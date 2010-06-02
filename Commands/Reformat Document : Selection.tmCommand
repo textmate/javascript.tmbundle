@@ -23,10 +23,13 @@ Ported with permission to TextMate by Ale Muñoz.
 
 */
 
-require($_ENV['TM_BUNDLE_SUPPORT'] . '/lib/beautify.php'); 
+$bundleSupportDir = getenv('TM_BUNDLE_SUPPORT');
+$selectedText = getenv('TM_SELECTED_TEXT');
 
-if (isset($_ENV['TM_SELECTED_TEXT'])) {
-  $input = get_magic_quotes_gpc() ? stripslashes($_ENV['TM_SELECTED_TEXT']) : $_ENV['TM_SELECTED_TEXT'];
+require "{$bundleSupportDir}/lib/beautify.php";
+
+if (!empty($selectedText)) {
+  $input = get_magic_quotes_gpc() ? stripslashes($selectedText) : $selectedText;
 } else {
   $input = file_get_contents('php://stdin');
 }
