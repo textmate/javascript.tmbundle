@@ -29,7 +29,7 @@ $selectedText = getenv('TM_SELECTED_TEXT');
 require "{$bundleSupportDir}/lib/beautify.php";
 
 if (!empty($selectedText)) {
-  $input = get_magic_quotes_gpc() ? stripslashes($selectedText) : $selectedText;
+  $input = $selectedText;
 } else {
   $input = file_get_contents('php://stdin');
 }
