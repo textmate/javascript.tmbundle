@@ -660,10 +660,8 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>match</key>
-					<string>\\.</string>
-					<key>name</key>
-					<string>constant.character.escape.js</string>
+					<key>include</key>
+					<string>source.js.regexp</string>
 				</dict>
 			</array>
 		</dict>
