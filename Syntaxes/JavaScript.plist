@@ -10,10 +10,6 @@
 		<string>htc</string>
 		<string>jsx</string>
 	</array>
-	<key>foldingStartMarker</key>
-	<string>^.*\bfunction\s*(\w+\s*)?\([^\)]*\)(\s*\{[^\}]*)?\s*$</string>
-	<key>foldingStopMarker</key>
-	<string>^\s*\}</string>
 	<key>keyEquivalent</key>
 	<string>^~J</string>
 	<key>name</key>
