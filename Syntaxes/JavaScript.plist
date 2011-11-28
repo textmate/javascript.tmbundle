@@ -43,7 +43,9 @@
 			<string>meta.class.js</string>
 		</dict>
 		<dict>
-			<key>captures</key>
+			<key>begin</key>
+			<string>([a-zA-Z_?.$][\w?.$]*)\.(prototype)\.([a-zA-Z_?.$][\w?.$]*)\s*(=)\s*(function)?\s*(\()</string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -75,23 +77,28 @@
 					<key>name</key>
 					<string>punctuation.definition.parameters.begin.js</string>
 				</dict>
-				<key>7</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.function.js</string>
-				</dict>
-				<key>8</key>
+			</dict>
+			<key>comment</key>
+			<string>match stuff like: Sound.prototype.play = function() { … }</string>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.parameters.end.js</string>
 				</dict>
 			</dict>
-			<key>comment</key>
-			<string>match stuff like: Sound.prototype.play = function() { … }</string>
-			<key>match</key>
-			<string>([a-zA-Z_?.$][\w?.$]*)\.(prototype)\.([a-zA-Z_?.$][\w?.$]*)\s*(=)\s*(function)?\s*(\()(.*?)(\))</string>
 			<key>name</key>
 			<string>meta.function.prototype.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#function-params</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -125,7 +132,9 @@
 			<string>meta.function.js</string>
 		</dict>
 		<dict>
-			<key>captures</key>
+			<key>begin</key>
+			<string>([a-zA-Z_?.$][\w?.$]*)\.([a-zA-Z_?.$][\w?.$]*)\s*(=)\s*(function)\s*(\()</string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -152,26 +161,33 @@
 					<key>name</key>
 					<string>punctuation.definition.parameters.begin.js</string>
 				</dict>
-				<key>6</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.function.js</string>
-				</dict>
-				<key>7</key>
+			</dict>
+			<key>comment</key>
+			<string>match stuff like: Sound.play = function() { … }</string>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.parameters.end.js</string>
 				</dict>
 			</dict>
-			<key>comment</key>
-			<string>match stuff like: Sound.play = function() { … }</string>
-			<key>match</key>
-			<string>([a-zA-Z_?.$][\w?.$]*)\.([a-zA-Z_?.$][\w?.$]*)\s*(=)\s*(function)\s*(\()(.*?)(\))</string>
 			<key>name</key>
 			<string>meta.function.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#function-params</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
-			<key>captures</key>
+			<key>begin</key>
+			<string>([a-zA-Z_?$][\w?$]*)\s*(=)\s*(function)\s*(\()</string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -193,26 +209,33 @@
 					<key>name</key>
 					<string>punctuation.definition.parameters.begin.js</string>
 				</dict>
-				<key>5</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.function.js</string>
-				</dict>
-				<key>6</key>
+			</dict>
+			<key>comment</key>
+			<string>match stuff like: play = function() { … }</string>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.parameters.end.js</string>
 				</dict>
 			</dict>
-			<key>comment</key>
-			<string>match stuff like: play = function() { … }</string>
-			<key>match</key>
-			<string>([a-zA-Z_?$][\w?$]*)\s*(=)\s*(function)\s*(\()(.*?)(\))</string>
 			<key>name</key>
 			<string>meta.function.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#function-params</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
-			<key>captures</key>
+			<key>begin</key>
+			<string>\b(function)\s+([a-zA-Z_$]\w*)?\s*(\()</string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -228,27 +251,34 @@
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.parameters.begin.js</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.function.js</string>
-				</dict>
-				<key>5</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.parameters.end.js</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>match regular function like: function myFunc(arg) { … }</string>
-			<key>match</key>
-			<string>\b(function)\s+([a-zA-Z_$]\w*)?\s*(\()(.*?)(\))</string>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.end.js</string>
+				</dict>
+			</dict>
 			<key>name</key>
 			<string>meta.function.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#function-params</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
-			<key>captures</key>
+			<key>begin</key>
+			<string>\b([a-zA-Z_?.$][\w?.$]*)\s*:\s*\b(function)?\s*(\()</string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -265,26 +295,33 @@
 					<key>name</key>
 					<string>punctuation.definition.parameters.begin.js</string>
 				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.function.js</string>
-				</dict>
-				<key>5</key>
+			</dict>
+			<key>comment</key>
+			<string>match stuff like: foobar: function() { … }</string>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.parameters.end.js</string>
 				</dict>
 			</dict>
-			<key>comment</key>
-			<string>match stuff like: foobar: function() { … }</string>
-			<key>match</key>
-			<string>\b([a-zA-Z_?.$][\w?.$]*)\s*:\s*\b(function)?\s*(\()(.*?)(\))</string>
 			<key>name</key>
 			<string>meta.function.json.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#function-params</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
-			<key>captures</key>
+			<key>begin</key>
+			<string>(?:((')(.*?)('))|((")(.*?)(")))\s*:\s*\b(function)?\s*(\()</string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -295,16 +332,6 @@
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.parameters.begin.js</string>
-				</dict>
-				<key>11</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.function.js</string>
-				</dict>
-				<key>12</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.parameters.end.js</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -349,10 +376,25 @@
 			</dict>
 			<key>comment</key>
 			<string>Attempt to match "foo": function</string>
-			<key>match</key>
-			<string>(?:((')(.*?)('))|((")(.*?)(")))\s*:\s*\b(function)?\s*(\()(.*?)(\))</string>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.end.js</string>
+				</dict>
+			</dict>
 			<key>name</key>
 			<string>meta.function.json.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#function-params</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -717,6 +759,34 @@
 			<string>meta.brace.square.js</string>
 		</dict>
 	</array>
+	<key>repository</key>
+	<dict>
+		<key>function-params</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>(?![\s,)])</string>
+					<key>end</key>
+					<string>(?=[,)])</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>\G[$_a-zA-Z][$_a-zA-Z0-9]*</string>
+							<key>name</key>
+							<string>variable.parameter.function.js</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</dict>
 	<key>scopeName</key>
 	<string>source.js</string>
 	<key>uuid</key>
