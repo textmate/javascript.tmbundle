@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>name</key>
@@ -9,9 +9,9 @@
 	<key>settings</key>
 	<dict>
 		<key>foldingStartMarker</key>
-		<string>^.*\bfunction\s*(\w+\s*)?\([^\)]*\)(\s*\{[^\}]*)?\s*$</string>
+		<string>^.*(\bfunction\s*(\w+\s*)?\([^\)]*\)(\s*\{[^\}]*)?\s*$|&lt;script\b.*?)</string>
 		<key>foldingStopMarker</key>
-		<string>^\s*\}</string>
+		<string>^\s*(\}|&lt;/script&gt;.*?)</string>
 	</dict>
 	<key>uuid</key>
 	<string>1E044101-68F8-410B-8FF5-E9553AD14B7C</string>
