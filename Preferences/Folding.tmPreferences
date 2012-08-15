@@ -9,9 +9,9 @@
 	<key>settings</key>
 	<dict>
 		<key>foldingStartMarker</key>
-		<string>^.*(\bfunction\s*(\w+\s*)?\([^\)]*\)(\s*\{[^\}]*)?\s*$|&lt;script\b.*?)</string>
+		<string>\{\s*(//.*)?$|\[\s*(//.*)?$|\(\s*(//.*)?$</string>
 		<key>foldingStopMarker</key>
-		<string>^\s*(\}|&lt;/script&gt;.*?)</string>
+		<string>^\s*\}|^\s*\]|^\s*\)</string>
 	</dict>
 	<key>uuid</key>
 	<string>1E044101-68F8-410B-8FF5-E9553AD14B7C</string>
