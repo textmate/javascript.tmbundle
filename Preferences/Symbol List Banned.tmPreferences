@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List Banned</string>
 	<key>scope</key>
-	<string>source.js meta.property.function entity.name.function</string>
+	<string>source.js meta.property.function entity.name.function, source.js entity.name.type.object, source.js entity.name.type.instance</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
