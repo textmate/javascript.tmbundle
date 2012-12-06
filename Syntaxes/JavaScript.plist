@@ -533,36 +533,19 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(^[ \t]+)?(?=//)</string>
+			<string>//</string>
 			<key>beginCaptures</key>
 			<dict>
-				<key>1</key>
+				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.whitespace.comment.leading.js</string>
+					<string>punctuation.definition.comment.js</string>
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?!\G)</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>begin</key>
-					<string>//</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.comment.js</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>\n</string>
-					<key>name</key>
-					<string>comment.line.double-slash.js</string>
-				</dict>
-			</array>
+			<string>\n</string>
+			<key>name</key>
+			<string>comment.line.double-slash.js</string>
 		</dict>
 		<dict>
 			<key>captures</key>
