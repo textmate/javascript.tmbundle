@@ -585,19 +585,19 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(boolean|byte|char|class|double|enum|float|function|int|interface|long|short|void)\b</string>
-			<key>name</key>
+			<string>(?&lt;!\.)\b(class|function|interface|void)\b</string>
+			<key>name</key
 			<string>storage.type.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(const|export|extends|final|implements|native|private|protected|public|static|synchronized|throws|transient|var|volatile)\b</string>
+			<string>(?&lt;!\.)\b(const|export|extends|implements|let|private|protected|public|static|var)\b</string>
 			<key>name</key>
 			<string>storage.modifier.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(break|case|catch|continue|default|do|else|finally|for|goto|if|import|package|return|switch|throw|try|while)\b</string>
+			<string>(?&lt;!\.)\b(break|case|catch|continue|default|do|else|finally|for|goto|if|import|package|return|super|switch|throw|try|while|yield)\b</string>
 			<key>name</key>
 			<string>keyword.control.js</string>
 		</dict>
