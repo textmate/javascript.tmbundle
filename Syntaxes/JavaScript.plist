@@ -603,7 +603,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(delete|in|instanceof|new|typeof|with)\b</string>
+			<string>(?&lt;!\.)\b(delete|in|instanceof|new|of|typeof|with)\b</string>
 			<key>name</key>
 			<string>keyword.operator.js</string>
 		</dict>
