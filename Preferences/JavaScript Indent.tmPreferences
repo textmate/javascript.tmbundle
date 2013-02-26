@@ -18,6 +18,8 @@
 		)
 		$
 	</string>
+		<key>indentNextLinePattern</key>
+		<string>^(?!(.*[};:])?\s*(//|/\*.*\*/\s*$)).*(\b(if|for|while)\s*\((?&lt;paren&gt;[^()]*|\(\g&lt;paren&gt;\))*\)|else)\s*$</string>
 	</dict>
 	<key>uuid</key>
 	<string>BC062860-3346-4D3B-8421-C5543F83D11F</string>
