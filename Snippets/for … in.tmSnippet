@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>for (${1:variable} in ${2:object}) {
+	${3:if (${2:object}.hasOwnProperty(${1:variable})) {
+		${4:$TM_SELECTED_TEXT}
+	\}}
+}</string>
+	<key>name</key>
+	<string>for … in</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>forin</string>
+	<key>uuid</key>
+	<string>3AFF0ECE-A475-4CFB-832B-EE551D90B8E5</string>
+</dict>
+</plist>
