@@ -9,12 +9,14 @@
 	<key>settings</key>
 	<dict>
 		<key>decreaseIndentPattern</key>
-		<string>^(.*\*/)?\s*(\}|\))</string>
+		<string>^(.*\*/)?\s*(\}|\)|case|default)</string>
 		<key>increaseIndentPattern</key>
 		<string>(?x)
 		(
 			\{ [^}"']*
 		|	\( [^)"']*
+		|	case[\s\S]*:
+		|	default:
 		)
 		$
 	</string>
