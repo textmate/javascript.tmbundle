@@ -5,8 +5,7 @@
 	<key>content</key>
 	<string>else {
 	${1:$TM_SELECTED_TEXT}
-}
-</string>
+}</string>
 	<key>name</key>
 	<string>else</string>
 	<key>scope</key>

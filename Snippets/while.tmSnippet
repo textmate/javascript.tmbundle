@@ -5,8 +5,7 @@
 	<key>content</key>
 	<string>while (${1:true}) {
 	${2:$TM_SELECTED_TEXT}
-}
-</string>
+}</string>
 	<key>name</key>
 	<string>while</string>
 	<key>scope</key>

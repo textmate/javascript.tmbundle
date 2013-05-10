@@ -5,8 +5,7 @@
 	<key>content</key>
 	<string>setInterval(${2:function () {
 	${3:$TM_SELECTED_TEXT}
-\}}, ${1:10});
-</string>
+\}}, ${1:10});</string>
 	<key>name</key>
 	<string>setInterval function</string>
 	<key>scope</key>
