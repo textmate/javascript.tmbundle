@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>if (${1:true}) {
+	<string>while (${1:true}) {
 	${2:$TM_SELECTED_TEXT}
 }</string>
 	<key>name</key>
-	<string>if</string>
+	<string>while</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>if</string>
+	<string>while</string>
 	<key>uuid</key>
-	<string>F19F3732-39A7-48EC-A72B-A8F477A01795</string>
+	<string>009514ED-12AE-440F-811E-CD7D41368DBF</string>
 </dict>
 </plist>

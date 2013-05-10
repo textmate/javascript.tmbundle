@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function ${1:function_name} (${2:argument}) {
+	<string>function ${1:function_name}(${2:argument}) {
 	${0:// body...}
 }</string>
 	<key>name</key>

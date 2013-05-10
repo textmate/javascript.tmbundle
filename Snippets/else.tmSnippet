@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>if (${1:true}) {
-	${2:$TM_SELECTED_TEXT}
+	<string>else {
+	${1:$TM_SELECTED_TEXT}
 }</string>
 	<key>name</key>
-	<string>if</string>
+	<string>else</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>if</string>
+	<string>else</string>
 	<key>uuid</key>
-	<string>F19F3732-39A7-48EC-A72B-A8F477A01795</string>
+	<string>5BA406DB-A4B1-4CED-BA61-33D378FD7F53</string>
 </dict>
 </plist>

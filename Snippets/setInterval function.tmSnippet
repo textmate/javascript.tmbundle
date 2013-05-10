@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>if (${1:true}) {
-	${2:$TM_SELECTED_TEXT}
-}</string>
+	<string>setInterval(${2:function () {
+	${3:$TM_SELECTED_TEXT}
+\}}, ${1:10});</string>
 	<key>name</key>
-	<string>if</string>
+	<string>setInterval function</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>if</string>
+	<string>interval</string>
 	<key>uuid</key>
-	<string>F19F3732-39A7-48EC-A72B-A8F477A01795</string>
+	<string>3A00B409-6E94-4E27-8050-45F04EB9765A</string>
 </dict>
 </plist>
