@@ -44,6 +44,7 @@
 				<key>items</key>
 				<array>
 					<string>009A3E6C-FE3F-4A18-8759-2DC31F17BBE2</string>
+					<string>3A00B409-6E94-4E27-8050-45F04EB9765A</string>
 				</array>
 				<key>name</key>
 				<string>BOM</string>
@@ -69,10 +70,17 @@
 				<key>items</key>
 				<array>
 					<string>F19F3732-39A7-48EC-A72B-A8F477A01795</string>
+					<string>5BA406DB-A4B1-4CED-BA61-33D378FD7F53</string>
 					<string>31964029-9D71-4ADC-8213-DFE5C4E222B3</string>
+					<string>13386ECB-2A5C-4881-9D54-035BC8B0A4A1</string>
 					<string>------------------------------------</string>
 					<string>011C4681-FBEC-4891-9326-3DECFCDED6D6</string>
 					<string>C207B7C3-5597-4873-8AAD-C46FB8842AF2</string>
+					<string>3AFF0ECE-A475-4CFB-832B-EE551D90B8E5</string>
+					<string>009514ED-12AE-440F-811E-CD7D41368DBF</string>
+					<string>0FF6F54D-AFE0-4FC5-9A15-E837A167689C</string>
+					<string>------------------------------------</string>
+					<string>4B1F658D-CB1C-4D10-968D-A443F8597C28</string>
 				</array>
 				<key>name</key>
 				<string>Control</string>
