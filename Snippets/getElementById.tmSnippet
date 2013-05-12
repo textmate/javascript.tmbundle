@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>getElementsById(${1:id})</string>
+	<string>getElementById(${1:'${2:id}'})</string>
 	<key>name</key>
-	<string>getElementsById</string>
+	<string>getElementById</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
