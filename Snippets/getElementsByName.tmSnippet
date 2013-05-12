@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>getElementsByName(${1:name})</string>
+	<string>getElementsByName(${1:'${2:name}'})</string>
 	<key>name</key>
 	<string>getElementsByName</string>
 	<key>scope</key>
