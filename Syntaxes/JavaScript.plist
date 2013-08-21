@@ -277,7 +277,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\b([a-zA-Z_?.$][\w?.$]*)\s*:\s*\b(function)?\s*(\()</string>
+			<string>\b([a-zA-Z_?.$][\w?.$]*)\s*:\s*</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -285,21 +285,11 @@
 					<key>name</key>
 					<string>entity.name.function.js</string>
 				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>storage.type.function.js</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.parameters.begin.js</string>
-				</dict>
 			</dict>
 			<key>comment</key>
-			<string>match stuff like: foobar: function() { … }</string>
+			<string>match stuff like: foo:*</string>
 			<key>end</key>
-			<string>(\))</string>
+			<string>(?=.)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -309,29 +299,17 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.function.json.js</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#function-params</string>
-				</dict>
-			</array>
+			<string>meta.key.object.js</string>
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?:((')(.*?)('))|((")(.*?)(")))\s*:\s*\b(function)?\s*(\()</string>
+			<string>(?:((')(.*?)('))|((")(.*?)(")))\s*:\s*</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>string.quoted.single.js</string>
-				</dict>
-				<key>10</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.parameters.begin.js</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -368,16 +346,11 @@
 					<key>name</key>
 					<string>punctuation.definition.string.end.js</string>
 				</dict>
-				<key>9</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.js</string>
-				</dict>
 			</dict>
 			<key>comment</key>
-			<string>Attempt to match "foo": function</string>
+			<string>match stuff like: "foo":*</string>
 			<key>end</key>
-			<string>(\))</string>
+			<string>(?=.)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -387,14 +360,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.function.json.js</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#function-params</string>
-				</dict>
-			</array>
+			<string>meta.key.json.js</string>
 		</dict>
 		<dict>
 			<key>captures</key>
