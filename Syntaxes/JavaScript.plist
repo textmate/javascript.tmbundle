@@ -786,7 +786,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(?![\s,)])</string>
+					<string>(?=[$_a-zA-Z])</string>
 					<key>end</key>
 					<string>(?=[,)])</string>
 					<key>patterns</key>
@@ -796,10 +796,6 @@
 							<string>\G[$_a-zA-Z][$_a-zA-Z0-9]*</string>
 							<key>name</key>
 							<string>variable.parameter.function.js</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>$self</string>
 						</dict>
 					</array>
 				</dict>
