@@ -186,54 +186,6 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>([a-zA-Z_?$][\w?$]*)\s*(=)\s*(function)\s*(\()</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.js</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.operator.js</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>storage.type.function.js</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.parameters.begin.js</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>match stuff like: play = function() { … }</string>
-			<key>end</key>
-			<string>(\))</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.parameters.end.js</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>meta.function.js</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#function-params</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
 			<string>\b(function)\s+([a-zA-Z_$]\w*)?\s*(\()</string>
 			<key>beginCaptures</key>
 			<dict>
@@ -762,6 +714,10 @@
 							<string>\G[$_a-zA-Z][$_a-zA-Z0-9]*</string>
 							<key>name</key>
 							<string>variable.parameter.function.js</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
 						</dict>
 					</array>
 				</dict>
