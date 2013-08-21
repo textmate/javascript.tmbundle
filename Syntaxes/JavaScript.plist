@@ -786,7 +786,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(?![\s,)])</string>
+					<string>(?=[$_a-zA-Z])</string>
 					<key>end</key>
 					<string>(?=[,)])</string>
 					<key>patterns</key>
