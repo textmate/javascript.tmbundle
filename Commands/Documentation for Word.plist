@@ -5,16 +5,12 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env bash
-[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+	<string>#!/usr/bin/env ruby
 
-# index created using: curl -s 'http://devguru.com/technologies/javascript/index.asp'|grep -o '&lt;a href="[0-9]*.asp"&gt;[a-z][a-zA-Z]*&lt;/a&gt;'|perl -pe 's/&lt;a href="([^"]*)"&gt;([^&lt;]*)&lt;\/a&gt;/$2\t$1/'|sort|uniq|gzip &gt;dev_guru_index.gz
+require "#{ENV['TM_BUNDLE_SUPPORT']}/jsmate"
 
-ref=$(zgrep -w "^${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}" "$TM_BUNDLE_SUPPORT/dev_guru_index.gz"|cut -f2)
-
-[[ -n "$ref" ]] &amp;&amp; exit_show_html "&lt;meta http-equiv='Refresh' content='0;URL=http://devguru.com/technologies/javascript/$ref'&gt;"
-
-echo "No documentation found."</string>
+JavaScript::documentationForWord
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
