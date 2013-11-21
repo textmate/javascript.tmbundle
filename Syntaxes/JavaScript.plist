@@ -69,7 +69,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>match function, optional function name and optional function arguments</string>
+			<string>Match function, optional function name and optional function arguments</string>
 			<key>end</key>
 			<string>(\))</string>
 			<key>endCaptures</key>
@@ -164,22 +164,6 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>/\*\*(?!/)</string>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.js</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>\*/</string>
-			<key>name</key>
-			<string>comment.block.documentation.js</string>
-		</dict>
-		<dict>
-			<key>begin</key>
 			<string>/\*</string>
 			<key>captures</key>
 			<dict>
@@ -228,119 +212,28 @@
 			</array>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.html.js</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.html.js</string>
-				</dict>
-			</dict>
 			<key>match</key>
-			<string>(&lt;!--|--&gt;)</string>
-			<key>name</key>
-			<string>comment.block.html.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\.)\b(boolean|byte|char|class|double|enum|float|function|int|interface|long|short|void)\b</string>
+			<string>(?&lt;!\.)\b(let|var)\b</string>
 			<key>name</key>
 			<string>storage.type.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(const|export|extends|final|implements|native|private|protected|public|static|synchronized|throws|transient|var|volatile)\b</string>
+			<string>(?&lt;!\.)\b(get|set)\b</string>
 			<key>name</key>
 			<string>storage.modifier.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(break|case|catch|continue|default|do|else|finally|for|goto|if|import|package|return|switch|throw|try|while)\b</string>
+			<string>(?&lt;!\.)\b(break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|yield)\b</string>
 			<key>name</key>
 			<string>keyword.control.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(delete|in|instanceof|new|typeof|with)\b</string>
+			<string>(?&lt;!\.)\b(delete|in|instanceof|new|typeof|void|with)\b</string>
 			<key>name</key>
 			<string>keyword.operator.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\.)\btrue\b</string>
-			<key>name</key>
-			<string>constant.language.boolean.true.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\.)\bfalse\b</string>
-			<key>name</key>
-			<string>constant.language.boolean.false.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\.)\bnull\b</string>
-			<key>name</key>
-			<string>constant.language.null.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\.)\b(super|this)\b</string>
-			<key>name</key>
-			<string>variable.language.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\.)\b(debugger)\b</string>
-			<key>name</key>
-			<string>keyword.other.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(Anchor|Applet|Area|Array|Boolean|Button|Checkbox|Date|document|event|FileUpload|Form|Frame|Function|Hidden|History|Image|JavaArray|JavaClass|JavaObject|JavaPackage|java|Layer|Link|Location|Math|MimeType|Number|navigator|netscape|Object|Option|Packages|Password|Plugin|Radio|RegExp|Reset|Select|String|Style|Submit|screen|sun|Text|Textarea|window|XMLHttpRequest)\b</string>
-			<key>name</key>
-			<string>support.class.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(s(h(ift|ow(Mod(elessDialog|alDialog)|Help))|croll(X|By(Pages|Lines)?|Y|To)?|t(op|rike)|i(n|zeToContent|debar|gnText)|ort|u(p|b(str(ing)?)?)|pli(ce|t)|e(nd|t(Re(sizable|questHeader)|M(i(nutes|lliseconds)|onth)|Seconds|Ho(tKeys|urs)|Year|Cursor|Time(out)?|Interval|ZOptions|Date|UTC(M(i(nutes|lliseconds)|onth)|Seconds|Hours|Date|FullYear)|FullYear|Active)|arch)|qrt|lice|avePreferences|mall)|h(ome|andleEvent)|navigate|c(har(CodeAt|At)|o(s|n(cat|textual|firm)|mpile)|eil|lear(Timeout|Interval)?|a(ptureEvents|ll)|reate(StyleSheet|Popup|EventObject))|t(o(GMTString|S(tring|ource)|U(TCString|pperCase)|Lo(caleString|werCase))|est|a(n|int(Enabled)?))|i(s(NaN|Finite)|ndexOf|talics)|d(isableExternalCapture|ump|etachEvent)|u(n(shift|taint|escape|watch)|pdateCommands)|j(oin|avaEnabled)|p(o(p|w)|ush|lugins.refresh|a(ddings|rse(Int|Float)?)|r(int|ompt|eference))|e(scape|nableExternalCapture|val|lementFromPoint|x(p|ec(Script|Command)?))|valueOf|UTC|queryCommand(State|Indeterm|Enabled|Value)|f(i(nd|le(ModifiedDate|Size|CreatedDate|UpdatedDate)|xed)|o(nt(size|color)|rward)|loor|romCharCode)|watch|l(ink|o(ad|g)|astIndexOf)|a(sin|nchor|cos|t(tachEvent|ob|an(2)?)|pply|lert|b(s|ort))|r(ou(nd|teEvents)|e(size(By|To)|calc|turnValue|place|verse|l(oad|ease(Capture|Events)))|andom)|g(o|et(ResponseHeader|M(i(nutes|lliseconds)|onth)|Se(conds|lection)|Hours|Year|Time(zoneOffset)?|Da(y|te)|UTC(M(i(nutes|lliseconds)|onth)|Seconds|Hours|Da(y|te)|FullYear)|FullYear|A(ttention|llResponseHeaders)))|m(in|ove(B(y|elow)|To(Absolute)?|Above)|ergeAttributes|a(tch|rgins|x))|b(toa|ig|o(ld|rderWidths)|link|ack))\b(?=\()</string>
-			<key>name</key>
-			<string>support.function.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(s(ub(stringData|mit)|plitText|e(t(NamedItem|Attribute(Node)?)|lect))|has(ChildNodes|Feature)|namedItem|c(l(ick|o(se|neNode))|reate(C(omment|DATASection|aption)|T(Head|extNode|Foot)|DocumentFragment|ProcessingInstruction|E(ntityReference|lement)|Attribute))|tabIndex|i(nsert(Row|Before|Cell|Data)|tem)|open|delete(Row|C(ell|aption)|T(Head|Foot)|Data)|focus|write(ln)?|a(dd|ppend(Child|Data))|re(set|place(Child|Data)|move(NamedItem|Child|Attribute(Node)?)?)|get(NamedItem|Element(sBy(Name|TagName)|ById)|Attribute(Node)?)|blur)\b(?=\()</string>
-			<key>name</key>
-			<string>support.function.dom.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;=\.)(s(ystemLanguage|cr(ipts|ollbars|een(X|Y|Top|Left))|t(yle(Sheets)?|atus(Text|bar)?)|ibling(Below|Above)|ource|uffixes|e(curity(Policy)?|l(ection|f)))|h(istory|ost(name)?|as(h|Focus))|y|X(MLDocument|SLDocument)|n(ext|ame(space(s|URI)|Prop))|M(IN_VALUE|AX_VALUE)|c(haracterSet|o(n(structor|trollers)|okieEnabled|lorDepth|mp(onents|lete))|urrent|puClass|l(i(p(boardData)?|entInformation)|osed|asses)|alle(e|r)|rypto)|t(o(olbar|p)|ext(Transform|Indent|Decoration|Align)|ags)|SQRT(1_2|2)|i(n(ner(Height|Width)|put)|ds|gnoreCase)|zIndex|o(scpu|n(readystatechange|Line)|uter(Height|Width)|p(sProfile|ener)|ffscreenBuffering)|NEGATIVE_INFINITY|d(i(splay|alog(Height|Top|Width|Left|Arguments)|rectories)|e(scription|fault(Status|Ch(ecked|arset)|View)))|u(ser(Profile|Language|Agent)|n(iqueID|defined)|pdateInterval)|_content|p(ixelDepth|ort|ersonalbar|kcs11|l(ugins|atform)|a(thname|dding(Right|Bottom|Top|Left)|rent(Window|Layer)?|ge(X(Offset)?|Y(Offset)?))|r(o(to(col|type)|duct(Sub)?|mpter)|e(vious|fix)))|e(n(coding|abledPlugin)|x(ternal|pando)|mbeds)|v(isibility|endor(Sub)?|Linkcolor)|URLUnencoded|P(I|OSITIVE_INFINITY)|f(ilename|o(nt(Size|Family|Weight)|rmName)|rame(s|Element)|gColor)|E|whiteSpace|l(i(stStyleType|n(eHeight|kColor))|o(ca(tion(bar)?|lName)|wsrc)|e(ngth|ft(Context)?)|a(st(M(odified|atch)|Index|Paren)|yer(s|X)|nguage))|a(pp(MinorVersion|Name|Co(deName|re)|Version)|vail(Height|Top|Width|Left)|ll|r(ity|guments)|Linkcolor|bove)|r(ight(Context)?|e(sponse(XML|Text)|adyState))|global|x|m(imeTypes|ultiline|enubar|argin(Right|Bottom|Top|Left))|L(N(10|2)|OG(10E|2E))|b(o(ttom|rder(Width|RightWidth|BottomWidth|Style|Color|TopWidth|LeftWidth))|ufferDepth|elow|ackground(Color|Image)))\b</string>
-			<key>name</key>
-			<string>support.constant.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;=\.)(s(hape|ystemId|c(heme|ope|rolling)|ta(ndby|rt)|ize|ummary|pecified|e(ctionRowIndex|lected(Index)?)|rc)|h(space|t(tpEquiv|mlFor)|e(ight|aders)|ref(lang)?)|n(o(Resize|tation(s|Name)|Shade|Href|de(Name|Type|Value)|Wrap)|extSibling|ame)|c(h(ildNodes|Off|ecked|arset)?|ite|o(ntent|o(kie|rds)|de(Base|Type)?|l(s|Span|or)|mpact)|ell(s|Spacing|Padding)|l(ear|assName)|aption)|t(ype|Bodies|itle|Head|ext|a(rget|gName)|Foot)|i(sMap|ndex|d|m(plementation|ages))|o(ptions|wnerDocument|bject)|d(i(sabled|r)|o(c(type|umentElement)|main)|e(clare|f(er|ault(Selected|Checked|Value)))|at(eTime|a))|useMap|p(ublicId|arentNode|r(o(file|mpt)|eviousSibling))|e(n(ctype|tities)|vent|lements)|v(space|ersion|alue(Type)?|Link|Align)|URL|f(irstChild|orm(s)?|ace|rame(Border)?)|width|l(ink(s)?|o(ngDesc|wSrc)|a(stChild|ng|bel))|a(nchors|c(ce(ssKey|pt(Charset)?)|tion)|ttributes|pplets|l(t|ign)|r(chive|eas)|xis|Link|bbr)|r(ow(s|Span|Index)|ules|e(v|ferrer|l|adOnly))|m(ultiple|e(thod|dia)|a(rgin(Height|Width)|xLength))|b(o(dy|rder)|ackground|gColor))\b</string>
-			<key>name</key>
-			<string>support.constant.dom.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(ELEMENT_NODE|ATTRIBUTE_NODE|TEXT_NODE|CDATA_SECTION_NODE|ENTITY_REFERENCE_NODE|ENTITY_NODE|PROCESSING_INSTRUCTION_NODE|COMMENT_NODE|DOCUMENT_NODE|DOCUMENT_TYPE_NODE|DOCUMENT_FRAGMENT_NODE|NOTATION_NODE|INDEX_SIZE_ERR|DOMSTRING_SIZE_ERR|HIERARCHY_REQUEST_ERR|WRONG_DOCUMENT_ERR|INVALID_CHARACTER_ERR|NO_DATA_ALLOWED_ERR|NO_MODIFICATION_ALLOWED_ERR|NOT_FOUND_ERR|NOT_SUPPORTED_ERR|INUSE_ATTRIBUTE_ERR)\b</string>
-			<key>name</key>
-			<string>support.constant.dom.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\bon(R(ow(s(inserted|delete)|e(nter|xit))|e(s(ize(start|end)?|et)|adystatechange))|Mouse(o(ut|ver)|down|up|move)|B(efore(cut|deactivate|u(nload|pdate)|p(aste|rint)|editfocus|activate)|lur)|S(croll|top|ubmit|elect(start|ionchange)?)|H(over|elp)|C(hange|ont(extmenu|rolselect)|ut|ellchange|l(ick|ose))|D(eactivate|ata(setc(hanged|omplete)|available)|r(op|ag(start|over|drop|en(ter|d)|leave)?)|blclick)|Unload|P(aste|ropertychange)|Error(update)?|Key(down|up|press)|Focus|Load|A(ctivate|fter(update|print)|bort))\b</string>
-			<key>name</key>
-			<string>support.function.event-handler.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -350,9 +243,173 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Infinity|NaN|undefined)\b</string>
+			<string>(?&lt;!\.)\b(debugger)\b</string>
+			<key>name</key>
+			<string>keyword.other.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Array|Boolean|Date|Error|EvalError|Function|Number|Object|RangeError|ReferenceError|RegExp|String|SyntaxError|TypeError|URIError)\b</string>
+			<key>name</key>
+			<string>support.class.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>DOM Core Level 4 (http://www.w3.org/TR/domcore/) and DOM Events Level 3 (http://www.w3.org/TR/DOM-Level-3-Events/)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(Attr|CharacterData|Comment|CompositionEvent|CustomEvent|Document|DocumentFragment|DocumentType|DOMError|DOMException|DOMImplementation|DOMParser|DOMString|DOMTimestamp|DOMSettableTokenList|DOMStringList|DOMTokenList|Element|Event|EventTarget|FocusEvent|HTMLCollection|KeyboardEvent|MouseEvent|MutationObserver|MutationRecord|Node|NodeFilter|NodeIterator|NodeList|ProcessingInstruction|Range|Text|TextEvent|TreeWalker|UIEvent|WheelEvent|XMLDocument)\b</string>
+			<key>name</key>
+			<string>support.class.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>DOM Core Level 4 (http://www.w3.org/TR/domcore/) and DOM Events Level 3 (http://www.w3.org/TR/DOM-Level-3-Events/)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(CDATASection|DOMConfiguration|DOMErrorHandler|DOMImplementationList|DOMImplementationSource|DOMLocator|DOMObject|DOMUserData|Entity|EntityReference|MutationEvent|NamedNodeMap|NameList|Notation|TypeInfo|UserDataHandler)\b</string>
+			<key>name</key>
+			<string>invalid.deprecated.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>TypedArray specification used by HTML 5 (http://www.khronos.org/registry/typedarray/specs/latest/)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(ArrayBuffer|DataView|Float32Array|Float64Array|Int8Array|Int16Array|Int32Array|TypedArray|Uint8Array|Uint16Array|Uint32Array|Uint8ClampedArray)\b</string>
+			<key>name</key>
+			<string>support.class.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>File specification used by HTML 5 (http://dev.w3.org/2006/webapi/FileAPI/)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(Blob|File|FileList|FileReader)\b</string>
+			<key>name</key>
+			<string>support.class.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>XMLHttpRequest specification used by HTML 5 (http://xhr.spec.whatwg.org/)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(FormData|ProgressEvent|XMLHttpRequest|XMLHttpRequestUpload)\b</string>
+			<key>name</key>
+			<string>support.class.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>EventSource specification used by HTML 5 (http://www.w3.org/TR/eventsource/)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(EventSource)\b</string>
+			<key>name</key>
+			<string>support.class.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>CSSOM specification used by HTML 5 (http://dev.w3.org/csswg/cssom/)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(CSS|CSSCharsetRule|CSSImportRule|CSSPageRule|CSSRule|CSSRuleList|CSSStyleDeclaration|CSSStyleRule|CSSStyleSheet|MediaList|Stylesheet|StyleSheetList)\b</string>
+			<key>name</key>
+			<string>support.class.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>CSSOM View specification used by HTML 5 (http://dev.w3.org/csswg/cssom-view/)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(Screen)\b</string>
+			<key>name</key>
+			<string>support.class.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>CSS Font specification used by HTML 5 (http://dev.w3.org/csswg/css-fonts/)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(CSSFontFaceRule)\b</string>
+			<key>name</key>
+			<string>support.class.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>SVG specification used by HTML 5 (http://www.w3.org/TR/SVG/single-page.html)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(SVGAElement|SVGAltGlyphDefElement|SVGAltGlyphElement|SVGAltGlyphItemElement|SVGAngle|SVGAnimateColorElement|SVGAnimateElement|SVGAnimateMotionElement|SVGAnimateTransformElement|SVGAnimatedAngle|SVGAnimatedBoolean|SVGAnimatedEnumeration|SVGAnimatedInteger|SVGAnimatedLength|SVGAnimatedLengthList|SVGAnimatedNumber|SVGAnimatedNumberList|SVGAnimatedPreserveAspectRatio|SVGAnimatedRect|SVGAnimatedString|SVGAnimatedTransformList|SVGAnimationElement|SVGCircleElement|SVGClipPathElement|SVGColor|SVGComponentTransferFunctionElement|SVGCursorElement|SVGDefsElement|SVGDescElement|SVGDocument|SVGElement|SVGElementInstance|SVGElementInstanceList|SVGEllipseElement|SVGFEBlendElement|SVGFEColorMatrixElement|SVGFEComponentTransferElement|SVGFECompositeElement|SVGFEConvolveMatrixElement|SVGFEDiffuseLightingElement|SVGFEDisplacementMapElement|SVGFEDistantLightElement|SVGFEFloodElement|SVGFEFuncAElement|SVGFEFuncBElement|SVGFEFuncGElement|SVGFEFuncRElement|SVGFEGaussianBlurElement|SVGFEImageElement|SVGFEMergeElement|SVGFEMergeNodeElement|SVGFEMorphologyElement|SVGFEOffsetElement|SVGFEPointLightElement|SVGFESpecularLightingElement|SVGFESpotLightElement|SVGFETileElement|SVGFETurbulenceElement|SVGFilterElement|SVGFontElement|SVGFontFaceElement|SVGFontFaceFormatElement|SVGFontFaceNameElement|SVGFontFaceSrcElement|SVGFontFaceUriElement|SVGForeignObjectElement|SVGGElement|SVGGlyphElement|SVGGlyphRefElement|SVGGradientElement|SVGHKernElement|SVGImageElement|SVGLength|SVGLengthList|SVGLineElement|SVGLinearGradientElement|SVGMPathElement|SVGMarkerElement|SVGMaskElement|SVGMatrix|SVGMetadataElement|SVGMissingGlyphElement|SVGNumber|SVGNumberList|SVGPaint|SVGPathElement|SVGPathSeg|SVGPathSegArcAbs|SVGPathSegArcRel|SVGPathSegClosePath|SVGPathSegCurvetoCubicAbs|SVGPathSegCurvetoCubicRel|SVGPathSegCurvetoCubicSmoothAbs|SVGPathSegCurvetoCubicSmoothRel|SVGPathSegCurvetoQuadraticAbs|SVGPathSegCurvetoQuadraticRel|SVGPathSegCurvetoQuadraticSmoothAbs|SVGPathSegCurvetoQuadraticSmoothRel|SVGPathSegLinetoAbs|SVGPathSegLinetoHorizontalAbs|SVGPathSegLinetoHorizontalRel|SVGPathSegLinetoRel|SVGPathSegLinetoVerticalAbs|SVGPathSegLinetoVerticalRel|SVGPathSegList|SVGPathSegMovetoAbs|SVGPathSegMovetoRel|SVGPatternElement|SVGPoint|SVGPointList|SVGPolygonElement|SVGPolylineElement|SVGPreserveAspectRatio|SVGRadialGradientElement|SVGRect|SVGRectElement|SVGRenderingIntent|SVGSVGElement|SVGScriptElement|SVGSetElement|SVGStopElement|SVGStringList|SVGStyleElement|SVGSwitchElement|SVGSymbolElement|SVGTRefElement|SVGTSpanElement|SVGTextContentElement|SVGTextElement|SVGTextPathElement|SVGTextPositioningElement|SVGTitleElement|SVGTransform|SVGTransformList|SVGUnitTypes|SVGUseElement|SVGUseElement|SVGVKernElement|SVGViewElement|SVGViewSpec|SVGZoomEvent)\b</string>
+			<key>name</key>
+			<string>support.class.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>WebGL specification used by HTML 5 (http://www.khronos.org/registry/webgl/specs/latest/1.0/)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(WebGLActiveInfo|WebGLBuffer|WebGLContextEvent|WebGLFramebuffer|WebGLProgram|WebGLRenderbuffer|WebGLRenderingContext|WebGLShader|WebGLShaderPrecisionFormat|WebGLTexture|WebGLUniformLocation)\b</string>
+			<key>name</key>
+			<string>support.class.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>HTML 5 (http://www.w3.org/TR/html5/single-page.html)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(Audio|BarProp|DOMStringMap|ErrorEvent|FileError|HTMLAllCollection|HTMLAnchorElement|HTMLAppletElement|HTMLAreaElement|HTMLAudioElement|HTMLBRElement|HTMLBaseElement|HTMLBodyElement|HTMLButtonElement|HTMLCanvasElement|HTMLDListElement|HTMLDataElement|HTMLDataListElement|HTMLDetailsElement|HTMLDialogElement|HTMLDirectoryElement|HTMLDivElement|HTMLEmbedElement|HTMLFieldSetElement|HTMLFontElement|HTMLFormControlsCollection|HTMLFormElement|HTMLFrameElement|HTMLFrameSetElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLIFrameElement|HTMLImageElement|HTMLInputElement|HTMLKeygenElement|HTMLLIElement|HTMLLabelElement|HTMLLegendElement|HTMLLinkElement|HTMLMapElement|HTMLMarqueeElement|HTMLMediaElement|HTMLMetaElement|HTMLMeterElement|HTMLModElement|HTMLOListElement|HTMLObjectElement|HTMLOptGroupElement|HTMLOptionElement|HTMLOptionsCollection|HTMLOutputElement|HTMLParagraphElement|HTMLParamElement|HTMLPreElement|HTMLProgressElement|HTMLQuoteElement|HTMLScriptElement|HTMLSelectElement|HTMLSour|HTMLSpanElement|HTMLStyleElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTextAreaElement|HTMLTimeElement|HTMLTitleElement|HTMLTrackElement|HTMLUListElement|HTMLUnknownElement|HTMLVideoElement|HashChangeEvent|History|Image|Location|MediaController|MediaError|MouseEvent|Navigator|Option|PageTransitionEvent|PopStateEvent|TextTrack|TextTrackCue|TextTrackCueList|TextTrackList|TimeRanges|TrackEvent|UIEvent|ValidityState|Window)\b</string>
+			<key>name</key>
+			<string>support.class.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>HTML 5 (http://www.w3.org/TR/html5/single-page.html#window)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(applicationCache|closed|console|crypto|document|external|frameElement|frames|history|innerHeight|innerWidth|length|location|locationbar|menubar|name|navigator|offscreenBuffering|onabort|onafterprint|onbeforeprint|onbeforeunload|onblur|oncancel|oncanplay|oncanplaythrough|onchange|onclick|onclose|oncuechange|ondblclick|ondrag|ondragend|ondragenter|ondragexit|ondragleave|ondragover|ondragstart|ondrop|ondurationchange|onemptied|onended|onerror|onfocus|onhashchange|oninput|oninvalid|onkeydown|onkeypress|onkeyup|onload|onloadeddata|onloadedmetadata|onloadstart|onmessage|onmousedown|onmouseenter|onmouseleave|onmousemove|onmouseout|onmouseover|onmouseup|onmousewheel|onoffline|ononline|onpagehide|onpageshow|onpause|onplay|onplaying|onpopstate|onprogress|onratechange|onreset|onresize|onscroll|onseeked|onseeking|onselect|onshow|onstalled|onstorage|onsubmit|onsuspend|ontimeupdate|onunload|onvolumechange|onwaiting|opener|outerHeight|outerWidth|pageXOffset|pageYOffset|parent|personalbar|postMessage|screen|screenX|screenY|scrollbars|scrollX|scrollY|self|status|statusbar|toolbar|top|window)\b</string>
+			<key>name</key>
+			<string>support.constant.dom.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>HTML 5 (http://www.w3.org/TR/html5/single-page.html#window)</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(addEventListener|alert|atob|blur|btoa|clearInterval|clearTimeout|close|confirm|dispatchEvent|doNotTrack|find|focus|getComputedStyle|getMatchedCSSRules|getSelection|matchMedia|moveBy|moveTo|open|openDatabase|print|prompt|removeEventListener|resizeBy|resizeTo|scroll|scrollBy|scrollTo|setInterval|setTimeout|showModalDialog|stop)\b</string>
+			<key>name</key>
+			<string>support.function.dom.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(captureEvents|defaultStatus|defaultstatus|releaseEvents)\b</string>
+			<key>name</key>
+			<string>invalid.deprecated.dom.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(JSON|Math)\b</string>
+			<key>name</key>
+			<string>support.constant.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(decodeURI|decodeURIComponent|encodeURI|encodeURIComponent|eval|isFinite|isNaN|parseFloat|parseInt|uneval)\b</string>
+			<key>name</key>
+			<string>support.function.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keywords reserved for future use but now are unused.</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(class|const|enum|export|extends|import|super)\b</string>
+			<key>name</key>
+			<string>invalid.illegal.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keywords reserved for future use in strict mode but now are unused.</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(implements|interface|package|private|protected|public|static)\b</string>
+			<key>name</key>
+			<string>invalid.deprecated.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(false|Infinity|NaN|null|true|undefined)\b</string>
 			<key>name</key>
 			<string>constant.language.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(this)\b</string>
+			<key>name</key>
+			<string>variable.language.js</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -455,6 +512,46 @@
 				</dict>
 			</array>
 		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Match classes based on the usage of the "new" operator.</string>
+			<key>match</key>
+			<string>(?&lt;=new )\b([$_a-zA-Z][$_a-zA-Z0-9]*)\b</string>
+			<key>name</key>
+			<string>support.class.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Match classes based on the usage of the "instanceof" operator.</string>
+			<key>match</key>
+			<string>(?&lt;= instanceof )\b([$_a-zA-Z][$_a-zA-Z0-9]*)\b</string>
+			<key>name</key>
+			<string>support.class.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Match classes based on the usage of the "prototype" property.</string>
+			<key>match</key>
+			<string>\b([$_a-zA-Z][$_a-zA-Z0-9]*)\b(?=\.\bprototype\b)</string>
+			<key>name</key>
+			<string>support.class.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Matches the "prototype" keyword.  Even though it is not a valid keyword, it is a special constant of sorts.</string>
+			<key>match</key>
+			<string>(?&lt;=\.)\b(prototype)\b</string>
+			<key>name</key>
+			<string>keyword.other.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Matches the function calls.</string>
+			<key>match</key>
+			<string>\b([$_a-zA-Z][$_a-zA-Z0-9]*)\b(?=\()</string>
+			<key>name</key>
+			<string>meta.function.js</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -465,6 +562,8 @@
 				<dict>
 					<key>begin</key>
 					<string>(?=[$_a-zA-Z])</string>
+					<key>comment</key>
+					<string>Matches valid argument, function and variable names.  To be thorough: https://github.com/mathiasbynens/mothereff.in/tree/master/js-variables</string>
 					<key>end</key>
 					<string>(?=[,)])</string>
 					<key>patterns</key>
