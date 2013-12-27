@@ -39,7 +39,7 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>(?:\b([a-zA-Z_$][\w$]*)(\s*=\s*))?\b(function)(?:\s+([a-zA-Z_$][\w$]*))?\s*(\()</string>
+			<string>(?:\b([a-zA-Z_$][\w$]*)\s*(=)\s*)?\b(function)(?:\s+([a-zA-Z_$][\w$]*))?\s*(\()</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
