@@ -7,6 +7,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>js</string>
+		<string>_js</string>
 		<string>htc</string>
 		<string>jsx</string>
 	</array>
