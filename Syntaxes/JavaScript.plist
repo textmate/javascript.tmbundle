@@ -18,13 +18,13 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b[a-zA-Z_$][\w$]*(?=\s*:\s*function\b)</string>
+					<string>(?&lt;!\w)[a-zA-Z_$][\w$]*(?=\s*:\s*function\b)</string>
 					<key>name</key>
 					<string>entity.name.function.js</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b[a-zA-Z_$][\w_$]*(?=\s*:)</string>
+					<string>(?&lt;!\w)[a-zA-Z_$][\w_$]*(?=\s*:)</string>
 					<key>name</key>
 					<string>entity.name.attribute-name.js</string>
 				</dict>
@@ -39,7 +39,7 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>(?:\b([a-zA-Z_$][\w$]*)\s*(=)\s*)?\b(function)(?:\s+([a-zA-Z_$][\w$]*))?\s*(\()</string>
+			<string>(?:(?&lt;!\w)([a-zA-Z_$][\w$]*)\s*(=)\s*)?\b(function)(?:\s+([a-zA-Z_$][\w$]*))?\s*(\()</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -516,7 +516,7 @@
 			<key>comment</key>
 			<string>Match classes based on the usage of the "new" operator.</string>
 			<key>match</key>
-			<string>(?&lt;=new )\b([$_a-zA-Z][$_a-zA-Z0-9]*)\b</string>
+			<string>(?&lt;=new )([$_a-zA-Z][$_a-zA-Z0-9]*)(?!\w)</string>
 			<key>name</key>
 			<string>support.class.js</string>
 		</dict>
@@ -524,7 +524,7 @@
 			<key>comment</key>
 			<string>Match classes based on the usage of the "instanceof" operator.</string>
 			<key>match</key>
-			<string>(?&lt;= instanceof )\b([$_a-zA-Z][$_a-zA-Z0-9]*)\b</string>
+			<string>(?&lt;= instanceof )([$_a-zA-Z][$_a-zA-Z0-9]*)(?!\w)</string>
 			<key>name</key>
 			<string>support.class.js</string>
 		</dict>
@@ -532,7 +532,7 @@
 			<key>comment</key>
 			<string>Match classes based on the usage of the "prototype" property.</string>
 			<key>match</key>
-			<string>\b([$_a-zA-Z][$_a-zA-Z0-9]*)\b(?=\.\bprototype\b)</string>
+			<string>(?&lt;!\w)([$_a-zA-Z][$_a-zA-Z0-9]*)(?=\.prototype\b)</string>
 			<key>name</key>
 			<string>support.class.js</string>
 		</dict>
@@ -540,7 +540,7 @@
 			<key>comment</key>
 			<string>Matches the "prototype" keyword.  Even though it is not a valid keyword, it is a special constant of sorts.</string>
 			<key>match</key>
-			<string>(?&lt;=\.)\b(prototype)\b</string>
+			<string>(?&lt;=\.)(prototype)\b</string>
 			<key>name</key>
 			<string>keyword.other.js</string>
 		</dict>
@@ -548,7 +548,7 @@
 			<key>comment</key>
 			<string>Matches the function calls.</string>
 			<key>match</key>
-			<string>\b([$_a-zA-Z][$_a-zA-Z0-9]*)\b(?=\()</string>
+			<string>(?&lt;!\w)([$_a-zA-Z][$_a-zA-Z0-9]*)(?=\()</string>
 			<key>name</key>
 			<string>meta.function.js</string>
 		</dict>
