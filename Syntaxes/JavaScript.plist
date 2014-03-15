@@ -460,18 +460,6 @@
 			<string>punctuation.terminator.statement.js</string>
 		</dict>
 		<dict>
-			<key>match</key>
-			<string>,[ |\t]*</string>
-			<key>name</key>
-			<string>meta.delimiter.object.comma.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\.</string>
-			<key>name</key>
-			<string>meta.delimiter.method.period.js</string>
-		</dict>
-		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
