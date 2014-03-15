@@ -424,32 +424,43 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?&lt;=[=(:,]|^|return|&amp;&amp;|\|\||!)\s*(/)(?![/*+{}?])</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.js</string>
-				</dict>
-			</dict>
+			<string>(?&lt;=[=(:,]|^|return|&amp;&amp;|\|\||!)\s*(?=/)</string>
+			<key>comment</key>
+			<string>Dont scope preceding whitespace as string.regex</string>
 			<key>end</key>
-			<string>(/)[igm]*</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.js</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>string.regexp.js</string>
+			<string>(?&lt;=[/igm])</string>
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>include</key>
-					<string>source.js.regexp</string>
+					<key>begin</key>
+					<string>/</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.js</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(/)[igm]*</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.js</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>string.regexp.js</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>source.js.regexp</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
