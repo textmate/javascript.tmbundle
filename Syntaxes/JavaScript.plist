@@ -174,20 +174,6 @@
 			</array>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.js</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>\A(#!).*$\n?</string>
-			<key>name</key>
-			<string>comment.line.number-sign.shebang.js</string>
-		</dict>
-		<dict>
 			<key>begin</key>
 			<string>/\*</string>
 			<key>captures</key>
@@ -438,7 +424,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?&lt;=[=(:,]|^|return|&amp;&amp;|\|\||!)\s*(?=/)</string>
+			<string>(?&lt;=[=(:,]|^|return|&amp;&amp;|\|\||!)\s*(?=/[^/*+{}?])</string>
 			<key>comment</key>
 			<string>Dont scope preceding whitespace as string.regex</string>
 			<key>end</key>
