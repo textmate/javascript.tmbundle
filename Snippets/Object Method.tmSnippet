@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:method_name}: function (${3:attribute}){
+	<string>${1:method_name}: function (${3:attribute}) {
 	$0
 }${10:,}</string>
 	<key>name</key>
