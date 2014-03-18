@@ -103,7 +103,23 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b((0(x|X)[0-9a-fA-F]+)|([0-9]+(\.[0-9]+)?))\b</string>
+			<string>\b0[xX]\h+\b</string>
+			<key>name</key>
+			<string>constant.numeric.hex.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)
+				(?&lt;!\w)									# Ensure word boundry
+				(?&gt;
+					(
+						(0|[1-9][0-9]*)(\.[0-9]*)?		# 0 or 1 or 1. or 1.0
+					  | \.[0-9]+						# .1
+					)
+					([eE][+-]?[0-9]+)?					# Exponent
+				)
+				(?!\w)									# Ensure word boundry
+			</string>
 			<key>name</key>
 			<string>constant.numeric.js</string>
 		</dict>
