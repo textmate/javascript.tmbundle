@@ -281,13 +281,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|yield)\b(?!\$)</string>
+			<string>(?&lt;!\.|\$)\b(break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|with|yield)\b(?!\$)</string>
 			<key>name</key>
 			<string>keyword.control.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(delete|in|instanceof|new|typeof|void|with)\b(?!\$)</string>
+			<string>(?&lt;!\.|\$)\b(delete|in|instanceof|new|typeof|void)\b(?!\$)</string>
 			<key>name</key>
 			<string>keyword.operator.js</string>
 		</dict>
