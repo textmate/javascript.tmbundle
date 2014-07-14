@@ -38,6 +38,22 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.js</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Match the shebang for JavaScript executables</string>
+			<key>match</key>
+			<string>\A(#!).*$\n</string>
+			<key>name</key>
+			<string>comment.line.number-sign.shebang.js</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>(?x)
 			(?:
