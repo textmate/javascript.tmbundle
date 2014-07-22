@@ -256,25 +256,25 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(let|var)\b</string>
+			<string>(?&lt;!\.|\$)\b(let|var)\b(?!\$)</string>
 			<key>name</key>
 			<string>storage.type.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(get|set)\b</string>
+			<string>(?&lt;!\.|\$)\b(get|set)\b(?!\$)</string>
 			<key>name</key>
 			<string>storage.modifier.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|yield)\b</string>
+			<string>(?&lt;!\.|\$)\b(break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|yield)\b(?!\$)</string>
 			<key>name</key>
 			<string>keyword.control.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(delete|in|instanceof|new|typeof|void|with)\b</string>
+			<string>(?&lt;!\.|\$)\b(delete|in|instanceof|new|typeof|void|with)\b(?!\$)</string>
 			<key>name</key>
 			<string>keyword.operator.js</string>
 		</dict>
@@ -286,13 +286,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(debugger)\b</string>
+			<string>(?&lt;!\.|\$)\b(debugger)\b(?!\$)</string>
 			<key>name</key>
 			<string>keyword.other.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Array|Boolean|Date|Error|EvalError|Function|Number|Object|RangeError|ReferenceError|RegExp|String|SyntaxError|TypeError|URIError)\b</string>
+			<string>(?&lt;!\.|\$)\b(Array|Boolean|Date|Error|EvalError|Function|Number|Object|RangeError|ReferenceError|RegExp|String|SyntaxError|TypeError|URIError)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.js</string>
 		</dict>
@@ -300,7 +300,7 @@
 			<key>comment</key>
 			<string>DOM Core Level 4 (http://www.w3.org/TR/domcore/) and DOM Events Level 3 (http://www.w3.org/TR/DOM-Level-3-Events/)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(Attr|CharacterData|Comment|CompositionEvent|CustomEvent|Document|DocumentFragment|DocumentType|DOMError|DOMException|DOMImplementation|DOMParser|DOMString|DOMTimestamp|DOMSettableTokenList|DOMStringList|DOMTokenList|Element|Event|EventTarget|FocusEvent|HTMLCollection|KeyboardEvent|MouseEvent|MutationObserver|MutationRecord|Node|NodeFilter|NodeIterator|NodeList|ProcessingInstruction|Range|Text|TextEvent|TreeWalker|UIEvent|WheelEvent|XMLDocument)\b</string>
+			<string>(?&lt;!\.|\$)\b(Attr|CharacterData|Comment|CompositionEvent|CustomEvent|Document|DocumentFragment|DocumentType|DOMError|DOMException|DOMImplementation|DOMParser|DOMString|DOMTimestamp|DOMSettableTokenList|DOMStringList|DOMTokenList|Element|Event|EventTarget|FocusEvent|HTMLCollection|KeyboardEvent|MouseEvent|MutationObserver|MutationRecord|Node|NodeFilter|NodeIterator|NodeList|ProcessingInstruction|Range|Text|TextEvent|TreeWalker|UIEvent|WheelEvent|XMLDocument)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.dom.js</string>
 		</dict>
@@ -308,7 +308,7 @@
 			<key>comment</key>
 			<string>DOM Core Level 4 (http://www.w3.org/TR/domcore/) and DOM Events Level 3 (http://www.w3.org/TR/DOM-Level-3-Events/)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(CDATASection|DOMConfiguration|DOMErrorHandler|DOMImplementationList|DOMImplementationSource|DOMLocator|DOMObject|DOMUserData|Entity|EntityReference|MutationEvent|NamedNodeMap|NameList|Notation|TypeInfo|UserDataHandler)\b</string>
+			<string>(?&lt;!\.|\$)\b(CDATASection|DOMConfiguration|DOMErrorHandler|DOMImplementationList|DOMImplementationSource|DOMLocator|DOMObject|DOMUserData|Entity|EntityReference|MutationEvent|NamedNodeMap|NameList|Notation|TypeInfo|UserDataHandler)\b(?!\$)</string>
 			<key>name</key>
 			<string>invalid.deprecated.dom.js</string>
 		</dict>
@@ -316,7 +316,7 @@
 			<key>comment</key>
 			<string>TypedArray specification used by HTML 5 (http://www.khronos.org/registry/typedarray/specs/latest/)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(ArrayBuffer|DataView|Float32Array|Float64Array|Int8Array|Int16Array|Int32Array|TypedArray|Uint8Array|Uint16Array|Uint32Array|Uint8ClampedArray)\b</string>
+			<string>(?&lt;!\.|\$)\b(ArrayBuffer|DataView|Float32Array|Float64Array|Int8Array|Int16Array|Int32Array|TypedArray|Uint8Array|Uint16Array|Uint32Array|Uint8ClampedArray)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.dom.js</string>
 		</dict>
@@ -324,7 +324,7 @@
 			<key>comment</key>
 			<string>File specification used by HTML 5 (http://dev.w3.org/2006/webapi/FileAPI/)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(Blob|File|FileList|FileReader)\b</string>
+			<string>(?&lt;!\.|\$)\b(Blob|File|FileList|FileReader)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.dom.js</string>
 		</dict>
@@ -332,7 +332,7 @@
 			<key>comment</key>
 			<string>XMLHttpRequest specification used by HTML 5 (http://xhr.spec.whatwg.org/)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(FormData|ProgressEvent|XMLHttpRequest|XMLHttpRequestUpload)\b</string>
+			<string>(?&lt;!\.|\$)\b(FormData|ProgressEvent|XMLHttpRequest|XMLHttpRequestUpload)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.dom.js</string>
 		</dict>
@@ -340,7 +340,7 @@
 			<key>comment</key>
 			<string>EventSource specification used by HTML 5 (http://www.w3.org/TR/eventsource/)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(EventSource)\b</string>
+			<string>(?&lt;!\.|\$)\b(EventSource)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.dom.js</string>
 		</dict>
@@ -348,7 +348,7 @@
 			<key>comment</key>
 			<string>CSSOM specification used by HTML 5 (http://dev.w3.org/csswg/cssom/)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(CSS|CSSCharsetRule|CSSImportRule|CSSPageRule|CSSRule|CSSRuleList|CSSStyleDeclaration|CSSStyleRule|CSSStyleSheet|MediaList|Stylesheet|StyleSheetList)\b</string>
+			<string>(?&lt;!\.|\$)\b(CSS|CSSCharsetRule|CSSImportRule|CSSPageRule|CSSRule|CSSRuleList|CSSStyleDeclaration|CSSStyleRule|CSSStyleSheet|MediaList|Stylesheet|StyleSheetList)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.dom.js</string>
 		</dict>
@@ -356,7 +356,7 @@
 			<key>comment</key>
 			<string>CSSOM View specification used by HTML 5 (http://dev.w3.org/csswg/cssom-view/)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(Screen)\b</string>
+			<string>(?&lt;!\.|\$)\b(Screen)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.dom.js</string>
 		</dict>
@@ -364,7 +364,7 @@
 			<key>comment</key>
 			<string>CSS Font specification used by HTML 5 (http://dev.w3.org/csswg/css-fonts/)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(CSSFontFaceRule)\b</string>
+			<string>(?&lt;!\.|\$)\b(CSSFontFaceRule)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.dom.js</string>
 		</dict>
@@ -372,7 +372,7 @@
 			<key>comment</key>
 			<string>SVG specification used by HTML 5 (http://www.w3.org/TR/SVG/single-page.html)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(SVGAElement|SVGAltGlyphDefElement|SVGAltGlyphElement|SVGAltGlyphItemElement|SVGAngle|SVGAnimateColorElement|SVGAnimateElement|SVGAnimateMotionElement|SVGAnimateTransformElement|SVGAnimatedAngle|SVGAnimatedBoolean|SVGAnimatedEnumeration|SVGAnimatedInteger|SVGAnimatedLength|SVGAnimatedLengthList|SVGAnimatedNumber|SVGAnimatedNumberList|SVGAnimatedPreserveAspectRatio|SVGAnimatedRect|SVGAnimatedString|SVGAnimatedTransformList|SVGAnimationElement|SVGCircleElement|SVGClipPathElement|SVGColor|SVGComponentTransferFunctionElement|SVGCursorElement|SVGDefsElement|SVGDescElement|SVGDocument|SVGElement|SVGElementInstance|SVGElementInstanceList|SVGEllipseElement|SVGFEBlendElement|SVGFEColorMatrixElement|SVGFEComponentTransferElement|SVGFECompositeElement|SVGFEConvolveMatrixElement|SVGFEDiffuseLightingElement|SVGFEDisplacementMapElement|SVGFEDistantLightElement|SVGFEFloodElement|SVGFEFuncAElement|SVGFEFuncBElement|SVGFEFuncGElement|SVGFEFuncRElement|SVGFEGaussianBlurElement|SVGFEImageElement|SVGFEMergeElement|SVGFEMergeNodeElement|SVGFEMorphologyElement|SVGFEOffsetElement|SVGFEPointLightElement|SVGFESpecularLightingElement|SVGFESpotLightElement|SVGFETileElement|SVGFETurbulenceElement|SVGFilterElement|SVGFontElement|SVGFontFaceElement|SVGFontFaceFormatElement|SVGFontFaceNameElement|SVGFontFaceSrcElement|SVGFontFaceUriElement|SVGForeignObjectElement|SVGGElement|SVGGlyphElement|SVGGlyphRefElement|SVGGradientElement|SVGHKernElement|SVGImageElement|SVGLength|SVGLengthList|SVGLineElement|SVGLinearGradientElement|SVGMPathElement|SVGMarkerElement|SVGMaskElement|SVGMatrix|SVGMetadataElement|SVGMissingGlyphElement|SVGNumber|SVGNumberList|SVGPaint|SVGPathElement|SVGPathSeg|SVGPathSegArcAbs|SVGPathSegArcRel|SVGPathSegClosePath|SVGPathSegCurvetoCubicAbs|SVGPathSegCurvetoCubicRel|SVGPathSegCurvetoCubicSmoothAbs|SVGPathSegCurvetoCubicSmoothRel|SVGPathSegCurvetoQuadraticAbs|SVGPathSegCurvetoQuadraticRel|SVGPathSegCurvetoQuadraticSmoothAbs|SVGPathSegCurvetoQuadraticSmoothRel|SVGPathSegLinetoAbs|SVGPathSegLinetoHorizontalAbs|SVGPathSegLinetoHorizontalRel|SVGPathSegLinetoRel|SVGPathSegLinetoVerticalAbs|SVGPathSegLinetoVerticalRel|SVGPathSegList|SVGPathSegMovetoAbs|SVGPathSegMovetoRel|SVGPatternElement|SVGPoint|SVGPointList|SVGPolygonElement|SVGPolylineElement|SVGPreserveAspectRatio|SVGRadialGradientElement|SVGRect|SVGRectElement|SVGRenderingIntent|SVGSVGElement|SVGScriptElement|SVGSetElement|SVGStopElement|SVGStringList|SVGStyleElement|SVGSwitchElement|SVGSymbolElement|SVGTRefElement|SVGTSpanElement|SVGTextContentElement|SVGTextElement|SVGTextPathElement|SVGTextPositioningElement|SVGTitleElement|SVGTransform|SVGTransformList|SVGUnitTypes|SVGUseElement|SVGUseElement|SVGVKernElement|SVGViewElement|SVGViewSpec|SVGZoomEvent)\b</string>
+			<string>(?&lt;!\.|\$)\b(SVGAElement|SVGAltGlyphDefElement|SVGAltGlyphElement|SVGAltGlyphItemElement|SVGAngle|SVGAnimateColorElement|SVGAnimateElement|SVGAnimateMotionElement|SVGAnimateTransformElement|SVGAnimatedAngle|SVGAnimatedBoolean|SVGAnimatedEnumeration|SVGAnimatedInteger|SVGAnimatedLength|SVGAnimatedLengthList|SVGAnimatedNumber|SVGAnimatedNumberList|SVGAnimatedPreserveAspectRatio|SVGAnimatedRect|SVGAnimatedString|SVGAnimatedTransformList|SVGAnimationElement|SVGCircleElement|SVGClipPathElement|SVGColor|SVGComponentTransferFunctionElement|SVGCursorElement|SVGDefsElement|SVGDescElement|SVGDocument|SVGElement|SVGElementInstance|SVGElementInstanceList|SVGEllipseElement|SVGFEBlendElement|SVGFEColorMatrixElement|SVGFEComponentTransferElement|SVGFECompositeElement|SVGFEConvolveMatrixElement|SVGFEDiffuseLightingElement|SVGFEDisplacementMapElement|SVGFEDistantLightElement|SVGFEFloodElement|SVGFEFuncAElement|SVGFEFuncBElement|SVGFEFuncGElement|SVGFEFuncRElement|SVGFEGaussianBlurElement|SVGFEImageElement|SVGFEMergeElement|SVGFEMergeNodeElement|SVGFEMorphologyElement|SVGFEOffsetElement|SVGFEPointLightElement|SVGFESpecularLightingElement|SVGFESpotLightElement|SVGFETileElement|SVGFETurbulenceElement|SVGFilterElement|SVGFontElement|SVGFontFaceElement|SVGFontFaceFormatElement|SVGFontFaceNameElement|SVGFontFaceSrcElement|SVGFontFaceUriElement|SVGForeignObjectElement|SVGGElement|SVGGlyphElement|SVGGlyphRefElement|SVGGradientElement|SVGHKernElement|SVGImageElement|SVGLength|SVGLengthList|SVGLineElement|SVGLinearGradientElement|SVGMPathElement|SVGMarkerElement|SVGMaskElement|SVGMatrix|SVGMetadataElement|SVGMissingGlyphElement|SVGNumber|SVGNumberList|SVGPaint|SVGPathElement|SVGPathSeg|SVGPathSegArcAbs|SVGPathSegArcRel|SVGPathSegClosePath|SVGPathSegCurvetoCubicAbs|SVGPathSegCurvetoCubicRel|SVGPathSegCurvetoCubicSmoothAbs|SVGPathSegCurvetoCubicSmoothRel|SVGPathSegCurvetoQuadraticAbs|SVGPathSegCurvetoQuadraticRel|SVGPathSegCurvetoQuadraticSmoothAbs|SVGPathSegCurvetoQuadraticSmoothRel|SVGPathSegLinetoAbs|SVGPathSegLinetoHorizontalAbs|SVGPathSegLinetoHorizontalRel|SVGPathSegLinetoRel|SVGPathSegLinetoVerticalAbs|SVGPathSegLinetoVerticalRel|SVGPathSegList|SVGPathSegMovetoAbs|SVGPathSegMovetoRel|SVGPatternElement|SVGPoint|SVGPointList|SVGPolygonElement|SVGPolylineElement|SVGPreserveAspectRatio|SVGRadialGradientElement|SVGRect|SVGRectElement|SVGRenderingIntent|SVGSVGElement|SVGScriptElement|SVGSetElement|SVGStopElement|SVGStringList|SVGStyleElement|SVGSwitchElement|SVGSymbolElement|SVGTRefElement|SVGTSpanElement|SVGTextContentElement|SVGTextElement|SVGTextPathElement|SVGTextPositioningElement|SVGTitleElement|SVGTransform|SVGTransformList|SVGUnitTypes|SVGUseElement|SVGUseElement|SVGVKernElement|SVGViewElement|SVGViewSpec|SVGZoomEvent)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.dom.js</string>
 		</dict>
@@ -380,7 +380,7 @@
 			<key>comment</key>
 			<string>WebGL specification used by HTML 5 (http://www.khronos.org/registry/webgl/specs/latest/1.0/)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(WebGLActiveInfo|WebGLBuffer|WebGLContextEvent|WebGLFramebuffer|WebGLProgram|WebGLRenderbuffer|WebGLRenderingContext|WebGLShader|WebGLShaderPrecisionFormat|WebGLTexture|WebGLUniformLocation)\b</string>
+			<string>(?&lt;!\.|\$)\b(WebGLActiveInfo|WebGLBuffer|WebGLContextEvent|WebGLFramebuffer|WebGLProgram|WebGLRenderbuffer|WebGLRenderingContext|WebGLShader|WebGLShaderPrecisionFormat|WebGLTexture|WebGLUniformLocation)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.dom.js</string>
 		</dict>
@@ -388,7 +388,7 @@
 			<key>comment</key>
 			<string>HTML 5 (http://www.w3.org/TR/html5/single-page.html)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(Audio|BarProp|DOMStringMap|ErrorEvent|FileError|HTMLAllCollection|HTMLAnchorElement|HTMLAppletElement|HTMLAreaElement|HTMLAudioElement|HTMLBRElement|HTMLBaseElement|HTMLBodyElement|HTMLButtonElement|HTMLCanvasElement|HTMLDListElement|HTMLDataElement|HTMLDataListElement|HTMLDetailsElement|HTMLDialogElement|HTMLDirectoryElement|HTMLDivElement|HTMLEmbedElement|HTMLFieldSetElement|HTMLFontElement|HTMLFormControlsCollection|HTMLFormElement|HTMLFrameElement|HTMLFrameSetElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLIFrameElement|HTMLImageElement|HTMLInputElement|HTMLKeygenElement|HTMLLIElement|HTMLLabelElement|HTMLLegendElement|HTMLLinkElement|HTMLMapElement|HTMLMarqueeElement|HTMLMediaElement|HTMLMetaElement|HTMLMeterElement|HTMLModElement|HTMLOListElement|HTMLObjectElement|HTMLOptGroupElement|HTMLOptionElement|HTMLOptionsCollection|HTMLOutputElement|HTMLParagraphElement|HTMLParamElement|HTMLPreElement|HTMLProgressElement|HTMLQuoteElement|HTMLScriptElement|HTMLSelectElement|HTMLSour|HTMLSpanElement|HTMLStyleElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTextAreaElement|HTMLTimeElement|HTMLTitleElement|HTMLTrackElement|HTMLUListElement|HTMLUnknownElement|HTMLVideoElement|HashChangeEvent|History|Image|Location|MediaController|MediaError|MouseEvent|Navigator|Option|PageTransitionEvent|PopStateEvent|TextTrack|TextTrackCue|TextTrackCueList|TextTrackList|TimeRanges|TrackEvent|UIEvent|ValidityState|Window)\b</string>
+			<string>(?&lt;!\.|\$)\b(Audio|BarProp|DOMStringMap|ErrorEvent|FileError|HTMLAllCollection|HTMLAnchorElement|HTMLAppletElement|HTMLAreaElement|HTMLAudioElement|HTMLBRElement|HTMLBaseElement|HTMLBodyElement|HTMLButtonElement|HTMLCanvasElement|HTMLDListElement|HTMLDataElement|HTMLDataListElement|HTMLDetailsElement|HTMLDialogElement|HTMLDirectoryElement|HTMLDivElement|HTMLEmbedElement|HTMLFieldSetElement|HTMLFontElement|HTMLFormControlsCollection|HTMLFormElement|HTMLFrameElement|HTMLFrameSetElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLIFrameElement|HTMLImageElement|HTMLInputElement|HTMLKeygenElement|HTMLLIElement|HTMLLabelElement|HTMLLegendElement|HTMLLinkElement|HTMLMapElement|HTMLMarqueeElement|HTMLMediaElement|HTMLMetaElement|HTMLMeterElement|HTMLModElement|HTMLOListElement|HTMLObjectElement|HTMLOptGroupElement|HTMLOptionElement|HTMLOptionsCollection|HTMLOutputElement|HTMLParagraphElement|HTMLParamElement|HTMLPreElement|HTMLProgressElement|HTMLQuoteElement|HTMLScriptElement|HTMLSelectElement|HTMLSour|HTMLSpanElement|HTMLStyleElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTextAreaElement|HTMLTimeElement|HTMLTitleElement|HTMLTrackElement|HTMLUListElement|HTMLUnknownElement|HTMLVideoElement|HashChangeEvent|History|Image|Location|MediaController|MediaError|MouseEvent|Navigator|Option|PageTransitionEvent|PopStateEvent|TextTrack|TextTrackCue|TextTrackCueList|TextTrackList|TimeRanges|TrackEvent|UIEvent|ValidityState|Window)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.dom.js</string>
 		</dict>
@@ -396,7 +396,7 @@
 			<key>comment</key>
 			<string>HTML 5 (http://www.w3.org/TR/html5/single-page.html#window)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(applicationCache|closed|console|crypto|document|external|frameElement|frames|history|innerHeight|innerWidth|length|location|locationbar|menubar|name|navigator|offscreenBuffering|onabort|onafterprint|onbeforeprint|onbeforeunload|onblur|oncancel|oncanplay|oncanplaythrough|onchange|onclick|onclose|oncuechange|ondblclick|ondrag|ondragend|ondragenter|ondragexit|ondragleave|ondragover|ondragstart|ondrop|ondurationchange|onemptied|onended|onerror|onfocus|onhashchange|oninput|oninvalid|onkeydown|onkeypress|onkeyup|onload|onloadeddata|onloadedmetadata|onloadstart|onmessage|onmousedown|onmouseenter|onmouseleave|onmousemove|onmouseout|onmouseover|onmouseup|onmousewheel|onoffline|ononline|onpagehide|onpageshow|onpause|onplay|onplaying|onpopstate|onprogress|onratechange|onreset|onresize|onscroll|onseeked|onseeking|onselect|onshow|onstalled|onstorage|onsubmit|onsuspend|ontimeupdate|onunload|onvolumechange|onwaiting|opener|outerHeight|outerWidth|pageXOffset|pageYOffset|parent|personalbar|postMessage|screen|screenX|screenY|scrollbars|scrollX|scrollY|self|status|statusbar|toolbar|top|window)\b</string>
+			<string>(?&lt;!\.|\$)\b(applicationCache|closed|console|crypto|document|external|frameElement|frames|history|innerHeight|innerWidth|length|location|locationbar|menubar|name|navigator|offscreenBuffering|onabort|onafterprint|onbeforeprint|onbeforeunload|onblur|oncancel|oncanplay|oncanplaythrough|onchange|onclick|onclose|oncuechange|ondblclick|ondrag|ondragend|ondragenter|ondragexit|ondragleave|ondragover|ondragstart|ondrop|ondurationchange|onemptied|onended|onerror|onfocus|onhashchange|oninput|oninvalid|onkeydown|onkeypress|onkeyup|onload|onloadeddata|onloadedmetadata|onloadstart|onmessage|onmousedown|onmouseenter|onmouseleave|onmousemove|onmouseout|onmouseover|onmouseup|onmousewheel|onoffline|ononline|onpagehide|onpageshow|onpause|onplay|onplaying|onpopstate|onprogress|onratechange|onreset|onresize|onscroll|onseeked|onseeking|onselect|onshow|onstalled|onstorage|onsubmit|onsuspend|ontimeupdate|onunload|onvolumechange|onwaiting|opener|outerHeight|outerWidth|pageXOffset|pageYOffset|parent|personalbar|postMessage|screen|screenX|screenY|scrollbars|scrollX|scrollY|self|status|statusbar|toolbar|top|window)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.constant.dom.js</string>
 		</dict>
@@ -404,25 +404,25 @@
 			<key>comment</key>
 			<string>HTML 5 (http://www.w3.org/TR/html5/single-page.html#window)</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(addEventListener|alert|atob|blur|btoa|clearInterval|clearTimeout|close|confirm|dispatchEvent|doNotTrack|find|focus|getComputedStyle|getMatchedCSSRules|getSelection|matchMedia|moveBy|moveTo|open|openDatabase|print|prompt|removeEventListener|resizeBy|resizeTo|scroll|scrollBy|scrollTo|setInterval|setTimeout|showModalDialog|stop)\b</string>
+			<string>(?&lt;!\.|\$)\b(addEventListener|alert|atob|blur|btoa|clearInterval|clearTimeout|close|confirm|dispatchEvent|doNotTrack|find|focus|getComputedStyle|getMatchedCSSRules|getSelection|matchMedia|moveBy|moveTo|open|openDatabase|print|prompt|removeEventListener|resizeBy|resizeTo|scroll|scrollBy|scrollTo|setInterval|setTimeout|showModalDialog|stop)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.function.dom.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(captureEvents|defaultStatus|defaultstatus|releaseEvents)\b</string>
+			<string>(?&lt;!\.|\$)\b(captureEvents|defaultStatus|defaultstatus|releaseEvents)\b(?!\$)</string>
 			<key>name</key>
 			<string>invalid.deprecated.dom.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(JSON|Math)\b</string>
+			<string>(?&lt;!\.|\$)\b(JSON|Math)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.constant.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(decodeURI|decodeURIComponent|encodeURI|encodeURIComponent|eval|isFinite|isNaN|parseFloat|parseInt|uneval)\b</string>
+			<string>(?&lt;!\.|\$)\b(decodeURI|decodeURIComponent|encodeURI|encodeURIComponent|eval|isFinite|isNaN|parseFloat|parseInt|uneval)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.function.js</string>
 		</dict>
@@ -430,7 +430,7 @@
 			<key>comment</key>
 			<string>Keywords reserved for future use but now are unused.</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(class|const|enum|export|extends|import|super)\b</string>
+			<string>(?&lt;!\.|\$)\b(class|const|enum|export|extends|import|super)\b(?!\$)</string>
 			<key>name</key>
 			<string>invalid.illegal.js</string>
 		</dict>
@@ -438,7 +438,7 @@
 			<key>comment</key>
 			<string>Keywords reserved for future use in strict mode but now are unused.</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(implements|interface|package|private|protected|public|static)\b</string>
+			<string>(?&lt;!\.|\$)\b(implements|interface|package|private|protected|public|static)\b(?!\$)</string>
 			<key>name</key>
 			<string>invalid.deprecated.js</string>
 		</dict>
@@ -450,7 +450,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(this)\b</string>
+			<string>(?&lt;!\.|\$)\b(this)\b(?!\$)</string>
 			<key>name</key>
 			<string>variable.language.js</string>
 		</dict>
