@@ -40,15 +40,21 @@ print "// $bookmarklet\n" . $src;
 </string>
 	<key>input</key>
 	<string>selection</string>
-	<key>keyEquivalent</key>
-	<string>^~@h</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>name</key>
 	<string>Copy as Bookmarklet to Clipboard</string>
-	<key>output</key>
-	<string>replaceSelectedText</string>
+	<key>outputCaret</key>
+	<string>heuristic</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>uuid</key>
 	<string>20E61C43-B81F-4FB9-9362-BFFE668EB9C9</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
