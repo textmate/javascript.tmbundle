@@ -62,7 +62,11 @@
 				\s*(=)\s*
 			)?																				# Optional
 			\b(function)
-			(?:\s+
+			(?:\s*
+				(\*)																		# Optional generator notation
+			)?
+			(?:\s*
+				(?&lt;=[\s\*])
 				([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)	# Optional Name
 			)?
 			\s*(\()
@@ -87,9 +91,14 @@
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.js</string>
+					<string>storage.modifier.js</string>
 				</dict>
 				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.js</string>
+				</dict>
+				<key>6</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.parameters.begin.js</string>
