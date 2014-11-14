@@ -9,16 +9,56 @@
 	<key>settings</key>
 	<dict>
 		<key>decreaseIndentPattern</key>
-		<string>^(.*\*/)?\s*(\}|\)|case|default)</string>
+		<string>(?x)
+	    ^ \s* ( (?! \S.* /[*] ) .* [*]/ \s* )? [})\]]
+	|   ^ \s* (case\b.*|default): \s* ( // .* | /[*] .* [*]/ \s* )? $
+	</string>
 		<key>increaseIndentPattern</key>
 		<string>(?x)
-		(
-			\{ [^}"']*
-		|	\( [^)"']*
-		|	case[\s\S]*:
-		|	default:
-		)
-		$
+	(   \{ [^}"']*
+	|   \( [^)"']*
+	|   \[ [^\]"']*
+	|   ^ \s* ( \{ \} | \( \) | \[ \]
+	          | (case\b.*|default):
+	          )
+	)
+	\s* ( // .* | /[*] .* [*]/ \s* )? $
+	</string>
+		<key>indentNextLinePattern</key>
+		<string>(?x)
+        ^ \s* (var|for|while|if|else)\b
+        # Disregard if line ends with semi-colon or braces
+	    (?! .* [;{}] \s* ( // .* | /[*] .* [*]/ \s* )? $ )
+	</string>
+		<key>unIndentedLinePattern</key>
+		<string>(?x)^
+	    # Ignore lines that do not end with (semi-)colon or braces
+	    (?! .* ([;{}] | \S:) \s* ( // .* | /[*] .* [*]/ \s* )? $ )
+
+		# Unless the line is matched by any of the rules above
+	    (?! .*
+	        # increaseIndentPattern
+            (   \{ [^}"']*
+            |   \( [^)"']*
+            |   \[ [^\]"']*
+            |   ^ \s* ( \{ \} | \( \) | \[ \]
+                      | (case\b.*|default):
+                      )
+            )
+            \s* ( // .* | /[*] .* [*]/ \s* )? $
+	    )
+
+	    (?!
+	        # decreaseIndentPattern
+                ^ \s* ( (?! \S.* /[*] ) .* [*]/ \s* )? [})\]]
+            |   ^ \s* (case\b.*|default): \s* ( // .* | /[*] .* [*]/ \s* )? $
+	    )
+
+	    (?!
+	        # indentNextLinePattern
+            ^ \s* (var|for|while|if|else)\b
+            (?! .* [;{}] \s* ( // .* | /[*] .* [*]/ \s* )? $ )
+	    )
 	</string>
 	</dict>
 	<key>uuid</key>
