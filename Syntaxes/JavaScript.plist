@@ -522,7 +522,7 @@
 			<key>comment</key>
 			<string>Dont scope preceding whitespace as string.regex</string>
 			<key>end</key>
-			<string>(?&lt;=[/igm])</string>
+			<string>(?&lt;=[/igmuy])</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -537,7 +537,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(/)[igm]*</string>
+					<string>(/)[igmuy]*</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
