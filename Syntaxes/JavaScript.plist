@@ -138,6 +138,18 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\b0[bB][01]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.binary.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b0[oO][0-7]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.octal.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(?x)
 				(?&lt;!\w)									# Ensure word boundry
 				(?&gt;
