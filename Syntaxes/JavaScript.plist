@@ -336,7 +336,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(delete|in|instanceof|new|typeof|void)\b(?!\$)</string>
+			<string>(?&lt;!\.|\$)\b(delete|in|instanceof|new|of|typeof|void)\b(?!\$)</string>
 			<key>name</key>
 			<string>keyword.operator.js</string>
 		</dict>
