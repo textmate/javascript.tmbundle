@@ -326,8 +326,27 @@
 			<string>storage.modifier.js</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.js</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>storage.modifier.js</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|with|yield)\b(?!\$)</string>
+			<string>(?&lt;!\.)\b(yield)(?!\s*:)\b(?:\s*(\*))?</string>
+			<key>name</key>
+			<string>meta.control.yield.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\.|\$)\b(break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|with)\b(?!\$)</string>
 			<key>name</key>
 			<string>keyword.control.js</string>
 		</dict>
