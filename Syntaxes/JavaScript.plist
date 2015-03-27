@@ -8,9 +8,10 @@
 	<array>
 		<string>js</string>
 		<string>_js</string>
+		<string>es</string>
+		<string>es6</string>
 		<string>htc</string>
 		<string>jsx</string>
-		<string>es6</string>
 	</array>
 	<key>firstLineMatch</key>
 	<string>^#!.*\b(node|iojs|JavaScript)</string>
