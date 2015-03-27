@@ -60,6 +60,55 @@
 		</dict>
 		<dict>
 			<key>begin</key>
+			<string>(?&lt;!\.)\b(import)(?!\s*:)\b</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.import.js</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(;)?\n</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.terminator.statement.js</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.import.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#strings</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(as|from)\b</string>
+					<key>name</key>
+					<string>keyword.control.js</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>,</string>
+					<key>name</key>
+					<string>meta.delimiter.object.comma.js</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\{|\}</string>
+					<key>name</key>
+					<string>meta.brace.curly.js</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>(?x)
 			(?:
 				(?&lt;!\w)																		# Ensure word boundry
