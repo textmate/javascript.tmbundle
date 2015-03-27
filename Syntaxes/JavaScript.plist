@@ -131,6 +131,46 @@
 			</array>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.class.js</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.js</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>storage.modifier.js</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.js</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?x)
+                \b(class)
+                \s+
+                (?:
+                    (?:
+                        ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)	# Identifier
+                        \s+
+                    )?
+                    (extends)\s+
+                )?
+                ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)	        # Identifier
+            </string>
+			<key>name</key>
+			<string>meta.class.js</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>\b0[xX]\h+\b</string>
 			<key>name</key>
@@ -315,6 +355,12 @@
 					<string>comment.line.double-slash.js</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>=&gt;</string>
+			<key>name</key>
+			<string>storage.type.arrow.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
