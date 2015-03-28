@@ -4,11 +4,11 @@
 <dict>
 	<key>content</key>
 	<string>try {
-	${1:statements}
+	$1
 } catch (${2:variable}) {
-	${3:statements}
+	$3
 }${4: finally {
-	${5:statements}
+	$5
 \}}</string>
 	<key>name</key>
 	<string>try</string>
