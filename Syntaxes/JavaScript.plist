@@ -12,6 +12,8 @@
 		<string>es6</string>
 		<string>htc</string>
 		<string>jsm</string>
+		<string>xsjs</string>
+		<string>xsjslib</string>
 		<string>jsx</string>
 	</array>
 	<key>firstLineMatch</key>
