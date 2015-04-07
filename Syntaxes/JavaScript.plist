@@ -181,6 +181,42 @@
 			</array>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>\b((?!(?:break|case|catch|continue|do|else|finally|for|function|if|export|import|package|return|switch|throw|try|while|with)[\s\(])(?:[a-zA-Z_$][a-zA-Z_$0-9]*))\s*(\()(?=(?:[^\(\)]*)?\)\s*\{)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.js</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.begin.js</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.begin.js</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.method.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#function-params</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
