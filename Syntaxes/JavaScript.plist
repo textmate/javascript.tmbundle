@@ -1295,15 +1295,19 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>&amp;&amp;|\|\|</string>
+					<string>!==|!=|&lt;=|&gt;=|===|==|&lt;|&gt;</string>
+					<key>name</key>
+					<string>keyword.operator.comparison.js</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>&amp;&amp;|!|\|\|</string>
 					<key>name</key>
 					<string>keyword.operator.logical.js</string>
 				</dict>
 				<dict>
-					<key>comment</key>
-					<string>match 2-character operator first</string>
 					<key>match</key>
-					<string>!=|!==|&lt;=|&gt;=|&amp;|~|===|==|&lt;&gt;|&lt;|&gt;|\?|\:|\^</string>
+					<string>&amp;|~|&lt;&gt;|\?|\:|\^</string>
 					<key>name</key>
 					<string>keyword.operator.js</string>
 				</dict>
