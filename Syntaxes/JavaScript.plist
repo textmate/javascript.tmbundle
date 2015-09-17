@@ -1307,7 +1307,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>&amp;|~|&lt;&gt;|\?|\:|\^</string>
+					<string>&amp;|\||\^|~</string>
+					<key>name</key>
+					<string>keyword.operator.bitwise.js</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>&lt;&gt;|\?|\:</string>
 					<key>name</key>
 					<string>keyword.operator.js</string>
 				</dict>
