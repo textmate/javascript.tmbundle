@@ -1295,9 +1295,23 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>!=|!==|&lt;=|&gt;=|!|&amp;|~|===|==|&lt;&gt;|&lt;|&gt;|!|&amp;&amp;|\|\||\?|\:|\^</string>
+					<string>&amp;&amp;|\|\|</string>
+					<key>name</key>
+					<string>keyword.operator.logical.js</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>match 2-character operator first</string>
+					<key>match</key>
+					<string>!=|!==|&lt;=|&gt;=|&amp;|~|===|==|&lt;&gt;|&lt;|&gt;|\?|\:|\^</string>
 					<key>name</key>
 					<string>keyword.operator.js</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>!</string>
+					<key>name</key>
+					<string>keyword.operator.logical.js</string>
 				</dict>
 				<dict>
 					<key>match</key>
