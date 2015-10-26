@@ -254,6 +254,32 @@
 			</array>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.js</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.language.default.js</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>variable.other.module.js</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>ES6 export: `export default (variable|class|function, etc.)`</string>
+			<key>match</key>
+			<string>(?x) \b(export)\b \s* \b(default)\b (?:\s*) \b((?!\bfunction\b|\bclass\b|\blet\b|\bvar\b|\bconst\b)[\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)?\b</string>
+			<key>name</key>
+			<string>meta.export.js</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>(?&lt;!\.)\b(export)(?!\s*:)\b</string>
 			<key>beginCaptures</key>
@@ -264,6 +290,8 @@
 					<string>keyword.control.export.js</string>
 				</dict>
 			</dict>
+			<key>comment</key>
+			<string>ES6 export, re-export: `export {member as alias, [...]} [from ...]`</string>
 			<key>end</key>
 			<string>(?=;|\bfunction\b|\bclass\b|\blet\b|\bvar\b|\bconst\b|$)</string>
 			<key>name</key>
