@@ -3,8 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:class_name}.prototype.${2:method_name} = function (${3:first_argument}) {
-	${0:// body...}
+	<string>${1:ClassName}.prototype.${2:methodName} = function ($3) {
+	$0
 };</string>
 	<key>name</key>
 	<string>Prototype</string>
