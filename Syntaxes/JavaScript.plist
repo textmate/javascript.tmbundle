@@ -15,6 +15,7 @@
 		<string>jsm</string>
 		<string>xsjs</string>
 		<string>xsjslib</string>
+		<string>jscad</string>
 		<string>jsx</string>
 	</array>
 	<key>firstLineMatch</key>
