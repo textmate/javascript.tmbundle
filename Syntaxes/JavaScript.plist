@@ -16,6 +16,7 @@
 		<string>xsjs</string>
 		<string>xsjslib</string>
 		<string>jscad</string>
+		<string>json5</string>
 		<string>jsx</string>
 	</array>
 	<key>firstLineMatch</key>
