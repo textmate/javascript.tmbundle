@@ -756,7 +756,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.|\$)\b(let|var)\b(?!\$)</string>
 			<key>name</key>
-			<string>storage.type.js</string>
+			<string>storage.type.var.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
