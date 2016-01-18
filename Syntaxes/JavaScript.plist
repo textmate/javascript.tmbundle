@@ -1026,25 +1026,6 @@
 			<key>comment</key>
 			<string>Allows the special return snippet to fire.</string>
 			<key>match</key>
-			<string>(\()(\))</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.section.scope.begin.js</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.section.scope.end.js</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>Allows the special return snippet to fire.</string>
-			<key>match</key>
 			<string>(\[)(\])</string>
 		</dict>
 		<dict>
@@ -1054,10 +1035,33 @@
 			<string>meta.brace.curly.js</string>
 		</dict>
 		<dict>
-			<key>match</key>
-			<string>\(|\)</string>
-			<key>name</key>
-			<string>meta.brace.round.js</string>
+			<key>begin</key>
+			<string>\(</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.begin.js</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.end.js</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>match</key>
