@@ -655,7 +655,7 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.type.js</string>
+					<string>entity.name.type.class.js</string>
 				</dict>
 				<key>3</key>
 				<dict>
@@ -665,7 +665,7 @@
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.type.js</string>
+					<string>entity.name.type.class.js</string>
 				</dict>
 			</dict>
 			<key>match</key>
