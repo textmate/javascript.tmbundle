@@ -14,6 +14,8 @@
 		<string>htc</string>
 		<string>pac</string>
 		<string>jsm</string>
+		<string>jslib</string>
+		<string>jspre</string>
 		<string>xsjs</string>
 		<string>xsjslib</string>
 		<string>jscad</string>
