@@ -439,7 +439,7 @@
 			<key>comment</key>
 			<string>Keywords reserved for future use but now are unused.</string>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(class|const|enum|export|extends|import|super)\b(?!\$)</string>
+			<string>(?&lt;!\.|\$)\b(enum)\b(?!\$)</string>
 			<key>name</key>
 			<string>invalid.illegal.js</string>
 		</dict>
