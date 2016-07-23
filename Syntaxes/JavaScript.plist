@@ -175,7 +175,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\\(x\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)</string>
+					<string>\\(x\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)</string>
 					<key>name</key>
 					<string>constant.character.escape.js</string>
 				</dict>
@@ -208,7 +208,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\\(x\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)</string>
+					<string>\\(x\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)</string>
 					<key>name</key>
 					<string>constant.character.escape.js</string>
 				</dict>
@@ -531,6 +531,44 @@
 			<string>(\{)(\})</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.begin.js</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.end.js</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Allows the special return snippet to fire.</string>
+			<key>match</key>
+			<string>(\()(\))</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.begin.js</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.end.js</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Allows the special return snippet to fire.</string>
+			<key>match</key>
+			<string>(\[)(\])</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>\{|\}</string>
 			<key>name</key>
@@ -601,7 +639,7 @@
 			<key>match</key>
 			<string>(?&lt;!\w)([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)(?=\()</string>
 			<key>name</key>
-			<string>meta.function.js</string>
+			<string>meta.function-call.js</string>
 		</dict>
 	</array>
 	<key>repository</key>
