@@ -10,6 +10,8 @@
 		<string>htc</string>
 		<string>jsx</string>
 	</array>
+	<key>firstLineMatch</key>
+	<string>^#!.*\b(node|iojs|JavaScript)</string>
 	<key>injections</key>
 	<dict>
 		<key>source.js - meta.ternary-if.js - string - comment</key>
