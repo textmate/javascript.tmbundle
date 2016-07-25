@@ -182,15 +182,32 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\b((?!(?:break|case|catch|continue|do|else|finally|for|function|if|export|import|package|return|switch|throw|try|while|with)[\s\(])(?:[a-zA-Z_$][a-zA-Z_$0-9]*))\s*(\()(?=(?:[^\(\)]*)?\)\s*\{)</string>
+			<string>(?x)
+                \b
+                (?: (static) \s+ )?                                             # Optional static keyword
+                (?!                                                             # Dont match known keywords
+                    (?:break|case|catch|continue|do|else|finally|for|function|if|
+                        export|import|package|return|switch|throw|try|while|with)
+                    [\s\(]
+                )
+                ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)
+                \s*
+                (\()
+                (?=(?:[^\(\)]*)?\)\s*\{)
+            </string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.js</string>
+					<string>storage.modifier.static.js</string>
 				</dict>
 				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.js</string>
+				</dict>
+				<key>3</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.parameters.begin.js</string>
@@ -565,7 +582,7 @@
 			<key>comment</key>
 			<string>Keywords used in an invalid context</string>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(class|function)\b(?!\$)</string>
+			<string>(?&lt;!\.|\$)\b(class|function|static)\b(?!\$)</string>
 			<key>name</key>
 			<string>invalid.illegal.js</string>
 		</dict>
