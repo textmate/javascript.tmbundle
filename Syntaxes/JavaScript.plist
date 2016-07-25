@@ -544,7 +544,7 @@
 			<key>comment</key>
 			<string>Keywords reserved for future use but now are unused.</string>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(class|const|enum|export|extends|import|super)\b(?!\$)</string>
+			<string>(?&lt;!\.|\$)\b(enum|await)\b(?!\$)</string>
 			<key>name</key>
 			<string>invalid.illegal.js</string>
 		</dict>
@@ -552,7 +552,7 @@
 			<key>comment</key>
 			<string>Keywords reserved for future use in strict mode but now are unused.</string>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(implements|interface|package|private|protected|public|static)\b(?!\$)</string>
+			<string>(?&lt;!\.|\$)\b(implements|interface|package|private|protected|public)\b(?!\$)</string>
 			<key>name</key>
 			<string>invalid.deprecated.js</string>
 		</dict>
