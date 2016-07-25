@@ -565,7 +565,7 @@
 			<key>comment</key>
 			<string>Keywords used in an invalid context</string>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(class)\b(?!\$)</string>
+			<string>(?&lt;!\.|\$)\b(class|function)\b(?!\$)</string>
 			<key>name</key>
 			<string>invalid.illegal.js</string>
 		</dict>
