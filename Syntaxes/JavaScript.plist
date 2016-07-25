@@ -335,7 +335,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(get|set)\b(?!\$)</string>
+			<string>(?&lt;!\.|\$)\b(get|set|const)\b(?!\$)</string>
 			<key>name</key>
 			<string>storage.modifier.js</string>
 		</dict>
