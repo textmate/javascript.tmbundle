@@ -243,15 +243,20 @@
 			<key>match</key>
 			<string>(?x)
                 \b(class)
-                \s+
                 (?:
+                    \s+
                     (?:
-                        ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)	# Identifier
-                        \s+
+                        (?:
+                            ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)	# Identifier
+                            \s+
+                        )?
+                        (extends)\s+
                     )?
-                    (extends)\s+
-                )?
-                ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)	        # Identifier
+                    ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)	        # Identifier
+                  | \s*($|(?=\{))                                                                       # To match class
+                                                                                                        #  as its entered
+                                                                                                        #  or unnamed
+                )
             </string>
 			<key>name</key>
 			<string>meta.class.js</string>
@@ -555,6 +560,14 @@
 			<string>(?&lt;!\.|\$)\b(implements|interface|package|private|protected|public)\b(?!\$)</string>
 			<key>name</key>
 			<string>invalid.deprecated.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keywords used in an invalid context</string>
+			<key>match</key>
+			<string>(?&lt;!\.|\$)\b(class)\b(?!\$)</string>
+			<key>name</key>
+			<string>invalid.illegal.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
