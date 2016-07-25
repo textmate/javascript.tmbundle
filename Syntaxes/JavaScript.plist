@@ -799,7 +799,7 @@
 					<key>comment</key>
 					<string>Matches valid argument, function and variable names.  To be thorough: https://github.com/mathiasbynens/mothereff.in/tree/master/js-variables</string>
 					<key>end</key>
-					<string>(?=[,)])</string>
+					<string>(?=[,)/])</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -809,6 +809,10 @@
 							<string>variable.parameter.function.js</string>
 						</dict>
 					</array>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#comments</string>
 				</dict>
 			</array>
 		</dict>
