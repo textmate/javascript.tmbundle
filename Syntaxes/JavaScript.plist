@@ -363,7 +363,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|with)\b(?!\$)</string>
+			<string>(?&lt;!\.|\$)\b(break|case|catch|continue|default|do|else|export|finally|for|if|return|switch|throw|try|while|with)\b(?!\$)</string>
 			<key>name</key>
 			<string>keyword.control.js</string>
 		</dict>
