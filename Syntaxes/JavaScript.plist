@@ -687,6 +687,48 @@
 			<string>meta.class.js</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>(?&lt;=[\[=(?:+,!]|^|return|=&gt;|&amp;&amp;|\|\|)\s*(?=/[^/*+?].*/)</string>
+			<key>comment</key>
+			<string>Dont scope preceding whitespace as string.regex</string>
+			<key>end</key>
+			<string>(?&lt;=[/igmuy])</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>/</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.js</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(/)[igmuy]*</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.js</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>string.regexp.js</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>source.js.regexp</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
 			<key>include</key>
 			<string>#numbers</string>
 		</dict>
@@ -697,6 +739,10 @@
 		<dict>
 			<key>include</key>
 			<string>#comments</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#operators</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -746,10 +792,6 @@
 			<string>(?&lt;!\.|\$)\b(delete|in|instanceof|new|of|typeof|void)\b(?!\$)</string>
 			<key>name</key>
 			<string>keyword.operator.js</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#operators</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -928,48 +970,6 @@
 			<string>(?&lt;!\.|\$)\b(this)\b(?!\$)</string>
 			<key>name</key>
 			<string>variable.language.js</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>(?&lt;=[\[=(?:+,!]|^|return|=&gt;|&amp;&amp;|\|\|)\s*(?=/[^/*+?].*/)</string>
-			<key>comment</key>
-			<string>Dont scope preceding whitespace as string.regex</string>
-			<key>end</key>
-			<string>(?&lt;=[/igmuy])</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>begin</key>
-					<string>/</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.string.begin.js</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>(/)[igmuy]*</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.string.end.js</string>
-						</dict>
-					</dict>
-					<key>name</key>
-					<string>string.regexp.js</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>source.js.regexp</string>
-						</dict>
-					</array>
-				</dict>
-			</array>
 		</dict>
 		<dict>
 			<key>match</key>
