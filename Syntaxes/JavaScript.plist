@@ -425,39 +425,8 @@
 			<string>meta.class.js</string>
 		</dict>
 		<dict>
-			<key>match</key>
-			<string>\b0[xX]\h+\b</string>
-			<key>name</key>
-			<string>constant.numeric.hex.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b0[bB][01]+\b</string>
-			<key>name</key>
-			<string>constant.numeric.binary.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b0[oO][0-7]+\b</string>
-			<key>name</key>
-			<string>constant.numeric.octal.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?x)
-				(?&lt;!\w)									# Ensure word boundry
-                [+-]?                                   # Optional sign
-				(?&gt;
-					(
-						(0|[1-9][0-9]*)(\.[0-9]*)?		# 0 or 1 or 1. or 1.0
-					  | \.[0-9]+						# .1
-					)
-					([eE][+-]?[0-9]+)?					# Exponent
-				)
-				(?!\w)									# Ensure word boundry
-			</string>
-			<key>name</key>
-			<string>constant.numeric.js</string>
+			<key>include</key>
+			<string>#numbers</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -1004,6 +973,47 @@
 							<string>$self</string>
 						</dict>
 					</array>
+				</dict>
+			</array>
+		</dict>
+		<key>numbers</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\b0[xX]\h+\b</string>
+					<key>name</key>
+					<string>constant.numeric.hex.js</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b0[bB][01]+\b</string>
+					<key>name</key>
+					<string>constant.numeric.binary.js</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b0[oO][0-7]+\b</string>
+					<key>name</key>
+					<string>constant.numeric.octal.js</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?x)
+        				(?&lt;!\w)									# Ensure word boundry
+                        [+-]?                                   # Optional sign
+        				(?&gt;
+        					(
+        						(0|[1-9][0-9]*)(\.[0-9]*)?		# 0 or 1 or 1. or 1.0
+        					  | \.[0-9]+						# .1
+        					)
+        					([eE][+-]?[0-9]+)?					# Exponent
+        				)
+        				(?!\w)									# Ensure word boundry
+        			</string>
+					<key>name</key>
+					<string>constant.numeric.js</string>
 				</dict>
 			</array>
 		</dict>
