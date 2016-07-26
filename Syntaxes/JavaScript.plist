@@ -486,10 +486,8 @@
 			<string>keyword.operator.js</string>
 		</dict>
 		<dict>
-			<key>match</key>
-			<string>!|%|&amp;|\*|\-\-|\-|\+\+|\+|~|===|==|=|!=|!==|&lt;=|&gt;=|&lt;&lt;=|&gt;&gt;=|&gt;&gt;&gt;=|&lt;&gt;|&lt;|&gt;|!|&amp;&amp;|\|\||\?|\:|\*=|(?&lt;!\()/=|%=|\+=|\-=|&amp;=|\^=|\^</string>
-			<key>name</key>
-			<string>keyword.operator.js</string>
+			<key>include</key>
+			<string>#operators</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -1014,6 +1012,18 @@
         			</string>
 					<key>name</key>
 					<string>constant.numeric.js</string>
+				</dict>
+			</array>
+		</dict>
+		<key>operators</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>!|%|&amp;|\*|\-\-|\-|\+\+|\+|~|===|==|=|!=|!==|&lt;=|&gt;=|&lt;&lt;=|&gt;&gt;=|&gt;&gt;&gt;=|&lt;&gt;|&lt;|&gt;|!|&amp;&amp;|\|\||\?|\:|\*=|(?&lt;!\()/=|%=|\+=|\-=|&amp;=|\^=|\^</string>
+					<key>name</key>
+					<string>keyword.operator.js</string>
 				</dict>
 			</array>
 		</dict>
