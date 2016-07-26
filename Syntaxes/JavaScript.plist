@@ -931,7 +931,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?&lt;=[\[=(:,+]|^|return|&amp;&amp;|\|\||!|\?)\s*(?=/[^/*+?])</string>
+			<string>(?&lt;=[\[=(?:+,!]|^|return|=&gt;|&amp;&amp;|\|\|)\s*(?=/[^/*+?])</string>
 			<key>comment</key>
 			<string>Dont scope preceding whitespace as string.regex</string>
 			<key>end</key>
