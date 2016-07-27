@@ -646,7 +646,7 @@
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.type.class.js</string>
+					<string>entity.other.inherited-class.js</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -654,18 +654,15 @@
                 \b(class)
                 (?:
                     \s+
-                    (?:
-                        (?:
-                            ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)	# Identifier
-                            \s+
-                        )?
-                        (extends)\s+
-                    )?
-                    ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)	        # Identifier
-                  | \s*($|(?=\{))                                                                       # To match class
-                                                                                                        #  as its entered
-                                                                                                        #  or unnamed
-                )
+                    ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)
+                )?
+                (?:
+                    \s+
+                    (extends)
+                    \s+
+                    ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)
+                )?
+                \s*($|(?=\{))
             </string>
 			<key>name</key>
 			<string>meta.class.js</string>
