@@ -24,27 +24,6 @@
 	</array>
 	<key>firstLineMatch</key>
 	<string>^#!.*\b(node|iojs|JavaScript)</string>
-	<key>injections</key>
-	<dict>
-		<key>source.js - meta.ternary-if.js - string - comment</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>(?&lt;!\w)[\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*(?=\s*:\s*function\b)</string>
-					<key>name</key>
-					<string>entity.name.function.js</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>(?&lt;!\w)[\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*(?=\s*:)</string>
-					<key>name</key>
-					<string>entity.name.attribute-name.js</string>
-				</dict>
-			</array>
-		</dict>
-	</dict>
 	<key>keyEquivalent</key>
 	<string>^~J</string>
 	<key>name</key>
@@ -775,6 +754,18 @@
 					<string>$self</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w)[\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*(?=\s*:\s*function\b)</string>
+			<key>name</key>
+			<string>entity.name.function.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w)[\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*(?=\s*:)</string>
+			<key>name</key>
+			<string>entity.name.attribute-name.js</string>
 		</dict>
 		<dict>
 			<key>include</key>
