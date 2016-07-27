@@ -1014,21 +1014,10 @@
 			<string>constant.language.js</string>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>variable.language.js</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>variable.language.js</string>
-				</dict>
-			</dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(super|this)(?!\s*:)\b|(?&lt;=\?)(?:\s*)(super|this)(?=\s*:)</string>
+			<string>(?&lt;!\.)\b(super|this)(?!\s*:)\b</string>
+			<key>name</key>
+			<string>variable.language.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
