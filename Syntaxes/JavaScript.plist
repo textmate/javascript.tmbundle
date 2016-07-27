@@ -734,6 +734,49 @@
 			</array>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>\?</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.ternary.js</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Matching as a capture group prevents false positives with other uses of :</string>
+			<key>end</key>
+			<string>([^:"'`\[\]{}()]*)(:)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.ternary.js</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.ternary-if.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
 			<key>include</key>
 			<string>#numbers</string>
 		</dict>
@@ -1077,21 +1120,6 @@
 			<string>meta.brace.square.js</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>\?</string>
-			<key>end</key>
-			<string>:</string>
-			<key>name</key>
-			<string>meta.ternary-if.js</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
 			<key>comment</key>
 			<string>Match classes based on the usage of the "new" operator.</string>
 			<key>match</key>
@@ -1366,7 +1394,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\?|\:</string>
+					<string>\:</string>
 					<key>name</key>
 					<string>keyword.operator.js</string>
 				</dict>
