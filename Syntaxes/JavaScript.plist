@@ -765,7 +765,7 @@
 			<key>match</key>
 			<string>(?&lt;!\w)[\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*(?=\s*:)</string>
 			<key>name</key>
-			<string>entity.name.attribute-name.js</string>
+			<string>entity.name.type.attribute-name.js</string>
 		</dict>
 		<dict>
 			<key>include</key>
