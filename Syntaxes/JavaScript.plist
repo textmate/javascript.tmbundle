@@ -1262,79 +1262,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>interpolated_js</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>begin</key>
-					<string>\$\{</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.section.embedded.begin.js</string>
-						</dict>
-					</dict>
-					<key>contentName</key>
-					<string>source.js</string>
-					<key>end</key>
-					<string>(\})</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.section.embedded.end.js</string>
-						</dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>source.js</string>
-						</dict>
-					</dict>
-					<key>name</key>
-					<string>meta.embedded.line.js</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>begin</key>
-							<string>\{</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>0</key>
-								<dict>
-									<key>name</key>
-									<string>meta.brace.curly.js</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>\}</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>0</key>
-								<dict>
-									<key>name</key>
-									<string>meta.brace.curly.js</string>
-								</dict>
-							</dict>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>$self</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>$self</string>
-						</dict>
-					</array>
-				</dict>
-			</array>
-		</dict>
 		<key>numbers</key>
 		<dict>
 			<key>patterns</key>
@@ -1478,10 +1405,8 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>match</key>
-							<string>\\(x\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)</string>
-							<key>name</key>
-							<string>constant.character.escape.js</string>
+							<key>include</key>
+							<string>#escapes</string>
 						</dict>
 						<dict>
 							<key>match</key>
@@ -1523,10 +1448,8 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>match</key>
-							<string>\\(x\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)</string>
-							<key>name</key>
-							<string>constant.character.escape.js</string>
+							<key>include</key>
+							<string>#escapes</string>
 						</dict>
 						<dict>
 							<key>match</key>
@@ -1568,18 +1491,94 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>match</key>
-							<string>\\(x\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)</string>
-							<key>name</key>
-							<string>constant.character.escape.js</string>
+							<key>include</key>
+							<string>#escapes</string>
 						</dict>
 						<dict>
 							<key>include</key>
-							<string>#interpolated_js</string>
+							<string>#interpolation</string>
 						</dict>
 					</array>
 				</dict>
 			</array>
+			<key>repository</key>
+			<dict>
+				<key>escapes</key>
+				<dict>
+					<key>match</key>
+					<string>\\(x\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)</string>
+					<key>name</key>
+					<string>constant.character.escape.js</string>
+				</dict>
+				<key>interpolation</key>
+				<dict>
+					<key>begin</key>
+					<string>\$\{</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.embedded.begin.js</string>
+						</dict>
+					</dict>
+					<key>contentName</key>
+					<string>source.js</string>
+					<key>end</key>
+					<string>(\})</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.embedded.end.js</string>
+						</dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>source.js</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.embedded.line.js</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>begin</key>
+							<string>\{</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>meta.brace.curly.js</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>\}</string>
+							<key>endCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>meta.brace.curly.js</string>
+								</dict>
+							</dict>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>$self</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
 		</dict>
 	</dict>
 	<key>scopeName</key>
