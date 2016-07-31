@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>moveRight:</string>
+		</dict>
+	</array>
+	<key>hideFromUser</key>
+	<true/>
+	<key>keyEquivalent</key>
+	<string>}</string>
+	<key>name</key>
+	<string>Overwrite '}' in ${ .. }</string>
+	<key>scope</key>
+	<string>source.js string meta.embedded.line.js punctuation.section.embedded.end.js</string>
+	<key>uuid</key>
+	<string>9A836C03-5693-49FA-B587-6EAF76EE743A</string>
+</dict>
+</plist>

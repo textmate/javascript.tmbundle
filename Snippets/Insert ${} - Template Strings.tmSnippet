@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\${${1:$TM_SELECTED_TEXT}}</string>
+	<key>hideFromUser</key>
+	<true/>
+	<key>keyEquivalent</key>
+	<string>$</string>
+	<key>name</key>
+	<string>Insert ${} - Template Strings</string>
+	<key>scope</key>
+	<string>B:string.quoted.other.template.js - string source</string>
+	<key>uuid</key>
+	<string>0DA0E112-971D-4D7F-B2C9-BCACE0CA61B3</string>
+</dict>
+</plist>
