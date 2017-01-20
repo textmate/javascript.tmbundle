@@ -1279,7 +1279,15 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(?=[\p{L}\p{Nl}$_])</string>
+					<string>(?=[\p{L}\p{Nl}$_])|(\.\.\.)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.operator.rest-parameters.js</string>
+						</dict>
+					</dict>
 					<key>comment</key>
 					<string>Matches valid argument, function and variable names.  To be thorough: https://github.com/mathiasbynens/mothereff.in/tree/master/js-variables</string>
 					<key>end</key>
