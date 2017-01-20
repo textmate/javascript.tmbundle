@@ -778,6 +778,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#function-call</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#operators</string>
 		</dict>
 		<dict>
@@ -1128,14 +1132,6 @@
 			<key>name</key>
 			<string>keyword.other.js</string>
 		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Matches the function calls.</string>
-			<key>match</key>
-			<string>(?&lt;!\w)([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)(?=\()</string>
-			<key>name</key>
-			<string>meta.function-call.js</string>
-		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -1235,6 +1231,48 @@
 				</dict>
 			</array>
 		</dict>
+		<key>function-call</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>(?&lt;!\w)([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)(\()</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>meta.function-call.js</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.function-call.begin.js</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>Matches the function calls.</string>
+					<key>end</key>
+					<string>\)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.function-call.end.js</string>
+						</dict>
+					</dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
 		<key>function-params</key>
 		<dict>
 			<key>patterns</key>
@@ -1253,6 +1291,32 @@
 							<string>\G[\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*</string>
 							<key>name</key>
 							<string>variable.parameter.function.js</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#function-call</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#numbers</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#strings</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#comments</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#operators</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>(?&lt;!\.)\b(super|this)(?!\s*:)\b</string>
+							<key>name</key>
+							<string>variable.language.js</string>
 						</dict>
 					</array>
 				</dict>
