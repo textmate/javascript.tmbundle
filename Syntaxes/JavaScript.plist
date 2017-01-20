@@ -837,7 +837,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(Array|Boolean|Date|Error|EvalError|Function|Number|Object|RangeError|ReferenceError|RegExp|String|SyntaxError|TypeError|URIError)\b(?!\$)</string>
+			<string>(?&lt;!\.|\$)\b(Array|Boolean|Date|Error|EvalError|Function|Map|Number|Object|Promise|Proxy|RangeError|ReferenceError|Reflect|RegExp|Set|String|SyntaxError|TypeError|URIError|WeakMap|WeakSet)\b(?!\$)</string>
 			<key>name</key>
 			<string>support.class.js</string>
 		</dict>
