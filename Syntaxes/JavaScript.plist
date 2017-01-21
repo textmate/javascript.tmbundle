@@ -626,7 +626,21 @@
 			</array>
 		</dict>
 		<dict>
-			<key>captures</key>
+			<key>begin</key>
+			<string>(?x)
+                \b(class)
+                (?:
+                    \s+
+                    ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)
+                )?
+                (?:
+                    \s+
+                    (extends)
+                    \s+
+                    (?:\b([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)\b(?![\(]))?
+                )?
+            </string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -649,23 +663,17 @@
 					<string>entity.other.inherited-class.js</string>
 				</dict>
 			</dict>
-			<key>match</key>
-			<string>(?x)
-                \b(class)
-                (?:
-                    \s+
-                    ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)
-                )?
-                (?:
-                    \s+
-                    (extends)
-                    \s+
-                    ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)
-                )?
-                \s*($|(?=\{))
-            </string>
+			<key>end</key>
+			<string>\s*($|(?=\{))</string>
 			<key>name</key>
 			<string>meta.class.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#function-call</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>begin</key>
