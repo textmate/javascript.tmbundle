@@ -578,7 +578,7 @@
                 \b
                 (?: (static) \s+ )?                                             # Optional static keyword
                 (?!                                                             # Dont match known keywords
-                    (?:break|case|catch|continue|do|else|finally|for|function|if|
+                    (?:async|await|break|case|catch|continue|do|else|finally|for|function|if|
                         export|import|package|return|switch|throw|try|while|with)
                     [\s\(]
                 )
@@ -819,7 +819,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.|\$)\b(break|case|catch|continue|default|do|else|export|finally|for|if|return|switch|throw|try|while|with)\b(?!\$)</string>
+			<string>(?&lt;!\.|\$)\b(async|await|break|case|catch|continue|default|do|else|export|finally|for|if|return|switch|throw|try|while|with)\b(?!\$)</string>
 			<key>name</key>
 			<string>keyword.control.js</string>
 		</dict>
