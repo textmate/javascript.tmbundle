@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18
+
+class String
+  def escape(char)
+    gsub(/\\.|#{Regexp.quote(char)}/) { |match| match == char ? "\\#{char}" : match }
+  end
+
+  def unescape(char)
+    gsub(/\\./) { |match| match == "\\#{char}" ? char : match }
+  end
+end
+
+print case str = STDIN.read
+  when /\A"(.*)"\z/m; "'" + $1.unescape('"').escape("'") + "'"
+  when /\A'(.*)'\z/m; '`' + $1.unescape("'").escape('`') + '`'
+  when /\A`(.*)`\z/m; '"' + $1.unescape("`").escape('"') + '"'
+  else str
+end
+</string>
+	<key>hideFromUser</key>
+	<true/>
+	<key>input</key>
+	<string>scope</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^"</string>
+	<key>name</key>
+	<string>Toggle Quote Style</string>
+	<key>outputCaret</key>
+	<string>interpolateByChar</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>source.js string.quoted.double, source.js string.quoted.single, source.js string.quoted.other.template</string>
+	<key>uuid</key>
+	<string>3CB25F61-ABB1-45FD-B7ED-2D65FF2CB84F</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
