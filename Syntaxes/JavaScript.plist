@@ -628,7 +628,7 @@
 		<dict>
 			<key>begin</key>
 			<string>(?x)
-                \b(class)
+                \b(class)(?=\s|$)
                 (?:
                     \s+
                     ([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)
