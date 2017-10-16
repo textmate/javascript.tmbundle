@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>try {
 	$1
-} catch (${2:e) {
+} catch (${2:e}) {
 	$3
 }${4: finally {
 	$5
