@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:key}: ${2:"${3:value}"}${4:, }</string>
-	<key>keyEquivalent</key>
-	<string>~:</string>
+	<string>console.debug(${1:$TM_SELECTED_TEXT});</string>
 	<key>name</key>
-	<string>Object key — key: "value"</string>
+	<string>debug</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>:</string>
+	<string>debug</string>
 	<key>uuid</key>
-	<string>DC8B46FB-8ADA-45EA-8F36-94C807A0D302</string>
+	<string>B09E67F5-ED9E-4C22-BFA4-ED61F0E4D3B3</string>
 </dict>
 </plist>

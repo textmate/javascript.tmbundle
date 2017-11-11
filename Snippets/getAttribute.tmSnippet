@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:key}: ${2:"${3:value}"}${4:, }</string>
-	<key>keyEquivalent</key>
-	<string>~:</string>
+	<string>getAttribute(${1:'${2:name}'})</string>
 	<key>name</key>
-	<string>Object key — key: "value"</string>
+	<string>getAttribute</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>:</string>
+	<string>get</string>
 	<key>uuid</key>
-	<string>DC8B46FB-8ADA-45EA-8F36-94C807A0D302</string>
+	<string>13A083C2-1F73-4CD6-9982-BFBCC5EB58B0</string>
 </dict>
 </plist>

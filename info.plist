@@ -12,18 +12,17 @@
 	<dict>
 		<key>items</key>
 		<array>
+			<string>F20780A9-CE3A-41D5-99B8-F5183AB54A98</string>
+			<string>------------------------------------</string>
 			<string>20E61C43-B81F-4FB9-9362-BFFE668EB9C9</string>
 			<string>36EC03E9-EFF4-479A-AB90-8DFA16800642</string>
 			<string>------------------------------------</string>
 			<string>B4874A14-2491-465A-A349-61E4EBCF4700</string>
 			<string>------------------------------------</string>
-			<string>D7E2FD2A-5B78-4147-BBF4-BE7FE854A337</string>
-			<string>3E69BFC9-8C2B-4BB3-875C-8673C1740FD4</string>
-			<string>9B27DBEA-56C1-4484-ACC7-0A5A05CFF9A8</string>
-			<string>------------------------------------</string>
 			<string>D2E6A1FE-2881-4754-B399-B65F61F29C2F</string>
 			<string>43F40EB6-5839-4BE8-99C8-4976D0534E5D</string>
 			<string>52090C49-D8B2-49A0-9597-80574354B3CD</string>
+			<string>E24EE160-FA32-4ADE-BE39-2F834AEB1D85</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -31,10 +30,13 @@
 			<dict>
 				<key>items</key>
 				<array>
+					<string>13A083C2-1F73-4CD6-9982-BFBCC5EB58B0</string>
 					<string>B2225C2E-59BD-4AD5-9554-755A9864D7F1</string>
 					<string>923442DA-69C2-4681-B57D-510BB1312E9E</string>
 					<string>C4CA6356-DBC9-4F0D-AA9B-8577692DEBB2</string>
 					<string>0701FB35-5C3C-453D-9ADE-8A0B7D1E617E</string>
+					<string>29B39100-632C-498F-829A-CF0F71DE0B25</string>
+					<string>29A152B6-8C5F-4BD3-82F2-EC7F21FA00A3</string>
 				</array>
 				<key>name</key>
 				<string>DOM</string>
@@ -48,6 +50,18 @@
 				</array>
 				<key>name</key>
 				<string>BOM</string>
+			</dict>
+			<key>E24EE160-FA32-4ADE-BE39-2F834AEB1D85</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>3E69BFC9-8C2B-4BB3-875C-8673C1740FD4</string>
+					<string>D7E2FD2A-5B78-4147-BBF4-BE7FE854A337</string>
+					<string>9B27DBEA-56C1-4484-ACC7-0A5A05CFF9A8</string>
+					<string>B09E67F5-ED9E-4C22-BFA4-ED61F0E4D3B3</string>
+				</array>
+				<key>name</key>
+				<string>Logging</string>
 			</dict>
 			<key>66778C58-CE08-4F21-AD36-562149AEEE80</key>
 			<dict>
@@ -87,6 +101,9 @@
 					<string>4B1F658D-CB1C-4D10-968D-A443F8597C28</string>
 					<string>------------------------------------</string>
 					<string>C1FE098B-501D-4567-B024-5C9C394898E5</string>
+					<string>------------------------------------</string>
+					<string>89CEA10F-CB8E-45A2-A206-BD7EE8118791</string>
+					<string>086ACC46-8307-4C69-B862-69302BFBBD66</string>
 				</array>
 				<key>name</key>
 				<string>Control</string>
@@ -110,6 +127,9 @@
 					<string>------------------------------------</string>
 					<string>66C3F21C-5762-40D7-A383-ABDFFC26EFE5</string>
 					<string>2F96136B-0193-42F5-90FC-B6F456A3AD77</string>
+					<string>------------------------------------</string>
+					<string>8F536653-6212-4A3A-ABF5-F47AC1ADAF21</string>
+					<string>FC9298E3-8ED7-4868-8C91-E50755F37325</string>
 				</array>
 				<key>name</key>
 				<string>Language</string>
@@ -118,6 +138,13 @@
 	</dict>
 	<key>name</key>
 	<string>JavaScript</string>
+	<key>source</key>
+	<dict>
+		<key>method</key>
+		<string>git</string>
+		<key>url</key>
+		<string>git@github.com:textmate/javascript.tmbundle</string>
+	</dict>
 	<key>uuid</key>
 	<string>AAB4FD74-73F9-11D9-B89A-000D93589AF6</string>
 </dict>

@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:key}: ${2:"${3:value}"}${4:, }</string>
-	<key>keyEquivalent</key>
-	<string>~:</string>
+	<string>then((${1:result}) =&gt; ${2:{
+  ${0}
+\}})</string>
 	<key>name</key>
-	<string>Object key — key: "value"</string>
+	<string>then</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>:</string>
+	<string>then</string>
 	<key>uuid</key>
-	<string>DC8B46FB-8ADA-45EA-8F36-94C807A0D302</string>
+	<string>086ACC46-8307-4C69-B862-69302BFBBD66</string>
 </dict>
 </plist>

@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function ${1:functionName}($2) {
-	$0
-}</string>
+	<string>new Promise((resolve, reject) =&gt; {
+  $0
+});</string>
 	<key>name</key>
-	<string>Function</string>
+	<string>new Promise</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>fun</string>
+	<string>pro</string>
 	<key>uuid</key>
-	<string>F0E4FB6A-4878-48C6-A777-62438DF1E14F</string>
+	<string>89CEA10F-CB8E-45A2-A206-BD7EE8118791</string>
 </dict>
 </plist>

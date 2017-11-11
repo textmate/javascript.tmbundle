@@ -1,0 +1,2239 @@
+---
+decodeURI:
+- :name: decodeURI
+  :url: "/JavaScript/Reference/Global_Objects/decodeURI"
+decodeURIComponent:
+- :name: decodeURIComponent
+  :url: "/JavaScript/Reference/Global_Objects/decodeURIComponent"
+encodeURI:
+- :name: encodeURI
+  :url: "/JavaScript/Reference/Global_Objects/encodeURI"
+encodeURIComponent:
+- :name: encodeURIComponent
+  :url: "/JavaScript/Reference/Global_Objects/encodeURIComponent"
+eval:
+- :name: eval
+  :url: "/JavaScript/Reference/Global_Objects/eval"
+- :name: Object.prototype.eval()
+  :url: "/JavaScript/Reference/Global_Objects/Object/eval"
+isFinite:
+- :name: isFinite
+  :url: "/JavaScript/Reference/Global_Objects/isFinite"
+- :name: Number.isFinite()
+  :url: "/JavaScript/Reference/Global_Objects/Number/isFinite"
+isNaN:
+- :name: isNaN
+  :url: "/JavaScript/Reference/Global_Objects/isNaN"
+- :name: Number.isNaN()
+  :url: "/JavaScript/Reference/Global_Objects/Number/isNaN"
+parseFloat:
+- :name: parseFloat
+  :url: "/JavaScript/Reference/Global_Objects/parseFloat"
+- :name: Number.parseFloat()
+  :url: "/JavaScript/Reference/Global_Objects/Number/parseFloat"
+parseInt:
+- :name: parseInt
+  :url: "/JavaScript/Reference/Global_Objects/parseInt"
+- :name: Number.parseInt()
+  :url: "/JavaScript/Reference/Global_Objects/Number/parseInt"
+undefined:
+- :name: undefined
+  :url: "/JavaScript/Reference/Global_Objects/undefined"
+'null':
+- :name: 'null'
+  :url: "/JavaScript/Reference/Global_Objects/null"
+NaN:
+- :name: NaN
+  :url: "/JavaScript/Reference/Global_Objects/NaN"
+- :name: Number.NaN
+  :url: "/JavaScript/Reference/Global_Objects/Number/NaN"
+Infinity:
+- :name: Infinity
+  :url: "/JavaScript/Reference/Global_Objects/Infinity"
+await:
+- :name: await
+  :url: "/JavaScript/Reference/Operators/await"
+delete:
+- :name: delete
+  :url: "/JavaScript/Reference/Operators/delete"
+- :name: Map.prototype.delete(key)
+  :url: "/JavaScript/Reference/Global_Objects/Map/delete"
+- :name: Set.prototype.delete(value)
+  :url: "/JavaScript/Reference/Global_Objects/Set/delete"
+- :name: WeakMap.prototype.delete(key)
+  :url: "/JavaScript/Reference/Global_Objects/WeakMap/delete"
+- :name: WeakSet.prototype.delete(value)
+  :url: "/JavaScript/Reference/Global_Objects/WeakSet/delete"
+get:
+- :name: get
+  :url: "/JavaScript/Reference/Operators/get"
+- :name: Map.prototype.get(key)
+  :url: "/JavaScript/Reference/Global_Objects/Map/get"
+- :name: handler.get()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/get"
+- :name: WeakMap.prototype.get(key)
+  :url: "/JavaScript/Reference/Global_Objects/WeakMap/get"
+in:
+- :name: for...in
+  :url: "/JavaScript/Reference/Operators/for...in"
+instanceof:
+- :name: instanceof
+  :url: "/JavaScript/Reference/Operators/instanceof"
+let:
+- :name: let
+  :url: "/JavaScript/Reference/Operators/let"
+- :name: let
+  :url: "/JavaScript/Reference/Statements/let"
+- :name: let
+  :url: "/JavaScript/Reference/Statements/let"
+new:
+- :name: new
+  :url: "/JavaScript/Reference/Operators/new"
+set:
+- :name: set
+  :url: "/JavaScript/Reference/Operators/set"
+- :name: Map.prototype.set(key, value)
+  :url: "/JavaScript/Reference/Global_Objects/Map/set"
+- :name: handler.set()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/set"
+- :name: WeakMap.prototype.set(key, value)
+  :url: "/JavaScript/Reference/Global_Objects/WeakMap/set"
+this:
+- :name: this
+  :url: "/JavaScript/Reference/Operators/this"
+typeof:
+- :name: typeof
+  :url: "/JavaScript/Reference/Operators/typeof"
+void:
+- :name: void
+  :url: "/JavaScript/Reference/Operators/void"
+yield*:
+- :name: yield*
+  :url: "/JavaScript/Reference/Operators/yield*"
+async function:
+- :name: async
+  :url: "/JavaScript/Reference/Statements/async function"
+break:
+- :name: break
+  :url: "/JavaScript/Reference/Statements/break"
+try...catch:
+- :name: catch
+  :url: "/JavaScript/Reference/Statements/try...catch"
+- :name: try
+  :url: "/JavaScript/Reference/Statements/try...catch"
+class:
+- :name: class
+  :url: "/JavaScript/Reference/Statements/class"
+const:
+- :name: const
+  :url: "/JavaScript/Reference/Statements/const"
+- :name: const
+  :url: "/JavaScript/Reference/Statements/const"
+continue:
+- :name: continue
+  :url: "/JavaScript/Reference/Statements/continue"
+debugger:
+- :name: debugger
+  :url: "/JavaScript/Reference/Statements/debugger"
+do...while:
+- :name: do
+  :url: "/JavaScript/Reference/Statements/do...while"
+if...else:
+- :name: else
+  :url: "/JavaScript/Reference/Statements/if...else"
+- :name: if
+  :url: "/JavaScript/Reference/Statements/if...else"
+export:
+- :name: export
+  :url: "/JavaScript/Reference/Statements/export"
+for:
+- :name: for
+  :url: "/JavaScript/Reference/Statements/for"
+- :name: Symbol.for(key)
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/for"
+function:
+- :name: function
+  :url: "/JavaScript/Reference/Statements/function"
+function*:
+- :name: function*
+  :url: "/JavaScript/Reference/Statements/function*"
+import:
+- :name: import
+  :url: "/JavaScript/Reference/Statements/import"
+for...in:
+- :name: in
+  :url: "/JavaScript/Reference/Statements/for...in"
+label:
+- :name: label
+  :url: "/JavaScript/Reference/Statements/label"
+for...of:
+- :name: of
+  :url: "/JavaScript/Reference/Statements/for...of"
+return:
+- :name: return
+  :url: "/JavaScript/Reference/Statements/return"
+switch:
+- :name: switch
+  :url: "/JavaScript/Reference/Statements/switch"
+throw:
+- :name: throw
+  :url: "/JavaScript/Reference/Statements/throw"
+var:
+- :name: var
+  :url: "/JavaScript/Reference/Statements/var"
+while:
+- :name: while
+  :url: "/JavaScript/Reference/Statements/while"
+with:
+- :name: with
+  :url: "/JavaScript/Reference/Statements/with"
+yield:
+- :name: yield
+  :url: "/JavaScript/Reference/Statements/yield"
+Image:
+- :name: Image
+  :url: "/API/HTMLImageElement/Image"
+- :name: Image
+  :url: "/API/Image"
+Array.prototype:
+- :name: Array.prototype
+  :url: "/JavaScript/Reference/Global_Objects/Array/prototype"
+length:
+- :name: Array.prototype.length
+  :url: "/JavaScript/Reference/Global_Objects/Array/length"
+- :name: Window.length
+  :url: "/API/Window/length"
+- :name: Function.length
+  :url: "/JavaScript/Reference/Global_Objects/Function/length"
+- :name: String.prototype.length
+  :url: "/JavaScript/Reference/Global_Objects/String/length"
+prototype[@@unscopables]:
+- :name: Array.prototype[@@unscopables]
+  :url: "/JavaScript/Reference/Global_Objects/Array/@@unscopables"
+copyWithin:
+- :name: Array.prototype.copyWithin()
+  :url: "/JavaScript/Reference/Global_Objects/Array/copyWithin"
+fill:
+- :name: Array.prototype.fill()
+  :url: "/JavaScript/Reference/Global_Objects/Array/fill"
+pop:
+- :name: Array.prototype.pop()
+  :url: "/JavaScript/Reference/Global_Objects/Array/pop"
+push:
+- :name: Array.prototype.push()
+  :url: "/JavaScript/Reference/Global_Objects/Array/push"
+reverse:
+- :name: Array.prototype.reverse()
+  :url: "/JavaScript/Reference/Global_Objects/Array/reverse"
+shift:
+- :name: Array.prototype.shift()
+  :url: "/JavaScript/Reference/Global_Objects/Array/shift"
+sort:
+- :name: Array.prototype.sort()
+  :url: "/JavaScript/Reference/Global_Objects/Array/sort"
+splice:
+- :name: Array.prototype.splice()
+  :url: "/JavaScript/Reference/Global_Objects/Array/splice"
+unshift:
+- :name: Array.prototype.unshift()
+  :url: "/JavaScript/Reference/Global_Objects/Array/unshift"
+concat:
+- :name: Array.prototype.concat()
+  :url: "/JavaScript/Reference/Global_Objects/Array/concat"
+- :name: String.prototype.concat()
+  :url: "/JavaScript/Reference/Global_Objects/String/concat"
+includes:
+- :name: Array.prototype.includes()
+  :url: "/JavaScript/Reference/Global_Objects/Array/includes"
+- :name: String.prototype.includes()
+  :url: "/JavaScript/Reference/Global_Objects/String/includes"
+indexOf:
+- :name: Array.prototype.indexOf()
+  :url: "/JavaScript/Reference/Global_Objects/Array/indexOf"
+- :name: String.prototype.indexOf()
+  :url: "/JavaScript/Reference/Global_Objects/String/indexOf"
+join:
+- :name: Array.prototype.join()
+  :url: "/JavaScript/Reference/Global_Objects/Array/join"
+lastIndexOf:
+- :name: Array.prototype.lastIndexOf()
+  :url: "/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
+- :name: String.prototype.lastIndexOf()
+  :url: "/JavaScript/Reference/Global_Objects/String/lastIndexOf"
+slice:
+- :name: Array.prototype.slice()
+  :url: "/JavaScript/Reference/Global_Objects/Array/slice"
+- :name: String.prototype.slice()
+  :url: "/JavaScript/Reference/Global_Objects/String/slice"
+toString:
+- :name: Array.prototype.toString()
+  :url: "/JavaScript/Reference/Global_Objects/Array/toString"
+- :name: Date.prototype.toString()
+  :url: "/JavaScript/Reference/Global_Objects/Date/toString"
+- :name: Function.prototype.toString()
+  :url: "/JavaScript/Reference/Global_Objects/Function/toString"
+- :name: Error.prototype.toString()
+  :url: "/JavaScript/Reference/Global_Objects/Error/toString"
+- :name: Boolean.prototype.toString()
+  :url: "/JavaScript/Reference/Global_Objects/Boolean/toString"
+- :name: Number.prototype.toString()
+  :url: "/JavaScript/Reference/Global_Objects/Number/toString"
+- :name: Object.prototype.toString()
+  :url: "/JavaScript/Reference/Global_Objects/Object/toString"
+- :name: RegExp.prototype.toString()
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/toString"
+- :name: String.prototype.toString()
+  :url: "/JavaScript/Reference/Global_Objects/String/toString"
+- :name: Symbol.prototype.toString()
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/toString"
+toLocaleString:
+- :name: Array.prototype.toLocaleString()
+  :url: "/JavaScript/Reference/Global_Objects/Array/toLocaleString"
+- :name: Date.prototype.toLocaleString()
+  :url: "/JavaScript/Reference/Global_Objects/Date/toLocaleString"
+- :name: Number.prototype.toLocaleString()
+  :url: "/JavaScript/Reference/Global_Objects/Number/toLocaleString"
+- :name: Object.prototype.toLocaleString()
+  :url: "/JavaScript/Reference/Global_Objects/Object/toLocaleString"
+entries:
+- :name: Array.prototype.entries()
+  :url: "/JavaScript/Reference/Global_Objects/Array/entries"
+- :name: Map.prototype.entries()
+  :url: "/JavaScript/Reference/Global_Objects/Map/entries"
+- :name: Object.entries()
+  :url: "/JavaScript/Reference/Global_Objects/Object/entries"
+- :name: Set.prototype.entries()
+  :url: "/JavaScript/Reference/Global_Objects/Set/entries"
+every:
+- :name: Array.prototype.every()
+  :url: "/JavaScript/Reference/Global_Objects/Array/every"
+filter:
+- :name: Array.prototype.filter()
+  :url: "/JavaScript/Reference/Global_Objects/Array/filter"
+find:
+- :name: Array.prototype.find()
+  :url: "/JavaScript/Reference/Global_Objects/Array/find"
+- :name: Window.find()
+  :url: "/API/Window/find"
+findIndex:
+- :name: Array.prototype.findIndex()
+  :url: "/JavaScript/Reference/Global_Objects/Array/findIndex"
+forEach:
+- :name: Array.prototype.forEach()
+  :url: "/JavaScript/Reference/Global_Objects/Array/forEach"
+- :name: Map.prototype.forEach(callbackFn[, thisArg])
+  :url: "/JavaScript/Reference/Global_Objects/Map/forEach"
+- :name: Set.prototype.forEach(callbackFn[, thisArg])
+  :url: "/JavaScript/Reference/Global_Objects/Set/forEach"
+keys:
+- :name: Array.prototype.keys()
+  :url: "/JavaScript/Reference/Global_Objects/Array/keys"
+- :name: Map.prototype.keys()
+  :url: "/JavaScript/Reference/Global_Objects/Map/keys"
+- :name: Object.keys()
+  :url: "/JavaScript/Reference/Global_Objects/Object/keys"
+- :name: Set.prototype.keys()
+  :url: "/JavaScript/Reference/Global_Objects/Set/keys"
+map:
+- :name: Array.prototype.map()
+  :url: "/JavaScript/Reference/Global_Objects/Array/map"
+reduce:
+- :name: Array.prototype.reduce()
+  :url: "/JavaScript/Reference/Global_Objects/Array/reduce"
+reduceRight:
+- :name: Array.prototype.reduceRight()
+  :url: "/JavaScript/Reference/Global_Objects/Array/reduceRight"
+some:
+- :name: Array.prototype.some()
+  :url: "/JavaScript/Reference/Global_Objects/Array/some"
+values:
+- :name: Array.prototype.values()
+  :url: "/JavaScript/Reference/Global_Objects/Array/values"
+- :name: Map.prototype.values()
+  :url: "/JavaScript/Reference/Global_Objects/Map/values"
+- :name: Object.values()
+  :url: "/JavaScript/Reference/Global_Objects/Object/values"
+- :name: Set.prototype.values()
+  :url: "/JavaScript/Reference/Global_Objects/Set/values"
+prototype[@@iterator]:
+- :name: Array.prototype[@@iterator]()
+  :url: "/JavaScript/Reference/Global_Objects/Array/@@iterator"
+- :name: Map.prototype[@@iterator]()
+  :url: "/JavaScript/Reference/Global_Objects/Map/@@iterator"
+- :name: Set.prototype[@@iterator]()
+  :url: "/JavaScript/Reference/Global_Objects/Set/@@iterator"
+- :name: String.prototype[@@iterator]()
+  :url: "/JavaScript/Reference/Global_Objects/String/@@iterator"
+HTMLElement:
+- :name: HTMLElement
+  :url: "/API/HTMLElement"
+accessKeyLabel:
+- :name: HTMLElement.accessKeyLabel
+  :url: "/API/HTMLElement/accessKeyLabel"
+contentEditable:
+- :name: HTMLElement.contentEditable
+  :url: "/API/HTMLElement/contentEditable"
+isContentEditable:
+- :name: HTMLElement.isContentEditable
+  :url: "/API/HTMLElement/isContentEditable"
+contextMenu:
+- :name: HTMLElement.contextMenu
+  :url: "/API/HTMLElement/contextMenu"
+dataset:
+- :name: HTMLElement.dataset
+  :url: "/API/HTMLElement/dataset"
+dir:
+- :name: HTMLElement.dir
+  :url: "/API/HTMLElement/dir"
+- :name: Document.dir
+  :url: "/API/Document/dir"
+hidden:
+- :name: HTMLElement.hidden
+  :url: "/API/HTMLElement/hidden"
+- :name: Document.hidden
+  :url: "/API/Document/hidden"
+lang:
+- :name: HTMLElement.lang
+  :url: "/API/HTMLElement/lang"
+offsetHeight:
+- :name: HTMLElement.offsetHeight
+  :url: "/API/HTMLElement/offsetHeight"
+offsetLeft:
+- :name: HTMLElement.offsetLeft
+  :url: "/API/HTMLElement/offsetLeft"
+offsetParent:
+- :name: HTMLElement.offsetParent
+  :url: "/API/HTMLElement/offsetParent"
+offsetTop:
+- :name: HTMLElement.offsetTop
+  :url: "/API/HTMLElement/offsetTop"
+offsetWidth:
+- :name: HTMLElement.offsetWidth
+  :url: "/API/HTMLElement/offsetWidth"
+style:
+- :name: HTMLElement.style
+  :url: "/API/HTMLElement/style"
+tabIndex:
+- :name: HTMLElement.tabIndex
+  :url: "/API/HTMLElement/tabIndex"
+title:
+- :name: HTMLElement.title
+  :url: "/API/HTMLElement/title"
+- :name: Document.title
+  :url: "/API/Document/title"
+blur:
+- :name: HTMLElement.blur()
+  :url: "/API/HTMLElement/blur"
+- :name: Window.blur()
+  :url: "/API/Window/blur"
+click:
+- :name: HTMLElement.click()
+  :url: "/API/HTMLElement/click"
+focus:
+- :name: HTMLElement.focus()
+  :url: "/API/HTMLElement/focus"
+- :name: Window.focus()
+  :url: "/API/Window/focus"
+forceSpellCheck:
+- :name: HTMLElement.forceSpellCheck()
+  :url: "/API/HTMLElement/forceSpellCheck"
+window:
+- :name: window
+  :url: "/API/window"
+- :name: Window.window
+  :url: "/API/Window/window"
+console:
+- :name: Window.console
+  :url: "/API/Window/console"
+crypto:
+- :name: Window.crypto
+  :url: "/API/Window/crypto"
+defaultStatus:
+- :name: Window.defaultStatus
+  :url: "/API/Window/defaultStatus"
+dialogArguments:
+- :name: Window.dialogArguments
+  :url: "/API/Window/dialogArguments"
+directories:
+- :name: Window.directories
+  :url: "/API/Window/directories"
+document:
+- :name: Window.document
+  :url: "/API/Window/document"
+- :name: document
+  :url: "/API/document"
+frameElement:
+- :name: Window.frameElement
+  :url: "/API/Window/frameElement"
+frames:
+- :name: Window.frames
+  :url: "/API/Window/frames"
+fullScreen:
+- :name: Window.fullScreen
+  :url: "/API/Window/fullScreen"
+history:
+- :name: Window.history
+  :url: "/API/Window/history"
+innerHeight:
+- :name: Window.innerHeight
+  :url: "/API/Window/innerHeight"
+innerWidth:
+- :name: Window.innerWidth
+  :url: "/API/Window/innerWidth"
+isSecureContext:
+- :name: Window.isSecureContext
+  :url: "/API/Window/isSecureContext"
+- :name: WindowOrWorkerGlobalScope.isSecureContext
+  :url: "/API/WindowOrWorkerGlobalScope/isSecureContext"
+location:
+- :name: Window.location
+  :url: "/API/Window/location"
+- :name: Document.location
+  :url: "/API/Document/location"
+locationbar:
+- :name: Window.locationbar
+  :url: "/API/Window/locationbar"
+localStorage:
+- :name: Window.localStorage
+  :url: "/API/Window/localStorage"
+menubar:
+- :name: Window.menubar
+  :url: "/API/Window/menubar"
+messageManager:
+- :name: Window.messageManager
+  :url: "/API/Window/messageManager"
+mozAnimationStartTime:
+- :name: Window.mozAnimationStartTime
+  :url: "/API/Window/mozAnimationStartTime"
+name:
+- :name: Window.name
+  :url: "/API/Window/name"
+- :name: Function.name
+  :url: "/JavaScript/Reference/Global_Objects/Function/name"
+- :name: Error.prototype.name
+  :url: "/JavaScript/Reference/Global_Objects/Error/name"
+- :name: RangeError.prototype.name
+  :url: "/JavaScript/Reference/Global_Objects/Error/name"
+- :name: ReferenceError.prototype.name
+  :url: "/JavaScript/Reference/Global_Objects/Error/name"
+- :name: SyntaxError.prototype.name
+  :url: "/JavaScript/Reference/Global_Objects/Error/name"
+- :name: TypeError.prototype.name
+  :url: "/JavaScript/Reference/Global_Objects/Error/name"
+navigator:
+- :name: Window.navigator
+  :url: "/API/Window/navigator"
+opener:
+- :name: Window.opener
+  :url: "/API/Window/opener"
+outerHeight:
+- :name: Window.outerHeight
+  :url: "/API/Window/outerHeight"
+outerWidth:
+- :name: Window.outerWidth
+  :url: "/API/Window/outerWidth"
+pageXOffset:
+- :name: Window.pageXOffset
+  :url: "/API/Window/scrollX"
+pageYOffset:
+- :name: Window.pageYOffset
+  :url: "/API/Window/scrollY"
+sessionStorage:
+- :name: Window.sessionStorage
+  :url: "/API/Window/sessionStorage"
+- :name: Window.sessionStorage
+  :url: "/API/Window/sessionStorage"
+parent:
+- :name: Window.parent
+  :url: "/API/Window/parent"
+performance:
+- :name: Window.performance
+  :url: "/API/Window/performance"
+personalbar:
+- :name: Window.personalbar
+  :url: "/API/Window/personalbar"
+pkcs11:
+- :name: Window.pkcs11
+  :url: "/API/Window/pkcs11"
+screen:
+- :name: Window.screen
+  :url: "/API/Window/screen"
+screenX:
+- :name: Window.screenX
+  :url: "/API/Window/screenX"
+screenY:
+- :name: Window.screenY
+  :url: "/API/Window/screenY"
+scrollbars:
+- :name: Window.scrollbars
+  :url: "/API/Window/scrollbars"
+scrollX:
+- :name: Window.scrollX
+  :url: "/API/Window/scrollX"
+scrollY:
+- :name: Window.scrollY
+  :url: "/API/Window/scrollY"
+self:
+- :name: Window.self
+  :url: "/API/Window/self"
+speechSynthesis:
+- :name: Window.speechSynthesis
+  :url: "/API/Window/speechSynthesis"
+status:
+- :name: Window.status
+  :url: "/API/Window/status"
+statusbar:
+- :name: Window.statusbar
+  :url: "/API/Window/statusbar"
+toolbar:
+- :name: Window.toolbar
+  :url: "/API/Window/toolbar"
+top:
+- :name: Window.top
+  :url: "/API/Window/top"
+visualViewport:
+- :name: Window.visualViewport
+  :url: "/API/Window/visualViewport"
+caches:
+- :name: WindowOrWorkerGlobalScope.caches
+  :url: "/API/WindowOrWorkerGlobalScope/caches"
+indexedDB:
+- :name: WindowOrWorkerGlobalScope.indexedDB
+  :url: "/API/WindowOrWorkerGlobalScope/indexedDB"
+origin:
+- :name: WindowOrWorkerGlobalScope.origin
+  :url: "/API/WindowOrWorkerGlobalScope/origin"
+alert:
+- :name: Window.alert()
+  :url: "/API/Window/alert"
+cancelAnimationFrame:
+- :name: Window.cancelAnimationFrame()
+  :url: "/API/Window/cancelAnimationFrame"
+cancelIdleCallback:
+- :name: Window.cancelIdleCallback()
+  :url: "/API/Window/cancelIdleCallback"
+captureEvents:
+- :name: Window.captureEvents()
+  :url: "/API/Window/captureEvents"
+clearImmediate:
+- :name: Window.clearImmediate()
+  :url: "/API/Window/clearImmediate"
+close:
+- :name: Window.close()
+  :url: "/API/Window/close"
+- :name: document.close()
+  :url: "/API/Document/close"
+confirm:
+- :name: Window.confirm()
+  :url: "/API/Window/confirm"
+getComputedStyle:
+- :name: Window.getComputedStyle()
+  :url: "/API/Window/getComputedStyle"
+getSelection:
+- :name: Window.getSelection()
+  :url: "/API/Window/getSelection"
+- :name: document.getSelection()
+  :url: "/API/Document/getSelection"
+matchMedia:
+- :name: Window.matchMedia()
+  :url: "/API/Window/matchMedia"
+minimize:
+- :name: Window.minimize()
+  :url: "/API/Window/minimize"
+moveBy:
+- :name: Window.moveBy()
+  :url: "/API/Window/moveBy"
+moveTo:
+- :name: Window.moveTo()
+  :url: "/API/Window/moveTo"
+open:
+- :name: Window.open()
+  :url: "/API/Window/open"
+- :name: document.open()
+  :url: "/API/Document/open"
+postMessage:
+- :name: Window.postMessage()
+  :url: "/API/Window/postMessage"
+print:
+- :name: Window.print()
+  :url: "/API/Window/print"
+prompt:
+- :name: Window.prompt()
+  :url: "/API/Window/prompt"
+requestAnimationFrame:
+- :name: Window.requestAnimationFrame()
+  :url: "/API/Window/requestAnimationFrame"
+requestIdleCallback:
+- :name: Window.requestIdleCallback()
+  :url: "/API/Window/requestIdleCallback"
+resizeBy:
+- :name: Window.resizeBy()
+  :url: "/API/Window/resizeBy"
+resizeTo:
+- :name: Window.resizeTo()
+  :url: "/API/Window/resizeTo"
+routeEvent:
+- :name: Window.routeEvent()
+  :url: "/API/Window/routeEvent"
+scroll:
+- :name: Window.scroll()
+  :url: "/API/Window/scroll"
+scrollBy:
+- :name: Window.scrollBy()
+  :url: "/API/Window/scrollBy"
+scrollTo:
+- :name: Window.scrollTo()
+  :url: "/API/Window/scrollTo"
+setImmediate:
+- :name: Window.setImmediate()
+  :url: "/API/Window/setImmediate"
+stop:
+- :name: Window.stop()
+  :url: "/API/Window/stop"
+addEventListener:
+- :name: EventTarget.addEventListener()
+  :url: "/API/EventTarget/addEventListener"
+atob:
+- :name: WindowOrWorkerGlobalScope.atob()
+  :url: "/API/WindowOrWorkerGlobalScope/atob"
+btoa:
+- :name: WindowOrWorkerGlobalScope.btoa()
+  :url: "/API/WindowOrWorkerGlobalScope/btoa"
+clearInterval:
+- :name: WindowOrWorkerGlobalScope.clearInterval()
+  :url: "/API/WindowOrWorkerGlobalScope/clearInterval"
+clearTimeout:
+- :name: WindowOrWorkerGlobalScope.clearTimeout()
+  :url: "/API/WindowOrWorkerGlobalScope/clearTimeout"
+createImageBitmap:
+- :name: WindowOrWorkerGlobalScope.createImageBitmap()
+  :url: "/API/WindowOrWorkerGlobalScope/createImageBitmap"
+fetch:
+- :name: WindowOrWorkerGlobalScope.fetch()
+  :url: "/API/WindowOrWorkerGlobalScope/fetch"
+removeEventListener:
+- :name: EventTarget.removeEventListener
+  :url: "/API/EventTarget/removeEventListener"
+setInterval:
+- :name: WindowOrWorkerGlobalScope.setInterval()
+  :url: "/API/WindowOrWorkerGlobalScope/setInterval"
+setTimeout:
+- :name: WindowOrWorkerGlobalScope.setTimeout()
+  :url: "/API/WindowOrWorkerGlobalScope/setTimeout"
+showModalDialog:
+- :name: Window.showModalDialog()
+  :url: "/API/Window/showModalDialog"
+onabort:
+- :name: GlobalEventHandlers.onabort
+  :url: "/API/GlobalEventHandlers/onabort"
+- :name: GlobalEventHandlers.onabort
+  :url: "/API/GlobalEventHandlers/onabort"
+onafterprint:
+- :name: WindowEventHandlers.onafterprint
+  :url: "/API/WindowEventHandlers/onafterprint"
+onbeforeprint:
+- :name: WindowEventHandlers.onbeforeprint
+  :url: "/API/WindowEventHandlers/onbeforeprint"
+onbeforeinstallprompt:
+- :name: Window.onbeforeinstallprompt
+  :url: "/API/Window/onbeforeinstallprompt"
+onbeforeunload:
+- :name: WindowEventHandlers.onbeforeunload
+  :url: "/API/WindowEventHandlers/onbeforeunload"
+onblur:
+- :name: GlobalEventHandlers.onblur
+  :url: "/API/GlobalEventHandlers/onblur"
+- :name: GlobalEventHandlers.onblur
+  :url: "/API/GlobalEventHandlers/onblur"
+onchange:
+- :name: GlobalEventHandlers.onchange
+  :url: "/API/GlobalEventHandlers/onchange"
+- :name: GlobalEventHandlers.onchange
+  :url: "/API/GlobalEventHandlers/onchange"
+onclick:
+- :name: GlobalEventHandlers.onclick
+  :url: "/API/GlobalEventHandlers/onclick"
+- :name: GlobalEventHandlers.onclick
+  :url: "/API/GlobalEventHandlers/onclick"
+ondblclick:
+- :name: GlobalEventHandlers.ondblclick
+  :url: "/API/GlobalEventHandlers/ondblclick"
+- :name: GlobalEventHandlers.ondblclick
+  :url: "/API/GlobalEventHandlers/ondblclick"
+onclose:
+- :name: GlobalEventHandlers.onclose
+  :url: "/API/GlobalEventHandlers/onclose"
+- :name: GlobalEventHandlers.onclose
+  :url: "/API/GlobalEventHandlers/onclose"
+oncontextmenu:
+- :name: GlobalEventHandlers.oncontextmenu
+  :url: "/API/GlobalEventHandlers/oncontextmenu"
+- :name: GlobalEventHandlers.oncontextmenu
+  :url: "/API/GlobalEventHandlers/oncontextmenu"
+ondevicelight:
+- :name: Window.ondevicelight
+  :url: "/API/Window/ondevicelight"
+ondevicemotion:
+- :name: Window.ondevicemotion
+  :url: "/API/Window/ondevicemotion"
+ondeviceorientation:
+- :name: Window.ondeviceorientation
+  :url: "/API/Window/ondeviceorientation"
+ondeviceproximity:
+- :name: Window.ondeviceproximity
+  :url: "/API/Window/ondeviceproximity"
+onerror:
+- :name: GlobalEventHandlers.onerror
+  :url: "/API/GlobalEventHandlers/onerror"
+- :name: GlobalEventHandlers.onerror
+  :url: "/API/GlobalEventHandlers/onerror"
+onfocus:
+- :name: GlobalEventHandlers.onfocus
+  :url: "/API/GlobalEventHandlers/onfocus"
+- :name: GlobalEventHandlers.onfocus
+  :url: "/API/GlobalEventHandlers/onfocus"
+onhashchange:
+- :name: WindowEventHandlers.onhashchange
+  :url: "/API/WindowEventHandlers/onhashchange"
+onappinstalled:
+- :name: Window.onappinstalled
+  :url: "/API/Window/onappinstalled"
+ongamepadconnected:
+- :name: Window.ongamepadconnected
+  :url: "/API/Window/ongamepadconnected"
+ongamepaddisconnected:
+- :name: Window.ongamepaddisconnected
+  :url: "/API/Window/ongamepaddisconnected"
+oninput:
+- :name: Window.oninput
+  :url: "/API/Window/oninput"
+- :name: GlobalEventHandlers.oninput
+  :url: "/API/GlobalEventHandlers/oninput"
+onkeydown:
+- :name: GlobalEventHandlers.onkeydown
+  :url: "/API/GlobalEventHandlers/onkeydown"
+- :name: GlobalEventHandlers.onkeydown
+  :url: "/API/GlobalEventHandlers/onkeydown"
+onkeypress:
+- :name: GlobalEventHandlers.onkeypress
+  :url: "/API/GlobalEventHandlers/onkeypress"
+- :name: GlobalEventHandlers.onkeypress
+  :url: "/API/GlobalEventHandlers/onkeypress"
+onkeyup:
+- :name: GlobalEventHandlers.onkeyup
+  :url: "/API/GlobalEventHandlers/onkeyup"
+- :name: GlobalEventHandlers.onkeyup
+  :url: "/API/GlobalEventHandlers/onkeyup"
+onlanguagechange:
+- :name: WindowEventHandlers.onlanguagechange
+  :url: "/API/WindowEventHandlers/onlanguagechange"
+onload:
+- :name: GlobalEventHandlers.onload
+  :url: "/API/GlobalEventHandlers/onload"
+- :name: GlobalEventHandlers.onload
+  :url: "/API/GlobalEventHandlers/onload"
+onmessage:
+- :name: WindowEventHandlers.onmessage
+  :url: "/API/WindowEventHandlers/onmessage"
+onmousedown:
+- :name: GlobalEventHandlers.onmousedown
+  :url: "/API/GlobalEventHandlers/onmousedown"
+- :name: GlobalEventHandlers.onmousedown
+  :url: "/API/GlobalEventHandlers/onmousedown"
+onmousemove:
+- :name: GlobalEventHandlers.onmousemove
+  :url: "/API/GlobalEventHandlers/onmousemove"
+- :name: GlobalEventHandlers.onmousemove
+  :url: "/API/GlobalEventHandlers/onmousemove"
+onmouseout:
+- :name: GlobalEventHandlers.onmouseout
+  :url: "/API/GlobalEventHandlers/onmouseout"
+- :name: GlobalEventHandlers.onmouseout
+  :url: "/API/GlobalEventHandlers/onmouseout"
+onmouseover:
+- :name: GlobalEventHandlers.onmouseover
+  :url: "/API/GlobalEventHandlers/onmouseover"
+- :name: GlobalEventHandlers.onmouseover
+  :url: "/API/GlobalEventHandlers/onmouseover"
+onmouseup:
+- :name: GlobalEventHandlers.onmouseup
+  :url: "/API/GlobalEventHandlers/onmouseup"
+- :name: GlobalEventHandlers.onmouseup
+  :url: "/API/GlobalEventHandlers/onmouseup"
+onmozbeforepaint:
+- :name: Window.onmozbeforepaint
+  :url: "/API/Window/onmozbeforepaint"
+onpaint:
+- :name: Window.onpaint
+  :url: "/API/Window/onpaint"
+onpopstate:
+- :name: WindowEventHandlers.onpopstate
+  :url: "/API/WindowEventHandlers/onpopstate"
+onrejectionhandled:
+- :name: Window.onrejectionhandled
+  :url: "/API/Window/onrejectionhandled"
+onreset:
+- :name: GlobalEventHandlers.onreset
+  :url: "/API/GlobalEventHandlers/onreset"
+- :name: GlobalEventHandlers.onreset
+  :url: "/API/GlobalEventHandlers/onreset"
+onresize:
+- :name: GlobalEventHandlers.onresize
+  :url: "/API/GlobalEventHandlers/onresize"
+onscroll:
+- :name: GlobalEventHandlers.onscroll
+  :url: "/API/GlobalEventHandlers/onscroll"
+- :name: GlobalEventHandlers.onscroll
+  :url: "/API/GlobalEventHandlers/onscroll"
+onwheel:
+- :name: GlobalEventHandlers.onwheel
+  :url: "/API/GlobalEventHandlers/onwheel"
+- :name: GlobalEventHandlers.onwheel
+  :url: "/API/GlobalEventHandlers/onwheel"
+onselect:
+- :name: GlobalEventHandlers.onselect
+  :url: "/API/GlobalEventHandlers/onselect"
+- :name: GlobalEventHandlers.onselect
+  :url: "/API/GlobalEventHandlers/onselect"
+onselectionchange:
+- :name: GlobalEventHandlers.onselectionchange
+  :url: "/API/GlobalEventHandlers/onselectionchange"
+- :name: Document.onselectionchange
+  :url: "/API/Document/onselectionchange"
+- :name: GlobalEventHandlers.onselectionchange
+  :url: "/API/GlobalEventHandlers/onselectionchange"
+onstorage:
+- :name: WindowEventHandlers.onstorage
+  :url: "/API/WindowEventHandlers/onstorage"
+onsubmit:
+- :name: GlobalEventHandlers.onsubmit
+  :url: "/API/GlobalEventHandlers/onsubmit"
+- :name: GlobalEventHandlers.onsubmit
+  :url: "/API/GlobalEventHandlers/onsubmit"
+onunhandledrejection:
+- :name: WindowEventHandlers.onunhandledrejection
+  :url: "/API/WindowEventHandlers/onunhandledrejection"
+onunload:
+- :name: WindowEventHandlers.onunload
+  :url: "/API/WindowEventHandlers/onunload"
+onuserproximity:
+- :name: Window.onuserproximity
+  :url: "/API/Window/onuserproximity"
+onvrdisplayconnect:
+- :name: Window.onvrdisplayconnect
+  :url: "/API/Window/onvrdisplayconnect"
+onvrdisplaydisconnect:
+- :name: Window.onvrdisplaydisconnect
+  :url: "/API/Window/onvrdisplaydisconnect"
+onvrdisplayactivate:
+- :name: Window.onvrdisplayactivate
+  :url: "/API/Window/onvrdisplayactivate"
+onvrdisplaydeactivate:
+- :name: Window.onvrdisplaydeactivate
+  :url: "/API/Window/onvrdisplaydeactivate"
+onvrdisplayblur:
+- :name: Window.onvrdisplayblur
+  :url: "/API/Window/onvrdisplayblur"
+onvrdisplayfocus:
+- :name: Window.onvrdisplayfocus
+  :url: "/API/Window/onvrdisplayfocus"
+onvrdisplaypresentchange:
+- :name: Window.onvrdisplaypresentchange
+  :url: "/API/Window/onvrdisplaypresentchange"
+DOMParser:
+- :name: DOMParser
+  :url: "/API/DOMParser"
+Option:
+- :name: Option
+  :url: "/API/Option"
+Worker:
+- :name: Worker
+  :url: "/API/Worker"
+async:
+- :name: Document.async
+  :url: "/API/Document/async"
+characterSet:
+- :name: Document.characterSet
+  :url: "/API/Document/characterSet"
+charset:
+- :name: Document.charset
+  :url: "/API/Document/charset"
+compatMode:
+- :name: Document.compatMode
+  :url: "/API/Document/compatMode"
+contentType:
+- :name: Document.contentType
+  :url: "/API/Document/contentType"
+doctype:
+- :name: Document.doctype
+  :url: "/API/Document/doctype"
+documentElement:
+- :name: Document.documentElement
+  :url: "/API/Document/documentElement"
+documentURI:
+- :name: Document.documentURI
+  :url: "/API/Document/documentURI"
+domConfig:
+- :name: Document.domConfig
+  :url: "/API/Document/domConfig"
+fullscreen:
+- :name: Document.fullscreen
+  :url: "/API/Document/fullscreen"
+implementation:
+- :name: Document.implementation
+  :url: "/API/Document/implementation"
+inputEncoding:
+- :name: Document.inputEncoding
+  :url: "/API/Document/inputEncoding"
+lastStyleSheetSet:
+- :name: Document.lastStyleSheetSet
+  :url: "/API/Document/lastStyleSheetSet"
+pointerLockElement:
+- :name: Document.pointerLockElement
+  :url: "/API/Document/pointerLockElement"
+preferredStyleSheetSet:
+- :name: Document.preferredStyleSheetSet
+  :url: "/API/Document/preferredStyleSheetSet"
+scrollingElement:
+- :name: Document.scrollingElement
+  :url: "/API/Document/scrollingElement"
+selectedStyleSheetSet:
+- :name: Document.selectedStyleSheetSet
+  :url: "/API/Document/selectedStyleSheetSet"
+styleSheets:
+- :name: Document.styleSheets
+  :url: "/API/Document/styleSheets"
+styleSheetSets:
+- :name: Document.styleSheetSets
+  :url: "/API/Document/styleSheetSets"
+timeline:
+- :name: Document.timeline
+  :url: "/API/Document/timeline"
+visibilityState:
+- :name: Document.visibilityState
+  :url: "/API/Document/visibilityState"
+xmlEncoding:
+- :name: Document.xmlEncoding
+  :url: "/API/Document/xmlEncoding"
+xmlVersion:
+- :name: Document.xmlVersion
+  :url: "/API/Document/xmlVersion"
+children:
+- :name: ParentNode.children
+  :url: "/API/ParentNode/children"
+firstElementChild:
+- :name: ParentNode.firstElementChild
+  :url: "/API/ParentNode/firstElementChild"
+lastElementChild:
+- :name: ParentNode.lastElementChild
+  :url: "/API/ParentNode/lastElementChild"
+childElementCount:
+- :name: ParentNode.childElementCount
+  :url: "/API/ParentNode/childElementCount"
+activeElement:
+- :name: Document.activeElement
+  :url: "/API/Document/activeElement"
+alinkColor:
+- :name: Document.alinkColor
+  :url: "/API/Document/alinkColor"
+anchors:
+- :name: Document.anchors
+  :url: "/API/Document/anchors"
+applets:
+- :name: Document.applets
+  :url: "/API/Document/applets"
+bgColor:
+- :name: Document.bgColor
+  :url: "/API/Document/bgColor"
+body:
+- :name: Document.body
+  :url: "/API/Document/body"
+cookie:
+- :name: Document.cookie
+  :url: "/API/Document/cookie"
+defaultView:
+- :name: Document.defaultView
+  :url: "/API/Document/defaultView"
+designMode:
+- :name: Document.designMode
+  :url: "/API/Document/designMode"
+domain:
+- :name: Document.domain
+  :url: "/API/Document/domain"
+embeds:
+- :name: Document.embeds
+  :url: "/API/Document/embeds"
+fgColor:
+- :name: document.fgColor
+  :url: "/API/Document/fgColor"
+forms:
+- :name: Document.forms
+  :url: "/API/Document/forms"
+head:
+- :name: Document.head
+  :url: "/API/Document/head"
+images:
+- :name: Document.images
+  :url: "/API/Document/images"
+lastModified:
+- :name: Document.lastModified
+  :url: "/API/Document/lastModified"
+linkColor:
+- :name: Document.linkColor
+  :url: "/API/Document/linkColor"
+links:
+- :name: Document.links
+  :url: "/API/Document/links"
+plugins:
+- :name: Document.plugins
+  :url: "/API/Document/plugins"
+readyState:
+- :name: Document.readyState
+  :url: "/API/Document/readyState"
+referrer:
+- :name: Document.referrer
+  :url: "/API/Document/referrer"
+scripts:
+- :name: Document.scripts
+  :url: "/API/Document/scripts"
+URL:
+- :name: Document.URL
+  :url: "/API/Document/URL"
+vlinkColor:
+- :name: Document.vlinkColor
+  :url: "/API/Document/vlinkColor"
+onfullscreenchange:
+- :name: Document.onfullscreenchange
+  :url: "/API/Document/onfullscreenchange"
+onfullscreenerror:
+- :name: Document.onfullscreenerror
+  :url: "/API/Document/onfullscreenerror"
+onvisibilitychange:
+- :name: Document.onvisibilitychange
+  :url: "/API/Document/onvisibilitychange"
+ondrag:
+- :name: GlobalEventHandlers.ondrag
+  :url: "/API/GlobalEventHandlers/ondrag"
+ondragend:
+- :name: GlobalEventHandlers.ondragend
+  :url: "/API/GlobalEventHandlers/ondragend"
+ondragenter:
+- :name: GlobalEventHandlers.ondragenter
+  :url: "/API/GlobalEventHandlers/ondragenter"
+ondragexit:
+- :name: GlobalEventHandlers.ondragexit
+  :url: "/API/GlobalEventHandlers/ondragexit"
+ondragleave:
+- :name: GlobalEventHandlers.ondragleave
+  :url: "/API/GlobalEventHandlers/ondragleave"
+ondragover:
+- :name: GlobalEventHandlers.ondragover
+  :url: "/API/GlobalEventHandlers/ondragover"
+ondragstart:
+- :name: GlobalEventHandlers.ondragstart
+  :url: "/API/GlobalEventHandlers/ondragstart"
+ondrop:
+- :name: GlobalEventHandlers.ondrop
+  :url: "/API/GlobalEventHandlers/ondrop"
+ongotpointercapture:
+- :name: GlobalEventHandlers.ongotpointercapture
+  :url: "/API/GlobalEventHandlers/ongotpointercapture"
+onloadend:
+- :name: GlobalEventHandlers.onloadend
+  :url: "/API/GlobalEventHandlers/onloadend"
+onloadstart:
+- :name: GlobalEventHandlers.onloadstart
+  :url: "/API/GlobalEventHandlers/onloadstart"
+onlostpointercapture:
+- :name: GlobalEventHandlers.onlostpointercapture
+  :url: "/API/GlobalEventHandlers/onlostpointercapture"
+onpointerdown:
+- :name: GlobalEventHandlers.onpointerdown
+  :url: "/API/GlobalEventHandlers/onpointerdown"
+onpointermove:
+- :name: GlobalEventHandlers.onpointermove
+  :url: "/API/GlobalEventHandlers/onpointermove"
+onpointerup:
+- :name: GlobalEventHandlers.onpointerup
+  :url: "/API/GlobalEventHandlers/onpointerup"
+onpointercancel:
+- :name: GlobalEventHandlers.onpointercancel
+  :url: "/API/GlobalEventHandlers/onpointercancel"
+onpointerover:
+- :name: GlobalEventHandlers.onpointerover
+  :url: "/API/GlobalEventHandlers/onpointerover"
+onpointerout:
+- :name: GlobalEventHandlers.onpointerout
+  :url: "/API/GlobalEventHandlers/onpointerout"
+onpointerenter:
+- :name: GlobalEventHandlers.onpointerenter
+  :url: "/API/GlobalEventHandlers/onpointerenter"
+onpointerleave:
+- :name: GlobalEventHandlers.onpointerleave
+  :url: "/API/GlobalEventHandlers/onpointerleave"
+onselectstart:
+- :name: GlobalEventHandlers.onselectstart
+  :url: "/API/GlobalEventHandlers/onselectstart"
+ontouchcancel:
+- :name: GlobalEventHandlers.ontouchcancel
+  :url: "/API/GlobalEventHandlers/ontouchcancel"
+ontouchend:
+- :name: GlobalEventHandlers.ontouchend
+  :url: "/API/GlobalEventHandlers/ontouchend"
+ontouchmove:
+- :name: GlobalEventHandlers.ontouchmove
+  :url: "/API/GlobalEventHandlers/ontouchmove"
+ontouchstart:
+- :name: GlobalEventHandlers.ontouchstart
+  :url: "/API/GlobalEventHandlers/ontouchstart"
+ontransitioncancel:
+- :name: GlobalEventHandlers.ontransitioncancel
+  :url: "/API/GlobalEventHandlers/ontransitioncancel"
+ontransitionend:
+- :name: GlobalEventHandlers.ontransitionend
+  :url: "/API/GlobalEventHandlers/ontransitionend"
+adoptNode:
+- :name: Document.adoptNode()
+  :url: "/API/Document/adoptNode"
+caretPositionFromPoint:
+- :name: Document.caretPositionFromPoint()
+  :url: "/API/Document/caretPositionFromPoint"
+createAttribute:
+- :name: Document.createAttribute()
+  :url: "/API/Document/createAttribute"
+createCDATASection:
+- :name: Document.createCDATASection()
+  :url: "/API/Document/createCDATASection"
+createComment:
+- :name: Document.createComment()
+  :url: "/API/Document/createComment"
+createDocumentFragment:
+- :name: Document.createDocumentFragment()
+  :url: "/API/Document/createDocumentFragment"
+createElement:
+- :name: Document.createElement()
+  :url: "/API/Document/createElement"
+createElementNS:
+- :name: Document.createElementNS()
+  :url: "/API/Document/createElementNS"
+createEntityReference:
+- :name: Document.createEntityReference()
+  :url: "/API/Document/createEntityReference"
+createEvent:
+- :name: Document.createEvent()
+  :url: "/API/Document/createEvent"
+createNodeIterator:
+- :name: Document.createNodeIterator()
+  :url: "/API/Document/createNodeIterator"
+createProcessingInstruction:
+- :name: Document.createProcessingInstruction()
+  :url: "/API/Document/createProcessingInstruction"
+createRange:
+- :name: Document.createRange()
+  :url: "/API/Document/createRange"
+createTextNode:
+- :name: Document.createTextNode()
+  :url: "/API/Document/createTextNode"
+createTouch:
+- :name: Document.createTouch()
+  :url: "/API/Document/createTouch"
+createTouchList:
+- :name: Document.createTouchList()
+  :url: "/API/Document/createTouchList"
+createTreeWalker:
+- :name: Document.createTreeWalker()
+  :url: "/API/Document/createTreeWalker"
+elementFromPoint:
+- :name: Document.elementFromPoint()
+  :url: "/API/Document/elementFromPoint"
+elementsFromPoint:
+- :name: Document.elementsFromPoint()
+  :url: "/API/Document/elementsFromPoint"
+enableStyleSheetsForSet:
+- :name: Document.enableStyleSheetsForSet()
+  :url: "/API/Document/enableStyleSheetsForSet"
+exitPointerLock:
+- :name: Document.exitPointerLock()
+  :url: "/API/Document/exitPointerLock"
+getAnimations:
+- :name: Document.getAnimations()
+  :url: "/API/Document/getAnimations"
+getElementsByClassName:
+- :name: Document.getElementsByClassName()
+  :url: "/API/Document/getElementsByClassName"
+getElementsByTagName:
+- :name: Document.getElementsByTagName()
+  :url: "/API/Document/getElementsByTagName"
+getElementsByTagNameNS:
+- :name: Document.getElementsByTagNameNS()
+  :url: "/API/Document/getElementsByTagNameNS"
+importNode:
+- :name: Document.importNode()
+  :url: "/API/Document/importNode"
+registerElement:
+- :name: Document.registerElement()
+  :url: "/API/Document/registerElement"
+getElementById:
+- :name: document.getElementById(String id)
+  :url: "/API/Document/getElementById"
+querySelector:
+- :name: document.querySelector(String selector)
+  :url: "/API/Document/querySelector"
+querySelectorAll:
+- :name: document.querySelectorAll(String selector)
+  :url: "/API/Document/querySelectorAll"
+createExpression:
+- :name: document.createExpression(String expression, XPathNSResolver resolver)
+  :url: "/API/Document/createExpression"
+createNSResolver:
+- :name: document.createNSResolver(Node resolver)
+  :url: "/API/Document/createNSResolver"
+evaluate:
+- :name: document.evaluate(String expression, Node contextNode, XPathNSResolver resolver,
+    Number type, Object result)
+  :url: "/API/Document/evaluate"
+execCommand:
+- :name: document.execCommand(String command[, Boolean showUI[, String value]])
+  :url: "/API/Document/execCommand"
+getElementsByName:
+- :name: document.getElementsByName(String name)
+  :url: "/API/Document/getElementsByName"
+hasFocus:
+- :name: document.hasFocus()
+  :url: "/API/Document/hasFocus"
+queryCommandEnabled:
+- :name: document.queryCommandEnabled(String command)
+  :url: "/API/Document/queryCommandEnabled"
+queryCommandState:
+- :name: document.queryCommandState(String command)
+  :url: "/API/Document/queryCommandState"
+queryCommandSupported:
+- :name: document.queryCommandSupported(String command)
+  :url: "/API/Document/queryCommandSupported"
+write:
+- :name: document.write(String text)
+  :url: "/API/Document/write"
+writeln:
+- :name: document.writeln(String text)
+  :url: "/API/Document/writeln"
+documentURIObject:
+- :name: document.documentURIObject
+  :url: "/API/Document/documentURIObject"
+popupNode:
+- :name: document.popupNode
+  :url: "/API/Document/popupNode"
+tooltipNode:
+- :name: document.tooltipNode
+  :url: "/API/Document/tooltipNode"
+getBoxObjectFor:
+- :name: document.getBoxObjectFor
+  :url: "/API/Document/getBoxObjectFor"
+loadOverlay:
+- :name: document.loadOverlay
+  :url: "/API/Document/loadOverlay"
+Node:
+- :name: Node
+  :url: "/API/Node"
+baseURI:
+- :name: Node.baseURI
+  :url: "/API/Node/baseURI"
+childNodes:
+- :name: Node.childNodes
+  :url: "/API/Node/childNodes"
+firstChild:
+- :name: Node.firstChild
+  :url: "/API/Node/firstChild"
+lastChild:
+- :name: Node.lastChild
+  :url: "/API/Node/lastChild"
+nextSibling:
+- :name: Node.nextSibling
+  :url: "/API/Node/nextSibling"
+nodeName:
+- :name: Node.nodeName
+  :url: "/API/Node/nodeName"
+nodeType:
+- :name: Node.nodeType
+  :url: "/API/Node/nodeType"
+nodeValue:
+- :name: Node.nodeValue
+  :url: "/API/Node/nodeValue"
+ownerDocument:
+- :name: Node.ownerDocument
+  :url: "/API/Node/ownerDocument"
+parentNode:
+- :name: Node.parentNode
+  :url: "/API/Node/parentNode"
+parentElement:
+- :name: Node.parentElement
+  :url: "/API/Node/parentElement"
+previousSibling:
+- :name: Node.previousSibling
+  :url: "/API/Node/previousSibling"
+textContent:
+- :name: Node.textContent
+  :url: "/API/Node/textContent"
+rootNode:
+- :name: Node.rootNode
+  :url: "/API/Node/rootNode"
+localName:
+- :name: Node.localName
+  :url: "/API/Node/localName"
+namespaceURI:
+- :name: Node.namespaceURI
+  :url: "/API/Node/namespaceURI"
+prefix:
+- :name: Node.prefix
+  :url: "/API/Node/prefix"
+appendChild:
+- :name: Node.appendChild()
+  :url: "/API/Node/appendChild"
+cloneNode:
+- :name: Node.cloneNode()
+  :url: "/API/Node/cloneNode"
+compareDocumentPosition:
+- :name: Node.compareDocumentPosition()
+  :url: "/API/Node/compareDocumentPosition"
+contains:
+- :name: Node.contains()
+  :url: "/API/Node/contains"
+getRootNode:
+- :name: Node.getRootNode()
+  :url: "/API/Node/getRootNode"
+hasChildNodes:
+- :name: Node.hasChildNodes()
+  :url: "/API/Node/hasChildNodes"
+insertBefore:
+- :name: Node.insertBefore()
+  :url: "/API/Node/insertBefore"
+isDefaultNamespace:
+- :name: Node.isDefaultNamespace()
+  :url: "/API/Node/isDefaultNamespace"
+isEqualNode:
+- :name: Node.isEqualNode()
+  :url: "/API/Node/isEqualNode"
+isSameNode:
+- :name: Node.isSameNode()
+  :url: "/API/Node/isSameNode"
+lookupPrefix:
+- :name: Node.lookupPrefix()
+  :url: "/API/Node/lookupPrefix"
+lookupNamespaceURI:
+- :name: Node.lookupNamespaceURI()
+  :url: "/API/Node/lookupNamespaceURI"
+normalize:
+- :name: Node.normalize()
+  :url: "/API/Node/normalize"
+- :name: String.prototype.normalize()
+  :url: "/JavaScript/Reference/Global_Objects/String/normalize"
+removeChild:
+- :name: Node.removeChild()
+  :url: "/API/Node/removeChild"
+replaceChild:
+- :name: Node.replaceChild()
+  :url: "/API/Node/replaceChild"
+getUserData:
+- :name: Node.getUserData()
+  :url: "/API/Node/getUserData"
+isSupported:
+- :name: Node.isSupported()
+  :url: "/API/Node/isSupported"
+setUserData:
+- :name: Node.setUserData()
+  :url: "/API/Node/setUserData"
+Event:
+- :name: Event
+  :url: "/API/Event"
+- :name: Event()
+  :url: "/API/Event/Event"
+bubbles:
+- :name: Event.bubbles
+  :url: "/API/Event/bubbles"
+cancelBubble:
+- :name: Event.cancelBubble
+  :url: "/API/Event/cancelBubble"
+cancelable:
+- :name: Event.cancelable
+  :url: "/API/Event/cancelable"
+composed:
+- :name: Event.composed
+  :url: "/API/Event/composed"
+currentTarget:
+- :name: Event.currentTarget
+  :url: "/API/Event/currentTarget"
+defaultPrevented:
+- :name: Event.defaultPrevented
+  :url: "/API/Event/defaultPrevented"
+eventPhase:
+- :name: Event.eventPhase
+  :url: "/API/Event/eventPhase"
+scoped:
+- :name: Event.scoped
+  :url: "/API/Event/scoped"
+target:
+- :name: Event.target
+  :url: "/API/Event/target"
+timeStamp:
+- :name: Event.timeStamp
+  :url: "/API/Event/timeStamp"
+type:
+- :name: Event.type
+  :url: "/API/Event/type"
+isTrusted:
+- :name: Event.isTrusted
+  :url: "/API/Event/isTrusted"
+initEvent:
+- :name: Event.initEvent()
+  :url: "/API/Event/initEvent"
+preventDefault:
+- :name: Event.preventDefault()
+  :url: "/API/Event/preventDefault"
+stopImmediatePropagation:
+- :name: Event.stopImmediatePropagation()
+  :url: "/API/Event/stopImmediatePropagation"
+stopPropagation:
+- :name: Event.stopPropagation()
+  :url: "/API/Event/stopPropagation"
+HTMLCollection:
+- :name: HTMLCollection
+  :url: "/API/HTMLCollection"
+item:
+- :name: HTMLCollection.item()
+  :url: "/API/HTMLCollection/item"
+Array:
+- :name: Array
+  :url: "/JavaScript/Reference/Global_Objects/Array"
+get Array[@@species]:
+- :name: get Array[@@species]
+  :url: "/JavaScript/Reference/Global_Objects/Array/@@species"
+prototype:
+- :name: Array.prototype
+  :url: "/JavaScript/Reference/Global_Objects/Array/prototype"
+- :name: Date.prototype
+  :url: "/JavaScript/Reference/Global_Objects/Date/prototype"
+- :name: Error.prototype
+  :url: "/JavaScript/Reference/Global_Objects/Error/prototype"
+- :name: Boolean.prototype
+  :url: "/JavaScript/Reference/Global_Objects/Boolean/prototype"
+- :name: Map.prototype
+  :url: "/JavaScript/Reference/Global_Objects/Map/prototype"
+- :name: Number.prototype
+  :url: "/JavaScript/Reference/Global_Objects/Number/prototype"
+- :name: Object.prototype
+  :url: "/JavaScript/Reference/Global_Objects/Object/prototype"
+- :name: Promise.prototype
+  :url: "/JavaScript/Reference/Global_Objects/Promise/prototype"
+- :name: RangeError.prototype
+  :url: "/JavaScript/Reference/Global_Objects/RangeError/prototype"
+- :name: ReferenceError.prototype
+  :url: "/JavaScript/Reference/Global_Objects/ReferenceError/prototype"
+- :name: RegExp.prototype
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/prototype"
+- :name: Set.prototype
+  :url: "/JavaScript/Reference/Global_Objects/Set/prototype"
+- :name: String.prototype
+  :url: "/JavaScript/Reference/Global_Objects/String/prototype"
+- :name: Symbol.prototype
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/prototype"
+- :name: SyntaxError.prototype
+  :url: "/JavaScript/Reference/Global_Objects/SyntaxError/prototype"
+- :name: TypeError.prototype
+  :url: "/JavaScript/Reference/Global_Objects/TypeError/prototype"
+- :name: WeakMap.prototype
+  :url: "/JavaScript/Reference/Global_Objects/WeakMap/prototype"
+- :name: WeakSet.prototype
+  :url: "/JavaScript/Reference/Global_Objects/WeakSet/prototype"
+from:
+- :name: Array.from()
+  :url: "/JavaScript/Reference/Global_Objects/Array/from"
+isArray:
+- :name: Array.isArray()
+  :url: "/JavaScript/Reference/Global_Objects/Array/isArray"
+of:
+- :name: Array.of()
+  :url: "/JavaScript/Reference/Global_Objects/Array/of"
+Date:
+- :name: Date
+  :url: "/JavaScript/Reference/Global_Objects/Date"
+now:
+- :name: Date.now()
+  :url: "/JavaScript/Reference/Global_Objects/Date/now"
+parse:
+- :name: Date.parse()
+  :url: "/JavaScript/Reference/Global_Objects/Date/parse"
+- :name: JSON.parse()
+  :url: "/JavaScript/Reference/Global_Objects/JSON/parse"
+UTC:
+- :name: Date.UTC()
+  :url: "/JavaScript/Reference/Global_Objects/Date/UTC"
+getDate:
+- :name: Date.prototype.getDate()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getDate"
+getDay:
+- :name: Date.prototype.getDay()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getDay"
+getFullYear:
+- :name: Date.prototype.getFullYear()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getFullYear"
+getHours:
+- :name: Date.prototype.getHours()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getHours"
+getMilliseconds:
+- :name: Date.prototype.getMilliseconds()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getMilliseconds"
+getMinutes:
+- :name: Date.prototype.getMinutes()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getMinutes"
+getMonth:
+- :name: Date.prototype.getMonth()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getMonth"
+getSeconds:
+- :name: Date.prototype.getSeconds()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getSeconds"
+getTime:
+- :name: Date.prototype.getTime()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getTime"
+getTimezoneOffset:
+- :name: Date.prototype.getTimezoneOffset()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getTimezoneOffset"
+getUTCDate:
+- :name: Date.prototype.getUTCDate()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getUTCDate"
+getUTCDay:
+- :name: Date.prototype.getUTCDay()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getUTCDay"
+getUTCFullYear:
+- :name: Date.prototype.getUTCFullYear()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getUTCFullYear"
+getUTCHours:
+- :name: Date.prototype.getUTCHours()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getUTCHours"
+getUTCMilliseconds:
+- :name: Date.prototype.getUTCMilliseconds()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getUTCMilliseconds"
+getUTCMinutes:
+- :name: Date.prototype.getUTCMinutes()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getUTCMinutes"
+getUTCMonth:
+- :name: Date.prototype.getUTCMonth()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getUTCMonth"
+getUTCSeconds:
+- :name: Date.prototype.getUTCSeconds()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getUTCSeconds"
+getYear:
+- :name: Date.prototype.getYear()
+  :url: "/JavaScript/Reference/Global_Objects/Date/getYear"
+setDate:
+- :name: Date.prototype.setDate()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setDate"
+setFullYear:
+- :name: Date.prototype.setFullYear()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setFullYear"
+setHours:
+- :name: Date.prototype.setHours()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setHours"
+setMilliseconds:
+- :name: Date.prototype.setMilliseconds()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setMilliseconds"
+setMinutes:
+- :name: Date.prototype.setMinutes()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setMinutes"
+setMonth:
+- :name: Date.prototype.setMonth()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setMonth"
+setSeconds:
+- :name: Date.prototype.setSeconds()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setSeconds"
+setTime:
+- :name: Date.prototype.setTime()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setTime"
+setUTCDate:
+- :name: Date.prototype.setUTCDate()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setUTCDate"
+setUTCFullYear:
+- :name: Date.prototype.setUTCFullYear()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setUTCFullYear"
+setUTCHours:
+- :name: Date.prototype.setUTCHours()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setUTCHours"
+setUTCMilliseconds:
+- :name: Date.prototype.setUTCMilliseconds()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setUTCMilliseconds"
+setUTCMinutes:
+- :name: Date.prototype.setUTCMinutes()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setUTCMinutes"
+setUTCMonth:
+- :name: Date.prototype.setUTCMonth()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setUTCMonth"
+setUTCSeconds:
+- :name: Date.prototype.setUTCSeconds()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setUTCSeconds"
+setYear:
+- :name: Date.prototype.setYear()
+  :url: "/JavaScript/Reference/Global_Objects/Date/setYear"
+toDateString:
+- :name: Date.prototype.toDateString()
+  :url: "/JavaScript/Reference/Global_Objects/Date/toDateString"
+toISOString:
+- :name: Date.prototype.toISOString()
+  :url: "/JavaScript/Reference/Global_Objects/Date/toISOString"
+toJSON:
+- :name: Date.prototype.toJSON()
+  :url: "/JavaScript/Reference/Global_Objects/Date/toJSON"
+toGMTString:
+- :name: Date.prototype.toGMTString()
+  :url: "/JavaScript/Reference/Global_Objects/Date/toGMTString"
+toLocaleDateString:
+- :name: Date.prototype.toLocaleDateString()
+  :url: "/JavaScript/Reference/Global_Objects/Date/toLocaleDateString"
+toLocaleTimeString:
+- :name: Date.prototype.toLocaleTimeString()
+  :url: "/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString"
+toTimeString:
+- :name: Date.prototype.toTimeString()
+  :url: "/JavaScript/Reference/Global_Objects/Date/toTimeString"
+toUTCString:
+- :name: Date.prototype.toUTCString()
+  :url: "/JavaScript/Reference/Global_Objects/Date/toUTCString"
+valueOf:
+- :name: Date.prototype.valueOf()
+  :url: "/JavaScript/Reference/Global_Objects/Date/valueOf"
+- :name: Boolean.prototype.valueOf()
+  :url: "/JavaScript/Reference/Global_Objects/Boolean/valueOf"
+- :name: Number.prototype.valueOf()
+  :url: "/JavaScript/Reference/Global_Objects/Number/valueOf"
+- :name: Object.prototype.valueOf()
+  :url: "/JavaScript/Reference/Global_Objects/Object/valueOf"
+- :name: String.prototype.valueOf()
+  :url: "/JavaScript/Reference/Global_Objects/String/valueOf"
+- :name: Symbol.prototype.valueOf()
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/valueOf"
+Function:
+- :name: Function
+  :url: "/JavaScript/Reference/Global_Objects/Function"
+arguments:
+- :name: Function.arguments
+  :url: "/JavaScript/Reference/Global_Objects/Function/arguments"
+arity:
+- :name: Function.arity
+  :url: "/JavaScript/Reference/Global_Objects/Function/arity"
+apply:
+- :name: Function.prototype.apply()
+  :url: "/JavaScript/Reference/Global_Objects/Function/apply"
+- :name: handler.apply()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/apply"
+bind:
+- :name: Function.prototype.bind()
+  :url: "/JavaScript/Reference/Global_Objects/Function/bind"
+call:
+- :name: Function.prototype.call()
+  :url: "/JavaScript/Reference/Global_Objects/Function/call"
+Error:
+- :name: Error
+  :url: "/JavaScript/Reference/Global_Objects/Error"
+EvalError:
+- :name: EvalError
+  :url: "/JavaScript/Reference/Global_Objects/EvalError"
+RangeError:
+- :name: RangeError
+  :url: "/JavaScript/Reference/Global_Objects/RangeError"
+- :name: RangeError
+  :url: "/JavaScript/Reference/Global_Objects/RangeError"
+ReferenceError:
+- :name: ReferenceError
+  :url: "/JavaScript/Reference/Global_Objects/ReferenceError"
+- :name: ReferenceError
+  :url: "/JavaScript/Reference/Global_Objects/ReferenceError"
+SyntaxError:
+- :name: SyntaxError
+  :url: "/JavaScript/Reference/Global_Objects/SyntaxError"
+- :name: SyntaxError
+  :url: "/JavaScript/Reference/Global_Objects/SyntaxError"
+TypeError:
+- :name: TypeError
+  :url: "/JavaScript/Reference/Global_Objects/TypeError"
+- :name: TypeError
+  :url: "/JavaScript/Reference/Global_Objects/TypeError"
+URIError:
+- :name: URIError
+  :url: "/JavaScript/Reference/Global_Objects/URIError"
+message:
+- :name: Error.prototype.message
+  :url: "/JavaScript/Reference/Global_Objects/Error/message"
+- :name: RangeError.prototype.message
+  :url: "/JavaScript/Reference/Global_Objects/Error/message"
+- :name: ReferenceError.prototype.message
+  :url: "/JavaScript/Reference/Global_Objects/Error/message"
+- :name: SyntaxError.prototype.message
+  :url: "/JavaScript/Reference/Global_Objects/Error/message"
+- :name: TypeError.prototype.message
+  :url: "/JavaScript/Reference/Global_Objects/Error/message"
+fileName:
+- :name: Error.prototype.fileName
+  :url: "/JavaScript/Reference/Global_Objects/Error/fileName"
+- :name: RangeError.prototype.fileName
+  :url: "/JavaScript/Reference/Global_Objects/Error/fileName"
+- :name: ReferenceError.prototype.fileName
+  :url: "/JavaScript/Reference/Global_Objects/Error/fileName"
+- :name: SyntaxError.prototype.fileName
+  :url: "/JavaScript/Reference/Global_Objects/Error/fileName"
+- :name: TypeError.prototype.fileName
+  :url: "/JavaScript/Reference/Global_Objects/Error/fileName"
+lineNumber:
+- :name: Error.prototype.lineNumber
+  :url: "/JavaScript/Reference/Global_Objects/Error/lineNumber"
+- :name: RangeError.prototype.lineNumber
+  :url: "/JavaScript/Reference/Global_Objects/Error/lineNumber"
+- :name: ReferenceError.prototype.lineNumber
+  :url: "/JavaScript/Reference/Global_Objects/Error/lineNumber"
+- :name: SyntaxError.prototype.lineNumber
+  :url: "/JavaScript/Reference/Global_Objects/Error/lineNumber"
+- :name: TypeError.prototype.lineNumber
+  :url: "/JavaScript/Reference/Global_Objects/Error/lineNumber"
+columnNumber:
+- :name: Error.prototype.columnNumber
+  :url: "/JavaScript/Reference/Global_Objects/Error/columnNumber"
+- :name: RangeError.prototype.columnNumber
+  :url: "/JavaScript/Reference/Global_Objects/Error/columnNumber"
+- :name: ReferenceError.prototype.columnNumber
+  :url: "/JavaScript/Reference/Global_Objects/Error/columnNumber"
+- :name: SyntaxError.prototype.columnNumber
+  :url: "/JavaScript/Reference/Global_Objects/Error/columnNumber"
+- :name: TypeError.prototype.columnNumber
+  :url: "/JavaScript/Reference/Global_Objects/Error/columnNumber"
+stack:
+- :name: Error.prototype.stack
+  :url: "/JavaScript/Reference/Global_Objects/Error/stack"
+- :name: RangeError.prototype.stack
+  :url: "/JavaScript/Reference/Global_Objects/Error/stack"
+- :name: ReferenceError.prototype.stack
+  :url: "/JavaScript/Reference/Global_Objects/Error/stack"
+- :name: SyntaxError.prototype.stack
+  :url: "/JavaScript/Reference/Global_Objects/Error/stack"
+- :name: TypeError.prototype.stack
+  :url: "/JavaScript/Reference/Global_Objects/Error/stack"
+Boolean:
+- :name: Boolean
+  :url: "/JavaScript/Reference/Global_Objects/Boolean"
+JSON:
+- :name: JSON
+  :url: "/JavaScript/Reference/Global_Objects/JSON"
+stringify:
+- :name: JSON.stringify()
+  :url: "/JavaScript/Reference/Global_Objects/JSON/stringify"
+Map:
+- :name: Map
+  :url: "/JavaScript/Reference/Global_Objects/Map"
+get Map[@@species]:
+- :name: get Map[@@species]
+  :url: "/JavaScript/Reference/Global_Objects/Map/@@species"
+size:
+- :name: Map.prototype.size
+  :url: "/JavaScript/Reference/Global_Objects/Map/size"
+- :name: Set.prototype.size
+  :url: "/JavaScript/Reference/Global_Objects/Set/size"
+clear:
+- :name: Map.prototype.clear()
+  :url: "/JavaScript/Reference/Global_Objects/Map/clear"
+- :name: Set.prototype.clear()
+  :url: "/JavaScript/Reference/Global_Objects/Set/clear"
+- :name: WeakMap.prototype.clear()
+  :url: "/JavaScript/Reference/Global_Objects/WeakMap/clear"
+- :name: WeakSet.prototype.clear()
+  :url: "/JavaScript/Reference/Global_Objects/WeakSet/clear"
+has:
+- :name: Map.prototype.has(key)
+  :url: "/JavaScript/Reference/Global_Objects/Map/has"
+- :name: handler.has()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/has"
+- :name: Set.prototype.has(value)
+  :url: "/JavaScript/Reference/Global_Objects/Set/has"
+- :name: WeakMap.prototype.has(key)
+  :url: "/JavaScript/Reference/Global_Objects/WeakMap/has"
+- :name: WeakSet.prototype.has(value)
+  :url: "/JavaScript/Reference/Global_Objects/WeakSet/has"
+Number:
+- :name: Number
+  :url: "/JavaScript/Reference/Global_Objects/Number"
+EPSILON:
+- :name: Number.EPSILON
+  :url: "/JavaScript/Reference/Global_Objects/Number/EPSILON"
+MAX_SAFE_INTEGER:
+- :name: Number.MAX_SAFE_INTEGER
+  :url: "/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER"
+MAX_VALUE:
+- :name: Number.MAX_VALUE
+  :url: "/JavaScript/Reference/Global_Objects/Number/MAX_VALUE"
+MIN_SAFE_INTEGER:
+- :name: Number.MIN_SAFE_INTEGER
+  :url: "/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER"
+MIN_VALUE:
+- :name: Number.MIN_VALUE
+  :url: "/JavaScript/Reference/Global_Objects/Number/MIN_VALUE"
+NEGATIVE_INFINITY:
+- :name: Number.NEGATIVE_INFINITY
+  :url: "/JavaScript/Reference/Global_Objects/Number/NEGATIVE_INFINITY"
+POSITIVE_INFINITY:
+- :name: Number.POSITIVE_INFINITY
+  :url: "/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY"
+isInteger:
+- :name: Number.isInteger()
+  :url: "/JavaScript/Reference/Global_Objects/Number/isInteger"
+isSafeInteger:
+- :name: Number.isSafeInteger()
+  :url: "/JavaScript/Reference/Global_Objects/Number/isSafeInteger"
+toInteger:
+- :name: Number.toInteger()
+  :url: "/JavaScript/Reference/Global_Objects/Number/toInteger"
+toExponential:
+- :name: Number.prototype.toExponential()
+  :url: "/JavaScript/Reference/Global_Objects/Number/toExponential"
+toFixed:
+- :name: Number.prototype.toFixed()
+  :url: "/JavaScript/Reference/Global_Objects/Number/toFixed"
+toPrecision:
+- :name: Number.prototype.toPrecision()
+  :url: "/JavaScript/Reference/Global_Objects/Number/toPrecision"
+Object:
+- :name: Object
+  :url: "/JavaScript/Reference/Global_Objects/Object"
+assign:
+- :name: Object.assign()
+  :url: "/JavaScript/Reference/Global_Objects/Object/assign"
+create:
+- :name: Object.create()
+  :url: "/JavaScript/Reference/Global_Objects/Object/create"
+defineProperty:
+- :name: Object.defineProperty()
+  :url: "/JavaScript/Reference/Global_Objects/Object/defineProperty"
+- :name: handler.defineProperty()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/defineProperty"
+defineProperties:
+- :name: Object.defineProperties()
+  :url: "/JavaScript/Reference/Global_Objects/Object/defineProperties"
+freeze:
+- :name: Object.freeze()
+  :url: "/JavaScript/Reference/Global_Objects/Object/freeze"
+getOwnPropertyDescriptor:
+- :name: Object.getOwnPropertyDescriptor()
+  :url: "/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor"
+- :name: handler.getOwnPropertyDescriptor()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/getOwnPropertyDescriptor"
+getOwnPropertyDescriptors:
+- :name: Object.getOwnPropertyDescriptors()
+  :url: "/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors"
+getOwnPropertyNames:
+- :name: Object.getOwnPropertyNames()
+  :url: "/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames"
+getOwnPropertySymbols:
+- :name: Object.getOwnPropertySymbols()
+  :url: "/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols"
+getPrototypeOf:
+- :name: Object.getPrototypeOf()
+  :url: "/JavaScript/Reference/Global_Objects/Object/getPrototypeOf"
+- :name: handler.getPrototypeOf()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/getPrototypeOf"
+is:
+- :name: Object.is()
+  :url: "/JavaScript/Reference/Global_Objects/Object/is"
+isExtensible:
+- :name: Object.isExtensible()
+  :url: "/JavaScript/Reference/Global_Objects/Object/isExtensible"
+- :name: handler.isExtensible()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/isExtensible"
+isFrozen:
+- :name: Object.isFrozen()
+  :url: "/JavaScript/Reference/Global_Objects/Object/isFrozen"
+isSealed:
+- :name: Object.isSealed()
+  :url: "/JavaScript/Reference/Global_Objects/Object/isSealed"
+preventExtensions:
+- :name: Object.preventExtensions()
+  :url: "/JavaScript/Reference/Global_Objects/Object/preventExtensions"
+- :name: handler.preventExtensions()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/preventExtensions"
+seal:
+- :name: Object.seal()
+  :url: "/JavaScript/Reference/Global_Objects/Object/seal"
+setPrototypeOf:
+- :name: Object.setPrototypeOf()
+  :url: "/JavaScript/Reference/Global_Objects/Object/setPrototypeOf"
+- :name: handler.setPrototypeOf()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/setPrototypeOf"
+constructor:
+- :name: Object.prototype.constructor
+  :url: "/JavaScript/Reference/Global_Objects/Object/constructor"
+__count__:
+- :name: Object.prototype.__count__
+  :url: "/JavaScript/Reference/Global_Objects/Object/count"
+__parent__:
+- :name: Object.prototype.__parent__
+  :url: "/JavaScript/Reference/Global_Objects/Object/parent"
+hasOwnProperty:
+- :name: Object.prototype.hasOwnProperty()
+  :url: "/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"
+isPrototypeOf:
+- :name: Object.prototype.isPrototypeOf()
+  :url: "/JavaScript/Reference/Global_Objects/Object/isPrototypeOf"
+propertyIsEnumerable:
+- :name: Object.prototype.propertyIsEnumerable()
+  :url: "/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable"
+Promise:
+- :name: Promise
+  :url: "/JavaScript/Reference/Global_Objects/Promise"
+all:
+- :name: Promise.all(iterable)
+  :url: "/JavaScript/Reference/Global_Objects/Promise/all"
+race:
+- :name: Promise.race(iterable)
+  :url: "/JavaScript/Reference/Global_Objects/Promise/race"
+reject:
+- :name: Promise.reject(reason)
+  :url: "/JavaScript/Reference/Global_Objects/Promise/reject"
+resolve:
+- :name: Promise.resolve(value)
+  :url: "/JavaScript/Reference/Global_Objects/Promise/resolve"
+catch:
+- :name: Promise.prototype.catch(onRejected)
+  :url: "/JavaScript/Reference/Global_Objects/Promise/catch"
+then:
+- :name: Promise.prototype.then(onFulfilled, onRejected)
+  :url: "/JavaScript/Reference/Global_Objects/Promise/then"
+finally:
+- :name: Promise.prototype.finally(onFinally)
+  :url: "/JavaScript/Reference/Global_Objects/Promise/finally"
+Proxy:
+- :name: Proxy
+  :url: "/JavaScript/Reference/Global_Objects/Proxy"
+revocable:
+- :name: Proxy.revocable()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/revocable"
+deleteProperty:
+- :name: handler.deleteProperty()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/deleteProperty"
+ownKeys:
+- :name: handler.ownKeys()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/ownKeys"
+construct:
+- :name: handler.construct()
+  :url: "/JavaScript/Reference/Global_Objects/Proxy/handler/construct"
+RegExp:
+- :name: RegExp
+  :url: "/JavaScript/Reference/Global_Objects/RegExp"
+get RegExp[@@species]:
+- :name: get RegExp[@@species]
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/@@species"
+lastIndex:
+- :name: RegExp.lastIndex
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/lastIndex"
+flags:
+- :name: RegExp.prototype.flags
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/flags"
+global:
+- :name: RegExp.prototype.global
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/global"
+ignoreCase:
+- :name: RegExp.prototype.ignoreCase
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/ignoreCase"
+multiline:
+- :name: RegExp.prototype.multiline
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/multiline"
+source:
+- :name: RegExp.prototype.source
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/source"
+sticky:
+- :name: RegExp.prototype.sticky
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/sticky"
+unicode:
+- :name: RegExp.prototype.unicode
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/unicode"
+compile:
+- :name: RegExp.prototype.compile()
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/compile"
+exec:
+- :name: RegExp.prototype.exec()
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/exec"
+test:
+- :name: RegExp.prototype.test()
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/test"
+prototype[@@match]:
+- :name: RegExp.prototype[@@match]()
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/@@match"
+prototype[@@replace]:
+- :name: RegExp.prototype[@@replace]()
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/@@replace"
+prototype[@@search]:
+- :name: RegExp.prototype[@@search]()
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/@@search"
+prototype[@@split]:
+- :name: RegExp.prototype[@@split]()
+  :url: "/JavaScript/Reference/Global_Objects/RegExp/@@split"
+Set:
+- :name: Set
+  :url: "/JavaScript/Reference/Global_Objects/Set"
+get Set[@@species]:
+- :name: get Set[@@species]
+  :url: "/JavaScript/Reference/Global_Objects/Set/@@species"
+add:
+- :name: Set.prototype.add(value)
+  :url: "/JavaScript/Reference/Global_Objects/Set/add"
+- :name: WeakSet.prototype.add(value)
+  :url: "/JavaScript/Reference/Global_Objects/WeakSet/add"
+String:
+- :name: String
+  :url: "/JavaScript/Reference/Global_Objects/String"
+fromCharCode:
+- :name: String.fromCharCode()
+  :url: "/JavaScript/Reference/Global_Objects/String/fromCharCode"
+fromCodePoint:
+- :name: String.fromCodePoint()
+  :url: "/JavaScript/Reference/Global_Objects/String/fromCodePoint"
+raw:
+- :name: String.raw()
+  :url: "/JavaScript/Reference/Global_Objects/String/raw"
+charAt:
+- :name: String.prototype.charAt()
+  :url: "/JavaScript/Reference/Global_Objects/String/charAt"
+charCodeAt:
+- :name: String.prototype.charCodeAt()
+  :url: "/JavaScript/Reference/Global_Objects/String/charCodeAt"
+codePointAt:
+- :name: String.prototype.codePointAt()
+  :url: "/JavaScript/Reference/Global_Objects/String/codePointAt"
+endsWith:
+- :name: String.prototype.endsWith()
+  :url: "/JavaScript/Reference/Global_Objects/String/endsWith"
+localeCompare:
+- :name: String.prototype.localeCompare()
+  :url: "/JavaScript/Reference/Global_Objects/String/localeCompare"
+match:
+- :name: String.prototype.match()
+  :url: "/JavaScript/Reference/Global_Objects/String/match"
+- :name: Symbol.match
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/match"
+padEnd:
+- :name: String.prototype.padEnd()
+  :url: "/JavaScript/Reference/Global_Objects/String/padEnd"
+padStart:
+- :name: String.prototype.padStart()
+  :url: "/JavaScript/Reference/Global_Objects/String/padStart"
+quote:
+- :name: String.prototype.quote()
+  :url: "/JavaScript/Reference/Global_Objects/String/quote"
+repeat:
+- :name: String.prototype.repeat()
+  :url: "/JavaScript/Reference/Global_Objects/String/repeat"
+replace:
+- :name: String.prototype.replace()
+  :url: "/JavaScript/Reference/Global_Objects/String/replace"
+- :name: Symbol.replace
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/replace"
+search:
+- :name: String.prototype.search()
+  :url: "/JavaScript/Reference/Global_Objects/String/search"
+- :name: Symbol.search
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/search"
+split:
+- :name: String.prototype.split()
+  :url: "/JavaScript/Reference/Global_Objects/String/split"
+- :name: Symbol.split
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/split"
+startsWith:
+- :name: String.prototype.startsWith()
+  :url: "/JavaScript/Reference/Global_Objects/String/startsWith"
+substr:
+- :name: String.prototype.substr()
+  :url: "/JavaScript/Reference/Global_Objects/String/substr"
+substring:
+- :name: String.prototype.substring()
+  :url: "/JavaScript/Reference/Global_Objects/String/substring"
+toLocaleLowerCase:
+- :name: String.prototype.toLocaleLowerCase()
+  :url: "/JavaScript/Reference/Global_Objects/String/toLocaleLowerCase"
+toLocaleUpperCase:
+- :name: String.prototype.toLocaleUpperCase()
+  :url: "/JavaScript/Reference/Global_Objects/String/toLocaleUpperCase"
+toLowerCase:
+- :name: String.prototype.toLowerCase()
+  :url: "/JavaScript/Reference/Global_Objects/String/toLowerCase"
+toUpperCase:
+- :name: String.prototype.toUpperCase()
+  :url: "/JavaScript/Reference/Global_Objects/String/toUpperCase"
+trim:
+- :name: String.prototype.trim()
+  :url: "/JavaScript/Reference/Global_Objects/String/trim"
+anchor:
+- :name: String.prototype.anchor()
+  :url: "/JavaScript/Reference/Global_Objects/String/anchor"
+big:
+- :name: String.prototype.big()
+  :url: "/JavaScript/Reference/Global_Objects/String/big"
+blink:
+- :name: String.prototype.blink()
+  :url: "/JavaScript/Reference/Global_Objects/String/blink"
+bold:
+- :name: String.prototype.bold()
+  :url: "/JavaScript/Reference/Global_Objects/String/bold"
+fixed:
+- :name: String.prototype.fixed()
+  :url: "/JavaScript/Reference/Global_Objects/String/fixed"
+fontcolor:
+- :name: String.prototype.fontcolor()
+  :url: "/JavaScript/Reference/Global_Objects/String/fontcolor"
+fontsize:
+- :name: String.prototype.fontsize()
+  :url: "/JavaScript/Reference/Global_Objects/String/fontsize"
+italics:
+- :name: String.prototype.italics()
+  :url: "/JavaScript/Reference/Global_Objects/String/italics"
+link:
+- :name: String.prototype.link()
+  :url: "/JavaScript/Reference/Global_Objects/String/link"
+small:
+- :name: String.prototype.small()
+  :url: "/JavaScript/Reference/Global_Objects/String/small"
+strike:
+- :name: String.prototype.strike()
+  :url: "/JavaScript/Reference/Global_Objects/String/strike"
+sub:
+- :name: String.prototype.sub()
+  :url: "/JavaScript/Reference/Global_Objects/String/sub"
+sup:
+- :name: String.prototype.sup()
+  :url: "/JavaScript/Reference/Global_Objects/String/sup"
+Symbol:
+- :name: Symbol
+  :url: "/JavaScript/Reference/Global_Objects/Symbol"
+iterator:
+- :name: Symbol.iterator
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/iterator"
+hasInstance:
+- :name: Symbol.hasInstance
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/hasInstance"
+isConcatSpreadable:
+- :name: Symbol.isConcatSpreadable
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/isConcatSpreadable"
+unscopables:
+- :name: Symbol.unscopables
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/unscopables"
+species:
+- :name: Symbol.species
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/species"
+toPrimitive:
+- :name: Symbol.toPrimitive
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/toPrimitive"
+toStringTag:
+- :name: Symbol.toStringTag
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/toStringTag"
+keyFor:
+- :name: Symbol.keyFor(sym)
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/keyFor"
+prototype[@@toPrimitive]:
+- :name: Symbol.prototype[@@toPrimitive]
+  :url: "/JavaScript/Reference/Global_Objects/Symbol/@@toPrimitive"
+WeakMap:
+- :name: WeakMap
+  :url: "/JavaScript/Reference/Global_Objects/WeakMap"
+WeakSet:
+- :name: WeakSet
+  :url: "/JavaScript/Reference/Global_Objects/WeakSet"

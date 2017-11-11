@@ -7,10 +7,9 @@
 	<key>command</key>
 	<string>#!/usr/bin/env ruby18
 
-require "#{ENV['TM_BUNDLE_SUPPORT']}/jsmate"
+require "#{ENV['TM_BUNDLE_SUPPORT']}/documentation"
 
-JavaScript::documentationForWord
-</string>
+Documentation::open_page_for(STDIN.read)</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
