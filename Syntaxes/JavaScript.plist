@@ -2008,9 +2008,19 @@
 							<key>name</key>
 							<string>meta.group.braces.round.function.arguments.js</string>
 						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>meta.brace.round.begin.js</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>meta.brace.round.end.js</string>
+						</dict>
 					</dict>
 					<key>match</key>
-					<string>([_$a-zA-Z][$\w]*)\s*(\(\s*\))</string>
+					<string>([_$a-zA-Z][$\w]*)\s*((\()\s*(\)))</string>
 					<key>name</key>
 					<string>meta.function-call.without-arguments.js</string>
 				</dict>
@@ -2558,13 +2568,23 @@
 							<key>name</key>
 							<string>meta.group.braces.round.function.arguments.js</string>
 						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
+							<string>meta.brace.round.begin.js</string>
+						</dict>
+						<key>6</key>
+						<dict>
+							<key>name</key>
+							<string>meta.brace.round.end.js</string>
+						</dict>
 					</dict>
 					<key>match</key>
 					<string>(?x)
   (?:(?&lt;=\.)|\b)
   ([A-Z][$\w]*)\s*(\.)
   ([_$a-zA-Z][$\w]*)\s*
-  (\(\s*\))</string>
+  ((\()\s*(\)))</string>
 					<key>name</key>
 					<string>meta.function-call.static.without-arguments.js</string>
 				</dict>
@@ -2609,12 +2629,22 @@
 							<key>name</key>
 							<string>meta.group.braces.round.function.arguments.js</string>
 						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>meta.brace.round.begin.js</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>meta.brace.round.end.js</string>
+						</dict>
 					</dict>
 					<key>match</key>
 					<string>(?x)
   (?&lt;=\.)
   ([_$a-zA-Z][$\w]*)\s*
-  (\(\s*\))</string>
+  ((\()\s*(\)))</string>
 					<key>name</key>
 					<string>meta.function-call.method.without-arguments.js</string>
 				</dict>
@@ -2706,7 +2736,7 @@
 					<string>(?x)
   !(?!=)| # logical-not     right-to-left   right
   &amp;&amp;    | # logical-and     left-to-right   both
-  \|\|  | # logical-or      left-to-right   both</string>
+  \|\|    # logical-or      left-to-right   both</string>
 					<key>name</key>
 					<string>keyword.operator.logical.js</string>
 				</dict>
