@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env python
+	<string>#!/usr/bin/env python3
 
 import os
 import sys
@@ -22,7 +22,7 @@ if os.environ["TM_SOFT_TABS"] == 'NO':
 else:
     opts.indent_size = int(os.environ["TM_TAB_SIZE"])
 
-print jsbeautifier.beautify_file('-', opts)
+print(jsbeautifier.beautify_file('-', opts))
 </string>
 	<key>input</key>
 	<string>selection</string>
