@@ -26,15 +26,23 @@ print(jsbeautifier.beautify_file('-', opts))
 </string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>^H</string>
 	<key>name</key>
 	<string>Reformat Document / Selection</string>
-	<key>output</key>
-	<string>replaceSelectedText</string>
+	<key>outputCaret</key>
+	<string>heuristic</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>uuid</key>
 	<string>36EC03E9-EFF4-479A-AB90-8DFA16800642</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
