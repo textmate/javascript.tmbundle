@@ -1,0 +1,18 @@
+[
+	{
+		"summary": "to do",
+		"details": "Planned features not yet implemented in this version.",
+		"todo": []
+	},
+	{
+		"summary": "this file",
+		"details": "It seems useful to have some structured higher-level documentation describing the current version. It should not be a direct copy of git commit history, but rather offer a more flexible and prioritized summary of changes. An entry doesn't have to have all the same attributes or use the same attribute types as other entries.",
+		"when": "2022-04-09T07:27:00-05:00",
+		"git": [
+			{
+				"fork": "ogallagher/javascript.tmbundle",
+				"branch": "changelist"
+			}
+		]
+	}
+]
